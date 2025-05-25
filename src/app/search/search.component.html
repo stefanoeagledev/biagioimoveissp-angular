@@ -10,6 +10,7 @@
         [(ngModel)]="searchQuery"
         (input)="onInput()"
         (focus)="onFocus()"
+        (keyup.enter)="onBuscar()"
         placeholder="Busque por rua, bairro ou cidade"
         autocomplete="off"
       />
