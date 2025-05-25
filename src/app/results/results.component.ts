@@ -17,6 +17,8 @@ export class ResultsComponent {
   loading = true;
   estado = '';
   cidade = '';
+  displayCidade = '';
+  displayEstado = '';
   filtered: any[] = [];
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {
@@ -32,9 +34,18 @@ export class ResultsComponent {
       this.imoveis = data;
       this.filtered = this.imoveis.filter(
         (imovel) =>
-          slugify(imovel.estado) === this.estado &&
-          slugify(imovel.cidade) === this.cidade
+          slugify(imovel.estado) === slugify(this.estado) &&
+          slugify(imovel.cidade) === slugify(this.cidade)
       );
+      // Set display values if found
+      if (this.filtered.length > 0) {
+        this.displayCidade = this.filtered[0].cidade;
+        this.displayEstado = this.filtered[0].estado;
+      } else {
+        // fallback to route params or empty
+        this.displayCidade = '';
+        this.displayEstado = '';
+      }
       this.loading = false;
     });
   }
