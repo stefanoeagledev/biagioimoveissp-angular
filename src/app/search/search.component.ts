@@ -13,12 +13,7 @@ export class SearchComponent {
     {
       code: 'SP',
       name: 'São Paulo',
-      cities: ['São Paulo', 'Campinas', 'Santos'],
-    },
-    {
-      code: 'RJ',
-      name: 'Rio de Janeiro',
-      cities: ['Rio de Janeiro', 'Niterói', 'Petrópolis'],
+      cities: ['São Paulo'],
     },
     // Add more states/cities as needed
   ];
