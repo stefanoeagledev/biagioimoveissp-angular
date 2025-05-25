@@ -4,7 +4,8 @@ import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, HeaderComponent],
+  standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
