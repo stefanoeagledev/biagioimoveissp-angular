@@ -65,6 +65,7 @@ export class SearchComponent {
 
     console.log('Buscar clicado!');
     console.log('Estado:', stateCode);
+    console.log('Cidade:', cityName);
     this.router.navigate(['/venda/imoveis', stateCode, cityName]);
   }
 
