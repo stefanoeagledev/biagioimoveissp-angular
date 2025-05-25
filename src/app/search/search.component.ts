@@ -1,9 +1,8 @@
+import { Component, ElementRef, HostListener } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
-import { RouterModule } from '@angular/router';
-import { slugify } from '../utils/slugify'; // Correct import
+import { Router, RouterModule } from '@angular/router';
+import { slugify } from '../utils/slugify';
 
 @Component({
   selector: 'app-search',
@@ -13,8 +12,6 @@ import { slugify } from '../utils/slugify'; // Correct import
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent {
-  constructor(private router: Router) {}
-
   searchQuery = '';
   cities = [
     'São Paulo, SP',
@@ -26,53 +23,48 @@ export class SearchComponent {
   filteredCities = this.cities;
   showSuggestions = false;
 
+  constructor(private router: Router, private el: ElementRef) {}
+
   onInput() {
     this.showSuggestions = true;
     const val = this.searchQuery.toLowerCase();
-    this.filteredCities = this.cities.filter((city) =>
-      city.toLowerCase().includes(val)
+    this.filteredCities = this.cities.filter((c) =>
+      c.toLowerCase().includes(val)
     );
   }
 
   onFocus() {
     this.showSuggestions = true;
-    this.filteredCities = this.cities; // show all on focus if search is empty
+    this.filteredCities = this.cities;
   }
 
   onBuscar() {
-    // Parse out state and city from the selected/typed city
-    let stateCode = '';
-    let cityName = '';
-
-    // Try to extract from suggestions first
     const selected = this.cities.find(
-      (city) => city.toLowerCase() === this.searchQuery.toLowerCase()
+      (c) => c.toLowerCase() === this.searchQuery.toLowerCase()
     );
+    let cidade = '',
+      uf = '';
     if (selected) {
-      // Format: "Cidade, UF"
-      const [cidade, uf] = selected.split(',').map((str) => str.trim());
-      stateCode = slugify(uf || 'sp');
-      cityName = slugify(cidade || 'sao paulo');
+      [cidade, uf] = selected.split(',').map((s) => s.trim());
     } else if (this.searchQuery.includes(',')) {
-      // If typed in "Cidade, UF"
-      const [cidade, uf] = this.searchQuery.split(',').map((str) => str.trim());
-      stateCode = slugify(uf || 'sp');
-      cityName = slugify(cidade || 'sao paulo');
+      [cidade, uf] = this.searchQuery.split(',').map((s) => s.trim());
     } else {
-      // Fallback: default to first city in list
-      const [cidade, uf] = this.cities[0].split(',').map((str) => str.trim());
-      stateCode = slugify(uf || 'sp');
-      cityName = slugify(cidade || 'sao paulo');
+      [cidade, uf] = this.cities[0].split(',').map((s) => s.trim());
     }
-
-    console.log('Buscar clicado!');
-    console.log('Estado:', stateCode);
-    console.log('Cidade:', cityName);
-    this.router.navigate(['/venda/imoveis', stateCode, cityName]);
+    const stateCode = slugify(uf);
+    const citySlug = slugify(cidade);
+    this.router.navigate(['/venda/imoveis', stateCode, citySlug]);
   }
 
   selectSuggestion(city: string) {
     this.searchQuery = city;
     this.showSuggestions = false;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onClickOutside(event: Event) {
+    if (!this.el.nativeElement.contains(event.target)) {
+      this.showSuggestions = false;
+    }
   }
 }

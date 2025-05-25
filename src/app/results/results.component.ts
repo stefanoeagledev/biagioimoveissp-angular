@@ -2,29 +2,34 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { slugify } from '../utils/slugify';
+import { ResultsFilterComponent } from '../components/results-filter/results-filter.component';
+import { ResultsSortComponent } from '../components/results-sort/results-sort.component';
+import { PropertyCardComponent } from '../components/property-card/property-card.component';
 
 @Component({
   selector: 'app-results',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [
+    CommonModule,
+    ResultsFilterComponent,
+    ResultsSortComponent,
+    PropertyCardComponent,
+  ],
   templateUrl: './results.component.html',
   styleUrls: ['./results.component.css'],
 })
 export class ResultsComponent {
   imoveis: any[] = [];
+  filtered: any[] = [];
   loading = true;
-  estado = '';
-  cidade = '';
   displayCidade = '';
   displayEstado = '';
-  filtered: any[] = [];
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {
-    this.route.paramMap.subscribe((params) => {
-      this.estado = params.get('estado') || '';
-      this.cidade = params.get('cidade') || '';
+    this.route.paramMap.subscribe((p) => {
+      this.displayEstado = p.get('estado') || '';
+      this.displayCidade = p.get('cidade') || '';
       this.fetchData();
     });
   }
@@ -33,18 +38,14 @@ export class ResultsComponent {
     this.http.get<any[]>('/assets/apartamentos.json').subscribe((data) => {
       this.imoveis = data;
       this.filtered = this.imoveis.filter(
-        (imovel) =>
-          slugify(imovel.estado) === slugify(this.estado) &&
-          slugify(imovel.cidade) === slugify(this.cidade)
+        (i) =>
+          slugify(i.estado) === slugify(this.displayEstado) &&
+          slugify(i.cidade) === slugify(this.displayCidade)
       );
-      // Set display values if found
-      if (this.filtered.length > 0) {
-        this.displayCidade = this.filtered[0].cidade;
+      if (this.filtered.length) {
+        // pull proper display from data
         this.displayEstado = this.filtered[0].estado;
-      } else {
-        // fallback to route params or empty
-        this.displayCidade = '';
-        this.displayEstado = '';
+        this.displayCidade = this.filtered[0].cidade;
       }
       this.loading = false;
     });
