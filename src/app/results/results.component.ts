@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router'; // 👈 Add this import
-import { slugify } from '../utils/slugify'; // path may vary
+import { RouterModule } from '@angular/router';
+import { slugify } from '../utils/slugify';
 
 @Component({
   selector: 'app-results',
@@ -21,10 +21,8 @@ export class ResultsComponent {
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {
     this.route.paramMap.subscribe((params) => {
-      this.estado = (params.get('estado') || '').toUpperCase();
-      this.cidade = (params.get('cidade') || '')
-        .replace(/-/g, ' ')
-        .toLowerCase();
+      this.estado = params.get('estado') || '';
+      this.cidade = params.get('cidade') || '';
       this.fetchData();
     });
   }
@@ -34,9 +32,8 @@ export class ResultsComponent {
       this.imoveis = data;
       this.filtered = this.imoveis.filter(
         (imovel) =>
-          imovel.estado.toUpperCase() === this.estado &&
-          imovel.cidade.toLowerCase().replace(/ /g, '-') ===
-            this.cidade.replace(/ /g, '-')
+          slugify(imovel.estado) === this.estado &&
+          slugify(imovel.cidade) === this.cidade
       );
       this.loading = false;
     });

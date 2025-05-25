@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
-import { slugify } from '../utils/slugify'; // path may vary
+import { slugify } from '../utils/slugify'; // Correct import
 
 @Component({
   selector: 'app-search',
@@ -13,16 +13,8 @@ import { slugify } from '../utils/slugify'; // path may vary
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent {
-  slugify(text: string) {
-    return text
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '') // remove accents
-      .replace(/\s+/g, '-') // replace spaces with hyphens
-      .replace(/[^a-z0-9\-]/g, ''); // remove all non-alphanumeric except hyphen
-  }
-
   constructor(private router: Router) {}
+
   searchQuery = '';
   cities = [
     'São Paulo, SP',
@@ -59,18 +51,18 @@ export class SearchComponent {
     if (selected) {
       // Format: "Cidade, UF"
       const [cidade, uf] = selected.split(',').map((str) => str.trim());
-      stateCode = uf.toLowerCase();
-      cityName = cidade.toLowerCase().replace(/\s+/g, '-');
+      stateCode = slugify(uf || 'sp');
+      cityName = slugify(cidade || 'sao paulo');
     } else if (this.searchQuery.includes(',')) {
       // If typed in "Cidade, UF"
       const [cidade, uf] = this.searchQuery.split(',').map((str) => str.trim());
-      stateCode = uf.toLowerCase();
-      cityName = cidade.toLowerCase().replace(/\s+/g, '-');
+      stateCode = slugify(uf || 'sp');
+      cityName = slugify(cidade || 'sao paulo');
     } else {
       // Fallback: default to first city in list
       const [cidade, uf] = this.cities[0].split(',').map((str) => str.trim());
-      stateCode = uf.toLowerCase();
-      cityName = cidade.toLowerCase().replace(/\s+/g, '-');
+      stateCode = slugify(uf || 'sp');
+      cityName = slugify(cidade || 'sao paulo');
     }
 
     console.log('Buscar clicado!');
