@@ -1,6 +1,7 @@
 import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -10,6 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent {
+  constructor(private router: Router) {}
   searchQuery = '';
   cities = [
     'São Paulo, SP',
@@ -35,10 +37,32 @@ export class SearchComponent {
   }
 
   onBuscar() {
-    this.showSuggestions = true;
-    this.filteredCities = this.cities.filter((city) =>
-      city.toLowerCase().includes(this.searchQuery.toLowerCase())
+    // Parse out state and city from the selected/typed city
+    let stateCode = '';
+    let cityName = '';
+
+    // Try to extract from suggestions first
+    const selected = this.cities.find(
+      (city) => city.toLowerCase() === this.searchQuery.toLowerCase()
     );
+    if (selected) {
+      // Format: "Cidade, UF"
+      const [cidade, uf] = selected.split(',').map((str) => str.trim());
+      stateCode = uf.toLowerCase();
+      cityName = cidade.toLowerCase().replace(/\s+/g, '-');
+    } else if (this.searchQuery.includes(',')) {
+      // If typed in "Cidade, UF"
+      const [cidade, uf] = this.searchQuery.split(',').map((str) => str.trim());
+      stateCode = uf.toLowerCase();
+      cityName = cidade.toLowerCase().replace(/\s+/g, '-');
+    } else {
+      // Fallback: default to first city in list
+      const [cidade, uf] = this.cities[0].split(',').map((str) => str.trim());
+      stateCode = uf.toLowerCase();
+      cityName = cidade.toLowerCase().replace(/\s+/g, '-');
+    }
+
+    this.router.navigate(['/venda/imoveis', stateCode, cityName]);
   }
 
   selectSuggestion(city: string) {
