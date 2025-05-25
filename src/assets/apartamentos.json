@@ -1,0 +1,389 @@
+[
+  {
+    "id": 1,
+    "construtora": "Marques Construtora",
+    "nome": "Jaracandá",
+    "logo": "logo.webp",
+    "status": "Breve lançamento Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com churrasqueira a carvão (74m²) / ponto grill (56m²)",
+    "endereco": "",
+    "vendido": "",
+    "prontoEm": "",
+    "lancamentoEm": "set/2024",
+    "fotos": [
+      "1.webp",
+      "2.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "8.webp"
+    ],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito",
+    "vagasdescr": "determinadas",
+    "videoId": "X9bdH8CVDRY",
+    "plantas": [
+      {
+        "area": 56,
+        "preco": 387159,
+        "quartos": 2,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 387.159"
+      },
+      {
+        "area": 74,
+        "preco": 513429,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p2.webp",
+        "precoapartirde": "R$ 513.429"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "construtora": "Marques Construtora",
+    "nome": "Olivier",
+    "logo": "logo.webp",
+    "status": "Lançamento Em Obras",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua José de Oliveira Coelho, 315",
+    "vendido": "90%",
+    "prontoEm": "jul/2026",
+    "lancamentoEm": "",
+    "fotos": [
+      "1.webp",
+      "2.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "olivier.webp"
+    ],
+    "vagas": [3],
+    "obsvagas": "com depósito",
+    "videoId": "nd9HanRNOps",
+    "plantas": [
+      {
+        "area": 141,
+        "preco": 1274100,
+        "quartos": 4,
+        "banheiros": 4,
+        "lavabos": 1,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 1.274.100"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "construtora": "Marques Construtora",
+    "nome": "Morumbi Home Resort",
+    "logo": "logo.webp",
+    "status": "Lançamento Em Obras",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua Carvalho de Freitas, 23",
+    "vendido": "80%",
+    "prontoEm": "dez/2025",
+    "lancamentoEm": "",
+    "fotos": [
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "home_resort.webp"
+    ],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito e vaga extra",
+    "videoId": "wWz93rz5r5E",
+    "plantas": [
+      {
+        "area": 60,
+        "preco": 734200,
+        "quartos": 2,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p3.webp",
+        "precoapartirde": "R$ 734.200",
+        "tabelaem": "24 meses"
+      },
+      {
+        "area": 83,
+        "preco": 869900,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "p2.webp",
+        "precoapartirde": "R$ 869.900"
+      },
+      {
+        "area": 104,
+        "preco": 1029900,
+        "quartos": 3,
+        "banheiros": 3,
+        "lavabos": 1,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 1.029.900"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "construtora": "Marques Construtora",
+    "nome": "Ohana",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Panamby",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua Fabio Lopes Dos Santos Luz, 120",
+    "vendido": "90%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": [
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "ohana.webp"
+    ],
+    "vagas": [2],
+    "obsvagas": "com depósito",
+    "videoId": "-XKzonBAZy4",
+    "plantas": [
+      {
+        "area": 94,
+        "preco": 1051400,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 1.051.400"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "construtora": "Marques Construtora",
+    "nome": "Magna",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua José de Oliveira Coelho, 451",
+    "vendido": "85%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": [
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "magna.webp"
+    ],
+    "vagas": [2, 3],
+    "obsvagas": "com depósito e vaga extra",
+    "videoId": "RjC6hA1wIJ8",
+    "plantas": [
+      {
+        "area": 133,
+        "preco": 1378900,
+        "quartos": 4,
+        "banheiros": 4,
+        "lavabos": 1,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 1.378.900"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "construtora": "Marques Construtora",
+    "nome": "Gracia",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "com churrasqueira a carvão (91m²) / ponto grill (56m²)",
+    "endereco": "Rua Francisco José da Silva, 287",
+    "vendido": "97%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito",
+    "vagasdescr": "determinadas",
+    "videoId": "t2LyDF32OGg",
+    "plantas": [
+      {
+        "area": 56,
+        "preco": 578000,
+        "quartos": 2,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 578.000"
+      },
+      {
+        "area": 91,
+        "preco": 975900,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "p2.webp",
+        "precoapartirde": "R$ 975.900"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "construtora": "Marques Construtora",
+    "nome": "Pleno",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com churrasqueira a carvão (75m²) / ponto grill (56m²)",
+    "endereco": "Rua Nicola Rollo, 201",
+    "vendido": "99%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": ["1.webp"],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito",
+    "vagasdescr": "determinadas",
+    "videoId": "ildD34hkmJI",
+    "plantas": [
+      {
+        "area": 56,
+        "preco": 547500,
+        "quartos": 2,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 547.500 (ultima unidade)"
+      },
+      {
+        "area": 75,
+        "preco": 547500,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p2.webp",
+        "precoapartirde": ""
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "construtora": "Marques Construtora",
+    "nome": "Arboris",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com ponto grill",
+    "endereco": "Rua Celso Ramos, 188",
+    "vendido": "75%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito",
+    "videoId": "cldrEnbab3U",
+    "plantas": [
+      {
+        "area": 47,
+        "preco": 427700,
+        "quartos": 2,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 427.700"
+      },
+      {
+        "area": 69,
+        "preco": 612600,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p2.webp",
+        "precoapartirde": "R$ 612.600"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "construtora": "Marques Construtora",
+    "nome": "Dueto",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com ponto grill",
+    "endereco": "Rua Carvalho de Freitas, 100",
+    "vendido": "95%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
+    "vagas": [1],
+    "obsvagas": "com depósito",
+    "videoId": "di8qBiT2rSc",
+    "plantas": [
+      {
+        "area": 45,
+        "preco": 413400,
+        "quartos": 2,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 413.400"
+      },
+      {
+        "area": 45,
+        "preco": 413400,
+        "quartos": 2,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "p2.webp",
+        "precoapartirde": "R$ 413.400"
+      }
+    ]
+  }
+]
