@@ -9,23 +9,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent {
-  states = [
-    {
-      code: 'SP',
-      name: 'São Paulo',
-      cities: ['São Paulo'],
-    },
-    // Add more states/cities as needed
+  searchQuery = '';
+  cities = [
+    'São Paulo, SP',
+    'Campinas, SP',
+    'Santos, SP',
+    'Rio de Janeiro, RJ',
+    'Belo Horizonte, MG',
   ];
+  filteredCities = this.cities;
+  showSuggestions = false;
 
-  selectedState = this.states[0];
-  selectedCity = this.states[0].cities[0];
+  onInput() {
+    this.showSuggestions = !!this.searchQuery;
+    const val = this.searchQuery.toLowerCase();
+    this.filteredCities = this.cities.filter((city) =>
+      city.toLowerCase().includes(val)
+    );
+  }
 
-  onStateChange(event: any) {
-    const state = this.states.find((s) => s.code === event.target.value);
-    if (state) {
-      this.selectedState = state;
-      this.selectedCity = state.cities[0];
-    }
+  selectSuggestion(city: string) {
+    this.searchQuery = city;
+    this.showSuggestions = false;
   }
 }

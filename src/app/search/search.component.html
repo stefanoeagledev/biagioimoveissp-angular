@@ -1,30 +1,29 @@
-<div class="search-bar">
-  <label>
-    Comprar:
-    <select (change)="onStateChange($event)">
-      <option
-        *ngFor="let state of states"
-        [value]="state.code"
-        [selected]="state === selectedState"
-      >
-        {{ state.name }}
-      </option>
-    </select>
-  </label>
-  <label>
-    Cidade:
-    <select [(ngModel)]="selectedCity">
-      <option *ngFor="let city of selectedState.cities" [value]="city">
-        {{ city }}
-      </option>
-    </select>
-  </label>
-  <button class="search-btn" aria-label="Buscar apartamentos">
-    <span
-      class="material-icons"
-      style="vertical-align: middle; font-size: 1.15em"
-      >search</span
-    >
-    Buscar
-  </button>
+<div class="search-outer">
+  <div class="search-card">
+    <div class="tabs">
+      <button class="tab selected">Comprar</button>
+    </div>
+    <div class="search-input-row">
+      <span class="material-icons search-icon">search</span>
+      <input
+        type="text"
+        [(ngModel)]="searchQuery"
+        (input)="onInput()"
+        placeholder="Busque por rua, bairro ou cidade"
+        autocomplete="off"
+      />
+      <button class="search-btn" aria-label="Buscar">Buscar</button>
+    </div>
+    <div class="suggestions" *ngIf="showSuggestions">
+      <div class="suggestion-header">Cidades</div>
+      <div class="suggestion-list">
+        <button
+          *ngFor="let city of filteredCities"
+          (click)="selectSuggestion(city)"
+        >
+          {{ city }}
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
