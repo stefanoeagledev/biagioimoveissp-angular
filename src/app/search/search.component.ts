@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
+import { slugify } from '../utils/slugify'; // path may vary
 
 @Component({
   selector: 'app-search',
@@ -12,6 +13,15 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent {
+  slugify(text: string) {
+    return text
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '') // remove accents
+      .replace(/\s+/g, '-') // replace spaces with hyphens
+      .replace(/[^a-z0-9\-]/g, ''); // remove all non-alphanumeric except hyphen
+  }
+
   constructor(private router: Router) {}
   searchQuery = '';
   cities = [

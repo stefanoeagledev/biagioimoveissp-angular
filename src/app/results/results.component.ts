@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router'; // 👈 Add this import
+import { slugify } from '../utils/slugify'; // path may vary
 
 @Component({
   selector: 'app-results',
