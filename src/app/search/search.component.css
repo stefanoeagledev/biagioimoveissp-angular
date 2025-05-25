@@ -28,10 +28,13 @@ select {
   font-size: 1rem;
   outline: none;
   transition: border 0.2s;
+  min-width: 150px;
 }
 
 select:focus {
   border: 1.5px solid #1a237e;
+  border-color: #1a237e;
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.06);
 }
 
 .search-btn {
@@ -50,4 +53,16 @@ select:focus {
 .search-btn:hover {
   background: #3949ab;
   box-shadow: 0 4px 14px rgba(26, 35, 126, 0.13);
+}
+
+@media (max-width: 700px) {
+  .search-bar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0.7rem;
+    max-width: 98vw;
+  }
+  .search-btn {
+    width: 100%;
+  }
 }
