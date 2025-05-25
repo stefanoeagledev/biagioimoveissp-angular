@@ -1,0 +1,23 @@
+<div class="search-bar">
+  <label>
+    Comprar:
+    <select (change)="onStateChange($event)">
+      <option
+        *ngFor="let state of states"
+        [value]="state.code"
+        [selected]="state === selectedState"
+      >
+        {{ state.name }}
+      </option>
+    </select>
+  </label>
+  <label>
+    Cidade:
+    <select [(ngModel)]="selectedCity">
+      <option *ngFor="let city of selectedState.cities" [value]="city">
+        {{ city }}
+      </option>
+    </select>
+  </label>
+  <button class="search-btn">Buscar</button>
+</div>
