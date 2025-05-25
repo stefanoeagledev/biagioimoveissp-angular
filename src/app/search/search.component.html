@@ -9,10 +9,13 @@
         type="text"
         [(ngModel)]="searchQuery"
         (input)="onInput()"
+        (focus)="onFocus()"
         placeholder="Busque por rua, bairro ou cidade"
         autocomplete="off"
       />
-      <button class="search-btn" aria-label="Buscar">Buscar</button>
+      <button class="search-btn" aria-label="Buscar" (click)="onBuscar()">
+        Buscar
+      </button>
     </div>
     <div class="suggestions" *ngIf="showSuggestions">
       <div class="suggestion-header">Cidades</div>

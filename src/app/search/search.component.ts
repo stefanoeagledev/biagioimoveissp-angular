@@ -1,10 +1,11 @@
 import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-search',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule], // 👈 Add CommonModule here!
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
 })
@@ -21,10 +22,22 @@ export class SearchComponent {
   showSuggestions = false;
 
   onInput() {
-    this.showSuggestions = !!this.searchQuery;
+    this.showSuggestions = true;
     const val = this.searchQuery.toLowerCase();
     this.filteredCities = this.cities.filter((city) =>
       city.toLowerCase().includes(val)
+    );
+  }
+
+  onFocus() {
+    this.showSuggestions = true;
+    this.filteredCities = this.cities; // show all on focus if search is empty
+  }
+
+  onBuscar() {
+    this.showSuggestions = true;
+    this.filteredCities = this.cities.filter((city) =>
+      city.toLowerCase().includes(this.searchQuery.toLowerCase())
     );
   }
 
