@@ -63,6 +63,8 @@ export class SearchComponent {
       cityName = cidade.toLowerCase().replace(/\s+/g, '-');
     }
 
+    console.log('Buscar clicado!');
+    console.log('Estado:', stateCode);
     this.router.navigate(['/venda/imoveis', stateCode, cityName]);
   }
 
