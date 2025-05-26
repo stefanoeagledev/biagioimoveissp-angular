@@ -48,3 +48,13 @@
     display: block;
   }
 }
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* default – crops to fill */
+  object-position: center;
+}
+img.vertical {
+  object-fit: contain; /* portrait shots show full with letterbox */
+  background-color: #f6f8fa;
+}
