@@ -6,16 +6,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-results-sort',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  template: `
-    <div class="sort-row">
-      <label for="sort">Ordenar por:</label>
-      <select id="sort" [(ngModel)]="sortOption">
-        <option>Mais relevante</option>
-        <option>Menor preço</option>
-        <option>Maior preço</option>
-      </select>
-    </div>
-  `,
+  templateUrl: './results-sort.component.html',
   styleUrls: ['./results-sort.component.css'],
 })
 export class ResultsSortComponent {
