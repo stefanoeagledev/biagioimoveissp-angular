@@ -1,0 +1,19 @@
+.amenidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+.amenidade {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+.amenidade .material-icons {
+  font-size: 1.4rem;
+  color: #1a237e;
+  vertical-align: middle;
+  line-height: 1;
+}

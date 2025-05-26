@@ -46,6 +46,26 @@
         "foto": "p2.webp",
         "precoapartirde": "R$ 513.429"
       }
+    ],
+    "amenidades": [
+      { "nome": "Piscina adulto", "iconKey": "pool" },
+      { "nome": "Piscina infantil", "iconKey": "child_care" },
+      { "nome": "Solarium", "iconKey": "wb_sunny" },
+      { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+      { "nome": "Baby play", "iconKey": "child_friendly" },
+      { "nome": "Churrasqueira e pizza", "iconKey": "outdoor_grill" },
+      { "nome": "Hall social", "iconKey": "meeting_room" },
+      { "nome": "Playground", "iconKey": "park" },
+      { "nome": "Fitness", "iconKey": "fitness_center" },
+      { "nome": "Fitness externo", "iconKey": "sports_motorsports" },
+      { "nome": "Salão de festas", "iconKey": "celebration" },
+      { "nome": "Sauna com descanso", "iconKey": "hot_tub" },
+      { "nome": "Salão de jogos", "iconKey": "sports_esports" },
+      { "nome": "Coworking", "iconKey": "workspaces" },
+      { "nome": "Portaria", "iconKey": "security" },
+      { "nome": "Entrada social", "iconKey": "login" },
+      { "nome": "Entrada de veículos", "iconKey": "garage" },
+      { "nome": "Zeladoria", "iconKey": "support_agent" }
     ]
   },
   {

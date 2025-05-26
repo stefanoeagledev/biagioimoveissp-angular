@@ -47,6 +47,12 @@ import { RouterModule } from '@angular/router';
             {{ imovel.vagas[0] === 1 ? 'vaga' : 'vagas' }}
           </span>
         </div>
+        <!-- <div class="amenidades">
+          <div *ngFor="let a of imovel.amenidades" class="amenidade">
+            <span class="material-icons">{{ a.iconKey }}</span>
+            <span class="nome">{{ a.nome }}</span>
+          </div>
+        </div> -->
         <button class="ver-detalhes-btn" [routerLink]="['/imovel', imovel.id]">
           Ver detalhes
         </button>
