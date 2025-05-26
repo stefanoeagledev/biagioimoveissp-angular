@@ -17,9 +17,16 @@
 .carousel-scroller img {
   flex: 0 0 100%;
   scroll-snap-align: start;
-  object-fit: cover;
+  width: 100%;
   height: 180px;
+  object-fit: cover; /* default: fill/crop */
+  object-position: center;
   border-radius: 1.6rem 1.6rem 0 0;
+  background-color: #f6f8fa; /* letterbox color if contain */
+}
+
+.carousel-scroller img.portrait {
+  object-fit: contain; /* portrait: show all with bars */
 }
 
 /* Desktop arrows */

@@ -3,8 +3,6 @@ import {
   Input,
   ElementRef,
   ViewChild,
-  QueryList,
-  ViewChildren,
   AfterViewInit,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -19,35 +17,26 @@ import { CommonModule } from '@angular/common';
 export class PhotoCarouselComponent implements AfterViewInit {
   @Input() images: string[] = [];
 
-  /** reference to the scroll-container */
+  /** track each image’s orientation */
+  orientations: Record<string, 'portrait' | 'landscape'> = {};
+
   @ViewChild('scroller', { static: true })
   scroller!: ElementRef<HTMLElement>;
 
-  /** keep track of which images are portrait */
-  @ViewChildren('slideImg')
-  slides!: QueryList<ElementRef<HTMLImageElement>>;
-  isVertical = new Map<string, boolean>();
-
   ngAfterViewInit() {
-    // once each img loads, detect orientation
-    this.slides.forEach((imgRef) => {
-      const img = imgRef.nativeElement;
-      img.addEventListener('load', () => {
-        const vert = img.naturalHeight > img.naturalWidth;
-        this.isVertical.set(img.src, vert);
-        img.classList.toggle('vertical', vert);
-      });
-    });
+    // nothing here anymore
   }
 
-  /**
-   * Scroll the container by its own width
-   */
-  scroll(direction: 'left' | 'right') {
+  /** called by each <img> when it finishes loading */
+  onSlideLoad(src: string, img: HTMLImageElement) {
+    this.orientations[src] =
+      img.naturalHeight > img.naturalWidth ? 'portrait' : 'landscape';
+  }
+
+  scroll(dir: 'left' | 'right') {
     const el = this.scroller.nativeElement;
-    const amount = el.clientWidth;
     el.scrollBy({
-      left: direction === 'left' ? -amount : amount,
+      left: (dir === 'left' ? -1 : 1) * el.clientWidth,
       behavior: 'smooth',
     });
   }

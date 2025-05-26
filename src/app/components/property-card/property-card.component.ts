@@ -14,7 +14,7 @@ export class PropertyCardComponent {
   @Input() imovel!: any;
   // in PropertyCardComponent
   get carouselImages() {
-    const base = `/assets/${this.imovel.nome}/Apartamentos/`;
+    const base = `/assets/${this.imovel.nome}/`;
     return this.imovel.fotos.map((f: string) => base + f);
   }
 }

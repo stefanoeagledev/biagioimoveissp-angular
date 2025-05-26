@@ -15,12 +15,11 @@
     "prontoEm": "",
     "lancamentoEm": "set/2024",
     "fotos": [
-      "01_Perspectiva artística da Fachada.webp",
-      "02_Perspectiva artística da entrada.webp",
-      "03_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
-      "04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
-      "05_Perspectiva artística do Living do apto. de 56 m².webp",
-      "06_Perspectiva artística do hall de social.webp"
+      "Apartamentos/03_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
+      "Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+      "Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
+      "Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
+      "Apartamentos/02_Perspectiva artística da entrada.webp"
     ],
     "vagas": [1, 2],
     "obsvagas": "com depósito",

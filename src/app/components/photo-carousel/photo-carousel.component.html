@@ -1,16 +1,14 @@
 <div class="carousel-container">
   <button class="arrow left" (click)="scroll('left')">‹</button>
-
   <div #scroller class="carousel-scroller">
-    <!-- note: direct <img> instead of ng-template/swiperSlide -->
     <img
       #slideImg
       *ngFor="let src of images"
       [src]="src"
-      [class.vertical]="isVertical.get(src)"
       alt="slide"
+      (load)="onSlideLoad(src, slideImg)"
+      [class.portrait]="orientations[src] === 'portrait'"
     />
   </div>
-
   <button class="arrow right" (click)="scroll('right')">›</button>
 </div>
