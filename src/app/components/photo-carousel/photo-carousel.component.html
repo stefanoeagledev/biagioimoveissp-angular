@@ -1,14 +1,39 @@
 <div class="carousel-container">
   <button class="arrow left" (click)="scroll('left')">‹</button>
-  <div #scroller class="carousel-scroller">
+
+  <div
+    #scroller
+    class="carousel-scroller"
+    role="region"
+    aria-label="Galeria de fotos do imóvel"
+    tabindex="0"
+    (scroll)="onScroll()"
+    (keydown.arrowLeft)="scroll('left')"
+    (keydown.arrowRight)="scroll('right')"
+  >
     <img
       #slideImg
-      *ngFor="let src of images"
+      *ngFor="let src of images; let i = index"
       [src]="src"
-      alt="slide"
+      [attr.alt]="
+        altTextPrefix
+          ? altTextPrefix + ' foto ' + (i + 1) + ' de ' + images.length
+          : 'Slide ' + (i + 1) + ' de ' + images.length
+      "
+      loading="lazy"
       (load)="onSlideLoad(src, slideImg)"
       [class.portrait]="orientations[src] === 'portrait'"
     />
   </div>
+
+  <div class="dots">
+    <button
+      *ngFor="let _ of images; let i = index"
+      class="dot"
+      [class.active]="currentIndex === i"
+      (click)="goTo(i)"
+    ></button>
+  </div>
+
   <button class="arrow right" (click)="scroll('right')">›</button>
 </div>

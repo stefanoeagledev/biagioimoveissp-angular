@@ -65,3 +65,22 @@ img.vertical {
   object-fit: contain; /* portrait shots show full with letterbox */
   background-color: #f6f8fa;
 }
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dot.active {
+  background: #1a237e;
+}
