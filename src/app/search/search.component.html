@@ -1,8 +1,7 @@
 <div class="search-outer">
   <div class="search-card">
-    <div class="tabs">
-      <button class="tab selected">Comprar</button>
-    </div>
+    <!-- … tabs markup … -->
+
     <div class="search-input-row">
       <span class="material-icons search-icon">search</span>
       <input
@@ -10,19 +9,25 @@
         [(ngModel)]="searchQuery"
         (input)="onInput()"
         (focus)="onFocus()"
-        (keyup.enter)="onBuscar()"
         placeholder="Busque por rua, bairro ou cidade"
         autocomplete="off"
       />
-      <button class="search-btn" aria-label="Buscar" (click)="onBuscar()">
+      <button
+        class="search-btn"
+        aria-label="Buscar"
+        type="button"
+        (click)="toggleSuggestions()"
+      >
         Buscar
       </button>
     </div>
+
     <div class="suggestions" *ngIf="showSuggestions">
       <div class="suggestion-header">Cidades</div>
       <div class="suggestion-list">
         <button
           *ngFor="let city of filteredCities"
+          type="button"
           (click)="selectSuggestion(city)"
         >
           {{ city }}

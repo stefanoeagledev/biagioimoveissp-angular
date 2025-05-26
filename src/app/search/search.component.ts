@@ -1,7 +1,8 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { slugify } from '../utils/slugify';
 
 @Component({
@@ -13,13 +14,7 @@ import { slugify } from '../utils/slugify';
 })
 export class SearchComponent {
   searchQuery = '';
-  cities = [
-    'São Paulo, SP',
-    'Campinas, SP',
-    'Santos, SP',
-    'Rio de Janeiro, RJ',
-    'Belo Horizonte, MG',
-  ];
+  cities = ['São Paulo, SP'];
   filteredCities = this.cities;
   showSuggestions = false;
 
@@ -38,29 +33,27 @@ export class SearchComponent {
     this.filteredCities = this.cities;
   }
 
-  onBuscar() {
-    const selected = this.cities.find(
-      (c) => c.toLowerCase() === this.searchQuery.toLowerCase()
-    );
-    let cidade = '',
-      uf = '';
-    if (selected) {
-      [cidade, uf] = selected.split(',').map((s) => s.trim());
-    } else if (this.searchQuery.includes(',')) {
-      [cidade, uf] = this.searchQuery.split(',').map((s) => s.trim());
-    } else {
-      [cidade, uf] = this.cities[0].split(',').map((s) => s.trim());
+  /** Toggle the suggestions on Buscar click */
+  toggleSuggestions() {
+    this.showSuggestions = !this.showSuggestions;
+    if (this.showSuggestions) {
+      // reset the full list when opening
+      this.filteredCities = this.cities;
     }
+  }
+
+  /** When a city is clicked: close + navigate */
+  selectSuggestion(city: string) {
+    this.searchQuery = city;
+    this.showSuggestions = false;
+
+    const [cidade, uf] = city.split(',').map((s) => s.trim());
     const stateCode = slugify(uf);
     const citySlug = slugify(cidade);
     this.router.navigate(['/venda/imoveis', stateCode, citySlug]);
   }
 
-  selectSuggestion(city: string) {
-    this.searchQuery = city;
-    this.showSuggestions = false;
-  }
-
+  /** Clicks outside hide the dropdown */
   @HostListener('document:click', ['$event'])
   onClickOutside(event: Event) {
     if (!this.el.nativeElement.contains(event.target)) {

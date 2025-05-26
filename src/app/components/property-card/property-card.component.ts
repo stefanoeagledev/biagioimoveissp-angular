@@ -9,7 +9,10 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="imovel-card">
       <div class="img-wrapper">
-        <img [src]="'/assets/' + imovel.fotos[0]" [alt]="imovel.nome" />
+        <img
+          [src]="'/assets/' + imovel.nome + '/' + imovel.fotos[0]"
+          [alt]="imovel.nome"
+        />
         <button class="fav-btn">
           <span class="material-icons">favorite_border</span>
         </button>
