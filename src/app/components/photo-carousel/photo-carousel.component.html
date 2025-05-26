@@ -1,0 +1,9 @@
+<div class="carousel-container">
+  <button class="arrow left" (click)="scroll('left')">‹</button>
+
+  <div #scroller class="carousel-scroller">
+    <img *ngFor="let img of images" [src]="img" alt="slide" />
+  </div>
+
+  <button class="arrow right" (click)="scroll('right')">›</button>
+</div>
