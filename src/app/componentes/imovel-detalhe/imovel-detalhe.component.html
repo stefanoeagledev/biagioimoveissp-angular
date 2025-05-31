@@ -27,7 +27,7 @@
   <section *ngIf="imovel.amenidades?.length">
     <h2>Amenidades</h2>
     <app-lista-amenidades
-      [amenidades]="imovel.amenidades"
+      [amenidades]="imovel.amenidades ?? []"
     ></app-lista-amenidades>
   </section>
 

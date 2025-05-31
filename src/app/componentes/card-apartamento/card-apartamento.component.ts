@@ -1,11 +1,15 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; // <<< importe o RouterModule
 import { Apartamento, Planta } from '../../modelos/apartamento.model';
 
 @Component({
   selector: 'app-card-apartamento',
   standalone: true,
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    RouterModule, // <<< inclua aqui
+  ],
   template: `
     <div class="card card-apartamento">
       <img
