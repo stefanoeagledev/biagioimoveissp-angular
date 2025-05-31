@@ -1,0 +1,74 @@
+<div class="card-imovel">
+  <!-- FOTO / CARROSSEL -->
+  <div class="card-imagem">
+    <div class="carousel-container">
+      <button class="btn-prev" (click)="prevFoto()">&lsaquo;</button>
+      <img
+        [src]="imovel.fotos[fotoIndex]"
+        alt="Foto do imóvel"
+        class="foto-atual"
+      />
+      <button class="btn-next" (click)="nextFoto()">&rsaquo;</button>
+      <div class="dots-container">
+        <span
+          *ngFor="let f of imovel.fotos; let i = index"
+          class="dot"
+          [class.active]="i === fotoIndex"
+          (click)="goToFoto(i)"
+        ></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DADOS DO IMÓVEL -->
+  <div class="card-dados">
+    <h3 class="card-titulo">{{ imovel.titulo }}</h3>
+    <p class="card-valor">
+      A partir de R$ {{ imovel.valor | number : "1.0-0" }}
+    </p>
+    <p class="card-endereco">{{ imovel.bairro }}, {{ imovel.cidade }}</p>
+
+    <div class="card-caracteristicas">
+      <!-- ÁREAS (se tiver mais de um valor) -->
+      <ng-container *ngIf="imovel.areas && imovel.areas.length > 0">
+        <span
+          class="item-caracteristica"
+          *ngFor="let A of imovel.areas; let idx = index"
+        >
+          <i class="icon-area"></i>
+          {{ A }}m²
+          <span *ngIf="idx < imovel.areas.length - 1">, </span>
+        </span>
+      </ng-container>
+
+      <!-- Quartos -->
+      <span
+        class="item-caracteristica"
+        *ngIf="imovel.quartos !== null && imovel.quartos !== undefined"
+      >
+        <i class="icon-quarto"></i>
+        {{ imovel.quartos }}
+      </span>
+
+      <!-- Banheiros -->
+      <span
+        class="item-caracteristica"
+        *ngIf="imovel.banheiros !== null && imovel.banheiros !== undefined"
+      >
+        <i class="icon-banheiro"></i>
+        {{ imovel.banheiros }}
+      </span>
+
+      <!-- Vagas -->
+      <span
+        class="item-caracteristica"
+        *ngIf="imovel.vagas !== null && imovel.vagas !== undefined"
+      >
+        <i class="icon-vaga"></i>
+        {{ imovel.vagas }}
+      </span>
+    </div>
+
+    <button class="btn-detalhes">Ver detalhes</button>
+  </div>
+</div>
