@@ -1,6 +1,12 @@
 // src/app/components/lista-apartamentos/lista-apartamentos.component.ts
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject, Signal, signal } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  inject,
+  WritableSignal,
+  signal,
+} from '@angular/core';
 import { ApartamentosServico } from '../../servicos/apartamentos.servico';
 import { Apartamento } from '../../modelos/apartamento.model';
 import { CardApartamentoComponent } from '../card-apartamento/card-apartamento.component';
@@ -10,7 +16,7 @@ import { CardApartamentoComponent } from '../card-apartamento/card-apartamento.c
   standalone: true,
   imports: [CommonModule, CardApartamentoComponent],
   template: `
-    <ng-container *ngFor="let a of apartamentos">
+    <ng-container *ngFor="let a of apartamentos()">
       <app-card-apartamento [a]="a"></app-card-apartamento>
     </ng-container>
   `,
@@ -18,7 +24,7 @@ import { CardApartamentoComponent } from '../card-apartamento/card-apartamento.c
 })
 export class ListaApartamentosComponent implements OnInit {
   private apartamentosServico = inject(ApartamentosServico);
-  apartamentos: Signal<Apartamento[]> = signal([]);
+  apartamentos: WritableSignal<Apartamento[]> = signal<Apartamento[]>([]);
 
   ngOnInit(): void {
     this.apartamentosServico.listarTodos().subscribe((dados) => {
