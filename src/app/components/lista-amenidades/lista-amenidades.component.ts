@@ -1,4 +1,3 @@
-// src/app/componentes/lista-amenidades/lista-amenidades.component.ts
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

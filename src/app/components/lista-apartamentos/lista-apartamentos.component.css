@@ -1,56 +1,23 @@
-.card-apartamento {
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+/* Ajuste conforme seu layout (exemplo de grid simples): */
+:host {
+  display: block;
+  margin: 1rem;
 }
 
-.card-apartamento .card-img-top {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+:host .lista-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
-.card-apartamento .card-body {
-  padding: 1rem;
+@media (min-width: 768px) {
+  :host .lista-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.card-apartamento .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-area {
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-}
-
-.card-local {
-  color: #666;
-  margin-bottom: 0.75rem;
-}
-
-.card-detalhes-icons {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 1rem;
-  align-items: center;
-}
-
-.texto-det {
-  display: flex;
-  align-items: center;
-  font-size: 0.95rem;
-  color: #333;
-}
-
-.texto-det mat-icon {
-  font-size: 1.2rem;
-  margin-right: 0.25rem;
-  color: #444;
-}
-
-.btn-ver-detalhes {
-  width: 100%;
-  text-align: center;
+@media (min-width: 1024px) {
+  :host .lista-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

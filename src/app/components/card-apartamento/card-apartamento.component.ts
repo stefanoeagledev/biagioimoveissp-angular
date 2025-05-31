@@ -1,7 +1,6 @@
-// src/app/components/card-apartamento/card-apartamento.component.ts
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Apartamento } from '../../modelos/apartamento.model';
+import { Apartamento, Planta } from '../../modelos/apartamento.model';
 
 @Component({
   selector: 'app-card-apartamento',
@@ -47,15 +46,15 @@ export class CardApartamentoComponent {
   @Input() a!: Apartamento;
 
   areaFormatada(): string {
-    return this.a.plantas.map((p) => `${p.area} m²`).join(', ');
+    return this.a.plantas.map((p: Planta) => `${p.area} m²`).join(', ');
   }
 
   quartosFormatados(): string {
-    return this.a.plantas.map((p) => `${p.quartos}`).join(',');
+    return this.a.plantas.map((p: Planta) => `${p.quartos}`).join(',');
   }
 
   banheirosFormatados(): string {
-    return this.a.plantas.map((p) => `${p.banheiros}`).join(',');
+    return this.a.plantas.map((p: Planta) => `${p.banheiros}`).join(',');
   }
 
   vagasFormatadas(): string {
