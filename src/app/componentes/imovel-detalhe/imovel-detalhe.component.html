@@ -1,7 +1,10 @@
-<div *ngIf="imovel; else carregando" class="container-imovel-detalhe">
+<div
+  *ngIf="imovelSignal() as imovel; else carregando"
+  class="container-imovel-detalhe"
+>
   <h1>{{ imovel.nome }}</h1>
 
-  <!-- Carrossel ou galeria de fotos (simplificado) -->
+  <!-- Galeria de fotos -->
   <div class="galeria-fotos">
     <img
       *ngFor="let foto of imovel.fotos"

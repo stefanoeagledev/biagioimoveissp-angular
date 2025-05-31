@@ -1,9 +1,10 @@
-import { Component, OnInit, inject } from '@angular/core';
+// src/app/componentes/imovel-detalhe/imovel-detalhe.component.ts
+
+import { Component, OnInit, inject, Signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ApartamentosServico } from '../../servicos/apartamentos.servico';
 import { Apartamento } from '../../modelos/apartamento.model';
-import { switchMap, map } from 'rxjs/operators';
 import { DetalhesPlantaComponent } from '../detalhes-planta/detalhes-planta.component';
 import { ListaAmenidadesComponent } from '../lista-amenidades/lista-amenidades.component';
 
@@ -22,20 +23,23 @@ import { ListaAmenidadesComponent } from '../lista-amenidades/lista-amenidades.c
 export class ImovelDetalheComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private apartamentosServico = inject(ApartamentosServico);
-  imovel?: Apartamento;
+
+  /** Signal que guarda o id do imóvel */
+  idSelecionado!: number;
+
+  /** Signal / Computed que aponta para o Apartamento ou undefined */
+  imovelSignal!: Signal<Apartamento | undefined>;
 
   ngOnInit(): void {
-    this.route.paramMap
-      .pipe(
-        map((params) => Number(params.get('id'))),
-        switchMap((id) =>
-          this.apartamentosServico
-            .listarTodos()
-            .pipe(map((lista) => lista.find((item) => item.id === id)))
-        )
-      )
-      .subscribe((resultado) => {
-        this.imovel = resultado || undefined;
-      });
+    // 1) Extrair o parâmetro “id” da rota
+    const idParam = Number(this.route.snapshot.paramMap.get('id') || NaN);
+    this.idSelecionado = isNaN(idParam) ? -1 : idParam;
+
+    // 2) Criar o computed que busca o apartamento por ID:
+    this.imovelSignal = this.apartamentosServico.buscarPorIdSignal(
+      this.idSelecionado
+    );
+    // - quando o sinal de todosApartamentos for populado,
+    //   este computed retornará o objeto correto ou undefined.
   }
 }

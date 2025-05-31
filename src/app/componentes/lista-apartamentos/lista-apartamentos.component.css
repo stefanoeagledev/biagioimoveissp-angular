@@ -1,23 +1,43 @@
-/* Ajuste conforme seu layout (exemplo de grid simples): */
-:host {
-  display: block;
-  margin: 1rem;
+/* src/app/componentes/lista-apartamentos/lista-apartamentos.component.css */
+
+.caixa-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-:host .lista-cards {
+.caixa-filtros input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 150px; /* ou ajuste conforme necessidade */
+}
+
+.caixa-filtros button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+/* Grid de cards: mantém igual ao anterior */
+.lista-cards {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
-@media (min-width: 768px) {
-  :host .lista-cards {
+@media (max-width: 767px) {
+  .lista-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .lista-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  :host .lista-cards {
+  .lista-cards {
     grid-template-columns: repeat(3, 1fr);
   }
 }
