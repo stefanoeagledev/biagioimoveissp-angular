@@ -1,4 +1,3 @@
-// src/app/componentes/detalhes-planta/detalhes-planta.component.ts
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Planta } from '../../modelos/apartamento.model';
@@ -9,8 +8,12 @@ import { Planta } from '../../modelos/apartamento.model';
   imports: [CommonModule],
   template: `
     <div class="detalhes-planta">
-      <img [src]="'/assets/' + planta.foto" alt="Planta {{ planta.area }} m²" />
-      <ul>
+      <img
+        class="planta-img"
+        [src]="'/assets/' + planta.foto"
+        alt="Planta {{ planta.area }} m²"
+      />
+      <ul class="dados-planta">
         <li><strong>Área:</strong> {{ planta.area }} m²</li>
         <li><strong>Preço a partir de:</strong> {{ planta.precoapartirde }}</li>
         <li><strong>Quartos:</strong> {{ planta.quartos }}</li>

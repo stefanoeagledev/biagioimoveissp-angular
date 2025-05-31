@@ -14,7 +14,7 @@ import { ListaAmenidadesComponent } from '../lista-amenidades/lista-amenidades.c
     CommonModule,
     RouterModule,
     DetalhesPlantaComponent,
-    ListaAmenidadesComponent
+    ListaAmenidadesComponent,
   ],
   templateUrl: './imovel-detalhe.component.html',
   styleUrls: ['./imovel-detalhe.component.css'],
@@ -27,14 +27,14 @@ export class ImovelDetalheComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap
       .pipe(
-        map(params => Number(params.get('id'))),
-        switchMap(id =>
-          this.apartamentosServico.listarTodos().pipe(
-            map(lista => lista.find(item => item.id === id))
-          )
+        map((params) => Number(params.get('id'))),
+        switchMap((id) =>
+          this.apartamentosServico
+            .listarTodos()
+            .pipe(map((lista) => lista.find((item) => item.id === id)))
         )
       )
-      .subscribe(resultado => {
+      .subscribe((resultado) => {
         this.imovel = resultado || undefined;
       });
   }

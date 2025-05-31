@@ -1,0 +1,45 @@
+<div *ngIf="imovel; else carregando" class="container-imovel-detalhe">
+  <h1>{{ imovel.nome }}</h1>
+
+  <!-- Carrossel ou galeria de fotos (simplificado) -->
+  <div class="galeria-fotos">
+    <img
+      *ngFor="let foto of imovel.fotos"
+      [src]="'/assets/' + foto"
+      alt="Foto {{ imovel.nome }}"
+      class="img-foto"
+    />
+  </div>
+
+  <!-- Informações principais -->
+  <p class="status">{{ imovel.status }}</p>
+  <p class="local">
+    {{ imovel.bairro }}, {{ imovel.cidade }} – {{ imovel.estado }}
+  </p>
+  <p class="lazer" *ngIf="imovel.lazer">
+    <strong>Lazer:</strong> {{ imovel.lazer }}
+  </p>
+  <p class="varanda" *ngIf="imovel.varanda">
+    <strong>Varanda:</strong> {{ imovel.varanda }}
+  </p>
+
+  <!-- Amenidades -->
+  <section *ngIf="imovel.amenidades?.length">
+    <h2>Amenidades</h2>
+    <app-lista-amenidades
+      [amenidades]="imovel.amenidades"
+    ></app-lista-amenidades>
+  </section>
+
+  <!-- Plantas -->
+  <section *ngIf="imovel.plantas?.length">
+    <h2>Opções de Planta</h2>
+    <ng-container *ngFor="let p of imovel.plantas">
+      <app-detalhes-planta [planta]="p"></app-detalhes-planta>
+    </ng-container>
+  </section>
+</div>
+
+<ng-template #carregando>
+  <p>Carregando informações do imóvel...</p>
+</ng-template>

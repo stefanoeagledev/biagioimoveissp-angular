@@ -6,8 +6,8 @@ export interface Planta {
   lavabos: number;
   foto: string;
   precoapartirde: string;
-  tabelaem: string;
-  // outros campos de planta (ex: tabelaem) podem ser adicionados conforme necessário
+  // opcional: outros campos, como "tabelaem"
+  tabelaem?: string;
 }
 
 export interface Apartamento {

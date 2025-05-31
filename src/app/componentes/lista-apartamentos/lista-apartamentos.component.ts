@@ -1,5 +1,3 @@
-// src/app/components/lista-apartamentos/lista-apartamentos.component.ts
-import { CommonModule } from '@angular/common';
 import {
   Component,
   OnInit,
@@ -7,6 +5,7 @@ import {
   WritableSignal,
   signal,
 } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ApartamentosServico } from '../../servicos/apartamentos.servico';
 import { Apartamento } from '../../modelos/apartamento.model';
 import { CardApartamentoComponent } from '../card-apartamento/card-apartamento.component';
@@ -30,21 +29,5 @@ export class ListaApartamentosComponent implements OnInit {
     this.apartamentosServico.listarTodos().subscribe((dados) => {
       this.apartamentos.set(dados);
     });
-  }
-
-  areaFormatada(a: Apartamento): string {
-    return a.plantas.map((p) => `${p.area} m²`).join(', ');
-  }
-
-  quartosFormatados(a: Apartamento): string {
-    return a.plantas.map((p) => `${p.quartos}`).join(',');
-  }
-
-  banheirosFormatados(a: Apartamento): string {
-    return a.plantas.map((p) => `${p.banheiros}`).join(',');
-  }
-
-  vagasFormatadas(a: Apartamento): string {
-    return a.vagas.join(',');
   }
 }

@@ -1,0 +1,23 @@
+.detalhes-planta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.planta-img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.dados-planta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dados-planta li {
+  margin-bottom: 0.25rem;
+}
