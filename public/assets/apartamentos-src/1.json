@@ -1,0 +1,103 @@
+{
+  "id": 1,
+  "construtora": "Marques Construtora",
+  "nome": "Jaracandá",
+  "logo": "logo.webp",
+  "status": "Pronto para Morar",
+  "bairro": "Morumbi",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "lazer": "completo",
+  "varanda": "com churrasqueira a carvão (74m²) / ponto grill (56m²)",
+  "endereco": "",
+  "vendido": "",
+  "prontoEm": "",
+  "lancamentoEm": "",
+  "foto_fachada": [
+    "01_Jaracandá/Fachada/01_Perspectiva artística da Fachada.webp"
+  ],
+  "fotos_apartamentos": [
+    "01_Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
+    "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+    "01_Jaracandá/Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
+    "01_Jaracandá/Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
+    "01_Jaracandá/Apartamentos/02_Perspectiva artística da entrada.webp",
+    "01_Jaracandá/Apartamentos/01_Perspectiva artística da Fachada.webp"
+  ],
+  "fotos_lazer": [
+    "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+    "01_Jaracandá/Lazer/02_Perspectiva artística do Fitness.webp",
+    "01_Jaracandá/Lazer/03_Perspectiva artística do Fitness Externo.webp",
+    "01_Jaracandá/Lazer/04_Perspectiva artística do Espaço Churrasqueira e Forno de Pizza.webp",
+    "01_Jaracandá/Lazer/05_Perspectiva artística da Brinquedoteca.webp",
+    "01_Jaracandá/Lazer/06_Perspectiva artística do Baby Play.webp",
+    "01_Jaracandá/Lazer/07_Perspectiva artística do Playground.webp",
+    "01_Jaracandá/Lazer/08_Perspectiva artística do Coworking.webp",
+    "01_Jaracandá/Lazer/09_Perspectiva artística da Sauna com Descanso.webp",
+    "01_Jaracandá/Lazer/10_Perspectiva artística do Salão de Festas Gourmet.webp",
+    "01_Jaracandá/Lazer/11_Perspectiva artística da Quadra Recreativa com Iluminação.webp",
+    "01_Jaracandá/Lazer/12_Perspectiva artística do Salão de Jogos.webp"
+  ],
+  "vagas": [2, 1],
+  "obsvagas": "com depósito",
+  "vagasdescr": "determinadas",
+  "videoId": "X9bdH8CVDRY",
+  "plantas": [
+    {
+      "area": 56,
+      "preco": 387159,
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "lavabos": 0,
+      "foto": "01_Jaracandá/Plantas/p1_2 dorms (1 suíte) - 56m² opção living ampliado.webp"
+    },
+    {
+      "area": 56,
+      "preco": 387159,
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "lavabos": 0,
+      "foto": "01_Jaracandá/Plantas/p1_2 dorms (1 suíte) - 56m²"
+    },
+    {
+      "area": 74,
+      "preco": 513429,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "lavabos": 0,
+      "foto": "01_Jaracandá/Plantas/p2_3 dorms (1 suíte) - 74m² opção living ampliado.webp"
+    },
+    {
+      "area": 74,
+      "preco": 513429,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "lavabos": 0,
+      "foto": "01_Jaracandá/Plantas/p2_3 dorms (1 suíte) - 74m².webp"
+    }
+  ],
+  "amenidades": [
+    { "nome": "Piscina adulto", "iconKey": "pool" },
+    { "nome": "Piscina infantil", "iconKey": "child_care" },
+    { "nome": "Solarium", "iconKey": "wb_sunny" },
+    { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+    { "nome": "Baby play", "iconKey": "child_friendly" },
+    { "nome": "Churrasqueira e pizza", "iconKey": "outdoor_grill" },
+    { "nome": "Hall social", "iconKey": "meeting_room" },
+    { "nome": "Playground", "iconKey": "park" },
+    { "nome": "Fitness", "iconKey": "fitness_center" },
+    { "nome": "Fitness externo", "iconKey": "sports_motorsports" },
+    { "nome": "Salão de festas", "iconKey": "celebration" },
+    { "nome": "Sauna com descanso", "iconKey": "hot_tub" },
+    { "nome": "Salão de jogos", "iconKey": "sports_esports" },
+    { "nome": "Coworking", "iconKey": "workspaces" },
+    { "nome": "Portaria", "iconKey": "security" },
+    { "nome": "Entrada social", "iconKey": "login" },
+    { "nome": "Entrada de veículos", "iconKey": "garage" },
+    { "nome": "Zeladoria", "iconKey": "support_agent" }
+  ]
+}

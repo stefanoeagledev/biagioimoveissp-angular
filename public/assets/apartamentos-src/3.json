@@ -1,0 +1,178 @@
+{
+  "id": 3,
+  "construtora": "Marques Construtora",
+  "nome": "Morumbi Home Resort",
+  "logo": "logo.webp",
+  "status": "Em Obras",
+  "bairro": "Morumbi",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "lazer": "completo + piscina coberta aquecida",
+  "varanda": "gourmet com churrasqueira a carvão",
+  "endereco": "Rua Carvalho de Freitas, 23",
+  "vendido": "80%",
+  "prontoEm": "dez/2025",
+  "lancamentoEm": "",
+  "foto_fachada": [
+    "03_Morumbi Home Resort/Fachada/01_Morumbi Home Resort Torres Aruba e Bahamas vistas da Nelson Gama de Oliveira.webp"
+  ],
+  "fotos_apartamentos": [
+    "03_Morumbi Home Resort/Apartamentos/01_Morumbi Home Resort Living Ampliado com cozinha integrada e home office do apto De 104m².webp",
+    "03_Morumbi Home Resort/Apartamentos/02_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 104m².webp",
+    "03_Morumbi Home Resort/Apartamentos/03_Morumbi Home Resort Suite do Apto De 104m².webp",
+    "03_Morumbi Home Resort/Apartamentos/04_Morumbi Home Resort Living Ampliado do Apto De 83m².webp",
+    "03_Morumbi Home Resort/Apartamentos/05_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 83m².webp",
+    "03_Morumbi Home Resort/Apartamentos/06_Morumbi Home Resort Living Apto De 60m².webp",
+    "03_Morumbi Home Resort/Apartamentos/07_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 60m².webp",
+    "03_Morumbi Home Resort/Apartamentos/08_Morumbi Home Resort torres Aruba e Bahamas vistas da Rua Carvalho de Freitas.webp",
+    "03_Morumbi Home Resort/Apartamentos/09_Morumbi Home Resort Voo De Pássaro.webp",
+    "03_Morumbi Home Resort/Apartamentos/10_Morumbi Home Resort Vista da Rua Nelson Gama de Oliveira com detalhe da loja.webp",
+    "03_Morumbi Home Resort/Apartamentos/11_Morumbi Home Resort Entrada.webp",
+    "03_Morumbi Home Resort/Apartamentos/12_Morumbi Home Resort Praça Da Entrada.webp",
+    "03_Morumbi Home Resort/Apartamentos/13_Morumbi Home Resort Hall Social Torre Aruba.webp",
+    "03_Morumbi Home Resort/Apartamentos/14_Morumbi Home Resort Hall Social Torre Bahamas.webp"
+  ],
+  "fotos_lazer": [
+    "02_Olivier/Lazer/01_Piscina Adulto.webp",
+    "02_Olivier/Lazer/02_Piscina Com Raia De 25 Metros.webp",
+    "02_Olivier/Lazer/03_Descanso Da Sauna.webp",
+    "02_Olivier/Lazer/04_Sauna.webp",
+    "02_Olivier/Lazer/05_Fitness.webp",
+    "02_Olivier/Lazer/06_Fitness Multiuso.webp",
+    "02_Olivier/Lazer/07_Quadra.webp",
+    "02_Olivier/Lazer/08_Espaço Churrasqueira E Forno De Pizza.webp",
+    "02_Olivier/Lazer/09_Salão De Festas Gourmet.webp",
+    "02_Olivier/Lazer/10_Salão De Festas Gourmet.webp",
+    "02_Olivier/Lazer/11_Salão De Jogos.webp",
+    "02_Olivier/Lazer/12_Coworking.webp",
+    "02_Olivier/Lazer/13_Babyplay.webp",
+    "02_Olivier/Lazer/14_Playground.webp",
+    "02_Olivier/Lazer/15_Brinquedoteca.webp"
+  ],
+  "vagas": [1, 2],
+  "obsvagas": "com depósito e vaga extra",
+  "videoId": "wWz93rz5r5E",
+  "plantas": [
+    {
+      "area": 60,
+      "preco": 734200,
+      "quartos": 1,
+      "suites": 1,
+      "banheiros": 1,
+      "lavabos": 0,
+      "tabelaem": "24 meses",
+      "foto": "03_Morumbi Home Resort/Plantas/p0_Planta Apto 60m² – Opção 1 Dormitório (1 Suíte) E Living Ampliado.webp"
+    },
+    {
+      "area": 60,
+      "preco": 734200,
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 1,
+      "lavabos": 0,
+      "tabelaem": "24 meses",
+      "foto": "03_Morumbi Home Resort/Plantas/p1_Planta tipo Apto 60m² – 2 Dormitórios (1 Suíte).webp"
+    },
+    {
+      "area": 83,
+      "preco": 869900,
+      "quartos": 2,
+      "suites": 2,
+      "banheiros": 2,
+      "lavabos": 1,
+      "foto": "03_Morumbi Home Resort/Plantas/p2_Planta Apto 83m² – Opção 2 Dormitórios (2 Suítes) E Living Ampliado.webp"
+    },
+    {
+      "area": 83,
+      "preco": 869900,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "lavabos": 1,
+      "foto": "Plantas/p3_Planta tipo Apto 83m² – 3 Dormitórios (1 Suíte).webp"
+    },
+    {
+      "area": 104,
+      "preco": 1029900,
+      "quartos": 2,
+      "suites": 2,
+      "banheiros": 3,
+      "lavabos": 1,
+      "foto": "Plantas/p4_Planta Apto 104m² – Opção 2 Suítes (suíte Master Com Closet Ampliado e Banheiros Sr. E Sra) + living ampliado e cozinha fechada.webp"
+    },
+    {
+      "area": 104,
+      "preco": 1029900,
+      "quartos": 2,
+      "suites": 2,
+      "banheiros": 2,
+      "lavabos": 1,
+      "foto": "Plantas/p5_Planta Apto 104m² – Opção 2 Suítes (suíte Master Com Closet E Banheiro Ampliados), cozinha integrada e living Ampliado.webp"
+    },
+    {
+      "area": 104,
+      "preco": 1029900,
+      "quartos": 2,
+      "suites": 2,
+      "banheiros": 2,
+      "lavabos": 1,
+      "foto": "Plantas/p6_Planta Apto 104m² - Opção 2 Suítes, Living Ampliado, cozinha integrada e Home Office.webp"
+    },
+    {
+      "area": 104,
+      "preco": 1029900,
+      "quartos": 3,
+      "suites": 3,
+      "banheiros": 3,
+      "lavabos": 1,
+      "foto": "Plantas/p7_Planta tipo Apto 104m² - 3 Suítes e cozinha fechada.webp"
+    }
+  ],
+  "amenidades": [
+    { "nome": "Portaria", "iconKey": "security" },
+    { "nome": "Acesso de veículos com clausura", "iconKey": "garage" },
+    { "nome": "Playground", "iconKey": "park" },
+    { "nome": "Brinquedoteca", "iconKey": "child_friendly" },
+    { "nome": "Praça de apoio ao salão de festas", "iconKey": "celebration" },
+    { "nome": "Piscina adulto", "iconKey": "pool" },
+    { "nome": "Solarium", "iconKey": "wb_sunny" },
+    { "nome": "Coworking", "iconKey": "workspaces" },
+    { "nome": "Piscina coberta com raia com 25 m", "iconKey": "pool" },
+    { "nome": "Fitness center", "iconKey": "fitness_center" },
+    { "nome": "Petplace", "iconKey": "pets" },
+    {
+      "nome": "Espaço família com churrasqueira e forno de pizza gourmet",
+      "iconKey": "outdoor_grill"
+    },
+    {
+      "nome": "Entrada social de pedestres com clausura",
+      "iconKey": "login"
+    },
+    { "nome": "Espaço Delivery", "iconKey": "delivery_dining" },
+    { "nome": "Praça do piquenique", "iconKey": "deck" },
+    { "nome": "Hall social", "iconKey": "meeting_room" },
+    { "nome": "Salão de jogos", "iconKey": "sports_esports" },
+    { "nome": "Piscina infantil", "iconKey": "pool" },
+    { "nome": "Sala de estudos", "iconKey": "menu_book" },
+    { "nome": "Praça de apoio ao coworking", "iconKey": "workspaces" },
+    { "nome": "Sauna com descanso", "iconKey": "hot_tub" },
+    { "nome": "Fitness externo", "iconKey": "sports_motorsports" },
+    { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+    { "nome": "Terraço Espaço Família", "iconKey": "deck" },
+    {
+      "nome": "Entrada de serviço de pedestres com clausura",
+      "iconKey": "login"
+    },
+    { "nome": "Praça da entrada", "iconKey": "location_city" },
+    { "nome": "Baby play", "iconKey": "child_care" },
+    { "nome": "Salão de festas", "iconKey": "celebration" },
+    { "nome": "Praça Home Resort", "iconKey": "home" },
+    { "nome": "Deck molhado", "iconKey": "deck" },
+    { "nome": "Sala de reunião", "iconKey": "group" },
+    { "nome": "Zeladoria", "iconKey": "support_agent" },
+    { "nome": "Sala de massagem", "iconKey": "spa" },
+    { "nome": "Herbário", "iconKey": "local_florist" },
+    { "nome": "Espaço Churrasqueira da quadra", "iconKey": "outdoor_grill" },
+    { "nome": "Ecoplay", "iconKey": "eco" }
+  ]
+}

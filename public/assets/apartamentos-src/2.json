@@ -1,0 +1,88 @@
+{
+  "id": 2,
+  "construtora": "Marques Construtora",
+  "nome": "Olivier",
+  "logo": "logo.webp",
+  "status": "Em Obras",
+  "bairro": "Morumbi",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "lazer": "completo + piscina coberta aquecida",
+  "varanda": "gourmet com churrasqueira a carvão",
+  "endereco": "Rua José de Oliveira Coelho, 315",
+  "vendido": "90%",
+  "prontoEm": "jul/2026",
+  "lancamentoEm": "",
+  "foto_fachada": ["02_Olivier/Fachada/01_Fachada.webp"],
+  "fotos_apartamentos": [
+    "02_Olivier/Apartamentos/02_Portaria.webp",
+    "02_Olivier/Lazer/01_Piscina Adulto.webp",
+    "02_Olivier/Apartamentos/03_Hall Social",
+    "02_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp",
+    "02_Olivier/Apartamentos/05_Terraço Gourmet.webp",
+    "02_Olivier/Apartamentos/06_Suite Master.webp"
+  ],
+  "fotos_lazer": [
+    "02_Olivier/Lazer/01_Piscina Adulto.webp",
+    "02_Olivier/Lazer/02_Piscina Com Raia De 25 Metros.webp",
+    "02_Olivier/Lazer/03_Descanso Da Sauna.webp",
+    "02_Olivier/Lazer/04_Sauna.webp",
+    "02_Olivier/Lazer/05_Fitness.webp",
+    "02_Olivier/Lazer/06_Fitness Multiuso.webp",
+    "02_Olivier/Lazer/07_Quadra.webp",
+    "02_Olivier/Lazer/08_Espaço Churrasqueira E Forno De Pizza.webp",
+    "02_Olivier/Lazer/09_Salão De Festas Gourmet.webp",
+    "02_Olivier/Lazer/10_Salão De Festas Gourmet.webp",
+    "02_Olivier/Lazer/11_Salão De Jogos.webp",
+    "02_Olivier/Lazer/12_Coworking.webp",
+    "02_Olivier/Lazer/13_Babyplay.webp",
+    "02_Olivier/Lazer/14_Playground.webp",
+    "02_Olivier/Lazer/15_Brinquedoteca.webp"
+  ],
+  "vagas": [3],
+  "obsvagas": "com depósito",
+  "videoId": "nd9HanRNOps",
+  "plantas": [
+    {
+      "area": 141,
+      "preco": 1274100,
+      "quartos": 4,
+      "suites": 2,
+      "banheiros": 4,
+      "lavabos": 1,
+      "foto": "02_Olivier/Plantas/p0_Planta tipo apto 141m² - 4 dorms (2 suítes).webp"
+    },
+    {
+      "area": 141,
+      "preco": 1274100,
+      "quartos": 3,
+      "suites": 3,
+      "banheiros": 4,
+      "lavabos": 1,
+      "foto": "02_Olivier/Plantas/p1_Planta opção apto 141m² - 3 suítes.webp"
+    }
+  ],
+  "amenidades": [
+    { "nome": "Portaria", "iconKey": "security" },
+    { "nome": "Entrada social", "iconKey": "login" },
+    { "nome": "Entrada de veículos", "iconKey": "garage" },
+    { "nome": "Piscina adulto", "iconKey": "pool" },
+    { "nome": "Piscina infantil", "iconKey": "child_care" },
+    { "nome": "Piscina coberta com raia", "iconKey": "pool" },
+    { "nome": "Solarium", "iconKey": "wb_sunny" },
+    { "nome": "Fitness", "iconKey": "fitness_center" },
+    { "nome": "Fitness Multiluso", "iconKey": "sports_motorsports" },
+    { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+    {
+      "nome": "Espaço churrasqueira e forno de pizza",
+      "iconKey": "outdoor_grill"
+    },
+    { "nome": "Salão de festas gourmet", "iconKey": "celebration" },
+    { "nome": "Salão de jogos", "iconKey": "sports_esports" },
+    { "nome": "Coworking", "iconKey": "workspaces" },
+    { "nome": "Baby play", "iconKey": "child_friendly" },
+    { "nome": "Playground", "iconKey": "park" },
+    { "nome": "Brinquedoteca", "iconKey": "emoji_people" },
+    { "nome": "Sauna com descanso", "iconKey": "hot_tub" }
+  ]
+}

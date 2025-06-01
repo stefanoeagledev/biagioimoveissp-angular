@@ -1,0 +1,612 @@
+[
+  {
+    "id": 1,
+    "construtora": "Marques Construtora",
+    "nome": "Jaracandá",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com churrasqueira a carvão (74m²) / ponto grill (56m²)",
+    "endereco": "",
+    "vendido": "",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "foto_fachada": [
+      "01_Jaracandá/Fachada/01_Perspectiva artística da Fachada.webp"
+    ],
+    "fotos_apartamentos": [
+      "01_Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
+      "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+      "01_Jaracandá/Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
+      "01_Jaracandá/Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
+      "01_Jaracandá/Apartamentos/02_Perspectiva artística da entrada.webp",
+      "01_Jaracandá/Apartamentos/01_Perspectiva artística da Fachada.webp"
+    ],
+    "fotos_lazer": [
+      "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+      "01_Jaracandá/Lazer/02_Perspectiva artística do Fitness.webp",
+      "01_Jaracandá/Lazer/03_Perspectiva artística do Fitness Externo.webp",
+      "01_Jaracandá/Lazer/04_Perspectiva artística do Espaço Churrasqueira e Forno de Pizza.webp",
+      "01_Jaracandá/Lazer/05_Perspectiva artística da Brinquedoteca.webp",
+      "01_Jaracandá/Lazer/06_Perspectiva artística do Baby Play.webp",
+      "01_Jaracandá/Lazer/07_Perspectiva artística do Playground.webp",
+      "01_Jaracandá/Lazer/08_Perspectiva artística do Coworking.webp",
+      "01_Jaracandá/Lazer/09_Perspectiva artística da Sauna com Descanso.webp",
+      "01_Jaracandá/Lazer/10_Perspectiva artística do Salão de Festas Gourmet.webp",
+      "01_Jaracandá/Lazer/11_Perspectiva artística da Quadra Recreativa com Iluminação.webp",
+      "01_Jaracandá/Lazer/12_Perspectiva artística do Salão de Jogos.webp"
+    ],
+    "vagas": [2, 1],
+    "obsvagas": "com depósito",
+    "vagasdescr": "determinadas",
+    "videoId": "X9bdH8CVDRY",
+    "plantas": [
+      {
+        "area": 56,
+        "preco": 387159,
+        "quartos": 2,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "01_Jaracandá/Plantas/p1_2 dorms (1 suíte) - 56m² opção living ampliado.webp"
+      },
+      {
+        "area": 56,
+        "preco": 387159,
+        "quartos": 2,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "01_Jaracandá/Plantas/p1_2 dorms (1 suíte) - 56m²"
+      },
+      {
+        "area": 74,
+        "preco": 513429,
+        "quartos": 3,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "01_Jaracandá/Plantas/p2_3 dorms (1 suíte) - 74m² opção living ampliado.webp"
+      },
+      {
+        "area": 74,
+        "preco": 513429,
+        "quartos": 3,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "01_Jaracandá/Plantas/p2_3 dorms (1 suíte) - 74m².webp"
+      }
+    ],
+    "amenidades": [
+      { "nome": "Piscina adulto", "iconKey": "pool" },
+      { "nome": "Piscina infantil", "iconKey": "child_care" },
+      { "nome": "Solarium", "iconKey": "wb_sunny" },
+      { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+      { "nome": "Baby play", "iconKey": "child_friendly" },
+      { "nome": "Churrasqueira e pizza", "iconKey": "outdoor_grill" },
+      { "nome": "Hall social", "iconKey": "meeting_room" },
+      { "nome": "Playground", "iconKey": "park" },
+      { "nome": "Fitness", "iconKey": "fitness_center" },
+      { "nome": "Fitness externo", "iconKey": "sports_motorsports" },
+      { "nome": "Salão de festas", "iconKey": "celebration" },
+      { "nome": "Sauna com descanso", "iconKey": "hot_tub" },
+      { "nome": "Salão de jogos", "iconKey": "sports_esports" },
+      { "nome": "Coworking", "iconKey": "workspaces" },
+      { "nome": "Portaria", "iconKey": "security" },
+      { "nome": "Entrada social", "iconKey": "login" },
+      { "nome": "Entrada de veículos", "iconKey": "garage" },
+      { "nome": "Zeladoria", "iconKey": "support_agent" }
+    ]
+  },
+  {
+    "id": 2,
+    "construtora": "Marques Construtora",
+    "nome": "Olivier",
+    "logo": "logo.webp",
+    "status": "Em Obras",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua José de Oliveira Coelho, 315",
+    "vendido": "90%",
+    "prontoEm": "jul/2026",
+    "lancamentoEm": "",
+    "foto_fachada": ["02_Olivier/Fachada/01_Fachada.webp"],
+    "fotos_apartamentos": [
+      "02_Olivier/Apartamentos/02_Portaria.webp",
+      "02_Olivier/Lazer/01_Piscina Adulto.webp",
+      "02_Olivier/Apartamentos/03_Hall Social",
+      "02_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp",
+      "02_Olivier/Apartamentos/05_Terraço Gourmet.webp",
+      "02_Olivier/Apartamentos/06_Suite Master.webp"
+    ],
+    "fotos_lazer": [
+      "02_Olivier/Lazer/01_Piscina Adulto.webp",
+      "02_Olivier/Lazer/02_Piscina Com Raia De 25 Metros.webp",
+      "02_Olivier/Lazer/03_Descanso Da Sauna.webp",
+      "02_Olivier/Lazer/04_Sauna.webp",
+      "02_Olivier/Lazer/05_Fitness.webp",
+      "02_Olivier/Lazer/06_Fitness Multiuso.webp",
+      "02_Olivier/Lazer/07_Quadra.webp",
+      "02_Olivier/Lazer/08_Espaço Churrasqueira E Forno De Pizza.webp",
+      "02_Olivier/Lazer/09_Salão De Festas Gourmet.webp",
+      "02_Olivier/Lazer/10_Salão De Festas Gourmet.webp",
+      "02_Olivier/Lazer/11_Salão De Jogos.webp",
+      "02_Olivier/Lazer/12_Coworking.webp",
+      "02_Olivier/Lazer/13_Babyplay.webp",
+      "02_Olivier/Lazer/14_Playground.webp",
+      "02_Olivier/Lazer/15_Brinquedoteca.webp"
+    ],
+    "vagas": [3],
+    "obsvagas": "com depósito",
+    "videoId": "nd9HanRNOps",
+    "plantas": [
+      {
+        "area": 141,
+        "preco": 1274100,
+        "quartos": 4,
+        "suites": 2,
+        "banheiros": 4,
+        "lavabos": 1,
+        "foto": "02_Olivier/Plantas/p0_Planta tipo apto 141m² - 4 dorms (2 suítes).webp"
+      },
+      {
+        "area": 141,
+        "preco": 1274100,
+        "quartos": 3,
+        "suites": 3,
+        "banheiros": 4,
+        "lavabos": 1,
+        "foto": "02_Olivier/Plantas/p1_Planta opção apto 141m² - 3 suítes.webp"
+      }
+    ],
+    "amenidades": [
+      { "nome": "Portaria", "iconKey": "security" },
+      { "nome": "Entrada social", "iconKey": "login" },
+      { "nome": "Entrada de veículos", "iconKey": "garage" },
+      { "nome": "Piscina adulto", "iconKey": "pool" },
+      { "nome": "Piscina infantil", "iconKey": "child_care" },
+      { "nome": "Piscina coberta com raia", "iconKey": "pool" },
+      { "nome": "Solarium", "iconKey": "wb_sunny" },
+      { "nome": "Fitness", "iconKey": "fitness_center" },
+      { "nome": "Fitness Multiluso", "iconKey": "sports_motorsports" },
+      { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+      {
+        "nome": "Espaço churrasqueira e forno de pizza",
+        "iconKey": "outdoor_grill"
+      },
+      { "nome": "Salão de festas gourmet", "iconKey": "celebration" },
+      { "nome": "Salão de jogos", "iconKey": "sports_esports" },
+      { "nome": "Coworking", "iconKey": "workspaces" },
+      { "nome": "Baby play", "iconKey": "child_friendly" },
+      { "nome": "Playground", "iconKey": "park" },
+      { "nome": "Brinquedoteca", "iconKey": "emoji_people" },
+      { "nome": "Sauna com descanso", "iconKey": "hot_tub" }
+    ]
+  },
+  {
+    "id": 3,
+    "construtora": "Marques Construtora",
+    "nome": "Morumbi Home Resort",
+    "logo": "logo.webp",
+    "status": "Em Obras",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua Carvalho de Freitas, 23",
+    "vendido": "80%",
+    "prontoEm": "dez/2025",
+    "lancamentoEm": "",
+    "foto_fachada": [
+      "03_Morumbi Home Resort/Fachada/01_Morumbi Home Resort Torres Aruba e Bahamas vistas da Nelson Gama de Oliveira.webp"
+    ],
+    "fotos_apartamentos": [
+      "03_Morumbi Home Resort/Apartamentos/01_Morumbi Home Resort Living Ampliado com cozinha integrada e home office do apto De 104m².webp",
+      "03_Morumbi Home Resort/Apartamentos/02_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 104m².webp",
+      "03_Morumbi Home Resort/Apartamentos/03_Morumbi Home Resort Suite do Apto De 104m².webp",
+      "03_Morumbi Home Resort/Apartamentos/04_Morumbi Home Resort Living Ampliado do Apto De 83m².webp",
+      "03_Morumbi Home Resort/Apartamentos/05_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 83m².webp",
+      "03_Morumbi Home Resort/Apartamentos/06_Morumbi Home Resort Living Apto De 60m².webp",
+      "03_Morumbi Home Resort/Apartamentos/07_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 60m².webp",
+      "03_Morumbi Home Resort/Apartamentos/08_Morumbi Home Resort torres Aruba e Bahamas vistas da Rua Carvalho de Freitas.webp",
+      "03_Morumbi Home Resort/Apartamentos/09_Morumbi Home Resort Voo De Pássaro.webp",
+      "03_Morumbi Home Resort/Apartamentos/10_Morumbi Home Resort Vista da Rua Nelson Gama de Oliveira com detalhe da loja.webp",
+      "03_Morumbi Home Resort/Apartamentos/11_Morumbi Home Resort Entrada.webp",
+      "03_Morumbi Home Resort/Apartamentos/12_Morumbi Home Resort Praça Da Entrada.webp",
+      "03_Morumbi Home Resort/Apartamentos/13_Morumbi Home Resort Hall Social Torre Aruba.webp",
+      "03_Morumbi Home Resort/Apartamentos/14_Morumbi Home Resort Hall Social Torre Bahamas.webp"
+    ],
+    "fotos_lazer": [
+      "02_Olivier/Lazer/01_Piscina Adulto.webp",
+      "02_Olivier/Lazer/02_Piscina Com Raia De 25 Metros.webp",
+      "02_Olivier/Lazer/03_Descanso Da Sauna.webp",
+      "02_Olivier/Lazer/04_Sauna.webp",
+      "02_Olivier/Lazer/05_Fitness.webp",
+      "02_Olivier/Lazer/06_Fitness Multiuso.webp",
+      "02_Olivier/Lazer/07_Quadra.webp",
+      "02_Olivier/Lazer/08_Espaço Churrasqueira E Forno De Pizza.webp",
+      "02_Olivier/Lazer/09_Salão De Festas Gourmet.webp",
+      "02_Olivier/Lazer/10_Salão De Festas Gourmet.webp",
+      "02_Olivier/Lazer/11_Salão De Jogos.webp",
+      "02_Olivier/Lazer/12_Coworking.webp",
+      "02_Olivier/Lazer/13_Babyplay.webp",
+      "02_Olivier/Lazer/14_Playground.webp",
+      "02_Olivier/Lazer/15_Brinquedoteca.webp"
+    ],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito e vaga extra",
+    "videoId": "wWz93rz5r5E",
+    "plantas": [
+      {
+        "area": 60,
+        "preco": 734200,
+        "quartos": 1,
+        "suites": 1,
+        "banheiros": 1,
+        "lavabos": 0,
+        "tabelaem": "24 meses",
+        "foto": "03_Morumbi Home Resort/Plantas/p0_Planta Apto 60m² – Opção 1 Dormitório (1 Suíte) E Living Ampliado.webp"
+      },
+      {
+        "area": 60,
+        "preco": 734200,
+        "quartos": 2,
+        "suites": 1,
+        "banheiros": 1,
+        "lavabos": 0,
+        "tabelaem": "24 meses",
+        "foto": "03_Morumbi Home Resort/Plantas/p1_Planta tipo Apto 60m² – 2 Dormitórios (1 Suíte).webp"
+      },
+      {
+        "area": 83,
+        "preco": 869900,
+        "quartos": 2,
+        "suites": 2,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "03_Morumbi Home Resort/Plantas/p2_Planta Apto 83m² – Opção 2 Dormitórios (2 Suítes) E Living Ampliado.webp"
+      },
+      {
+        "area": 83,
+        "preco": 869900,
+        "quartos": 3,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "Plantas/p3_Planta tipo Apto 83m² – 3 Dormitórios (1 Suíte).webp"
+      },
+      {
+        "area": 104,
+        "preco": 1029900,
+        "quartos": 2,
+        "suites": 2,
+        "banheiros": 3,
+        "lavabos": 1,
+        "foto": "Plantas/p4_Planta Apto 104m² – Opção 2 Suítes (suíte Master Com Closet Ampliado e Banheiros Sr. E Sra) + living ampliado e cozinha fechada.webp"
+      },
+      {
+        "area": 104,
+        "preco": 1029900,
+        "quartos": 2,
+        "suites": 2,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "Plantas/p5_Planta Apto 104m² – Opção 2 Suítes (suíte Master Com Closet E Banheiro Ampliados), cozinha integrada e living Ampliado.webp"
+      },
+      {
+        "area": 104,
+        "preco": 1029900,
+        "quartos": 2,
+        "suites": 2,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "Plantas/p6_Planta Apto 104m² - Opção 2 Suítes, Living Ampliado, cozinha integrada e Home Office.webp"
+      },
+      {
+        "area": 104,
+        "preco": 1029900,
+        "quartos": 3,
+        "suites": 3,
+        "banheiros": 3,
+        "lavabos": 1,
+        "foto": "Plantas/p7_Planta tipo Apto 104m² - 3 Suítes e cozinha fechada.webp"
+      }
+    ],
+    "amenidades": [
+      { "nome": "Portaria", "iconKey": "security" },
+      { "nome": "Acesso de veículos com clausura", "iconKey": "garage" },
+      { "nome": "Playground", "iconKey": "park" },
+      { "nome": "Brinquedoteca", "iconKey": "child_friendly" },
+      { "nome": "Praça de apoio ao salão de festas", "iconKey": "celebration" },
+      { "nome": "Piscina adulto", "iconKey": "pool" },
+      { "nome": "Solarium", "iconKey": "wb_sunny" },
+      { "nome": "Coworking", "iconKey": "workspaces" },
+      { "nome": "Piscina coberta com raia com 25 m", "iconKey": "pool" },
+      { "nome": "Fitness center", "iconKey": "fitness_center" },
+      { "nome": "Petplace", "iconKey": "pets" },
+      {
+        "nome": "Espaço família com churrasqueira e forno de pizza gourmet",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Entrada social de pedestres com clausura",
+        "iconKey": "login"
+      },
+      { "nome": "Espaço Delivery", "iconKey": "delivery_dining" },
+      { "nome": "Praça do piquenique", "iconKey": "deck" },
+      { "nome": "Hall social", "iconKey": "meeting_room" },
+      { "nome": "Salão de jogos", "iconKey": "sports_esports" },
+      { "nome": "Piscina infantil", "iconKey": "pool" },
+      { "nome": "Sala de estudos", "iconKey": "menu_book" },
+      { "nome": "Praça de apoio ao coworking", "iconKey": "workspaces" },
+      { "nome": "Sauna com descanso", "iconKey": "hot_tub" },
+      { "nome": "Fitness externo", "iconKey": "sports_motorsports" },
+      { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+      { "nome": "Terraço Espaço Família", "iconKey": "deck" },
+      {
+        "nome": "Entrada de serviço de pedestres com clausura",
+        "iconKey": "login"
+      },
+      { "nome": "Praça da entrada", "iconKey": "location_city" },
+      { "nome": "Baby play", "iconKey": "child_care" },
+      { "nome": "Salão de festas", "iconKey": "celebration" },
+      { "nome": "Praça Home Resort", "iconKey": "home" },
+      { "nome": "Deck molhado", "iconKey": "deck" },
+      { "nome": "Sala de reunião", "iconKey": "group" },
+      { "nome": "Zeladoria", "iconKey": "support_agent" },
+      { "nome": "Sala de massagem", "iconKey": "spa" },
+      { "nome": "Herbário", "iconKey": "local_florist" },
+      { "nome": "Espaço Churrasqueira da quadra", "iconKey": "outdoor_grill" },
+      { "nome": "Ecoplay", "iconKey": "eco" }
+    ]
+  },
+  {
+    "id": 4,
+    "construtora": "Marques Construtora",
+    "nome": "Ohana",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Panamby",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua Fabio Lopes Dos Santos Luz, 120",
+    "vendido": "90%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": [
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "ohana.webp"
+    ],
+    "vagas": [2],
+    "obsvagas": "com depósito",
+    "videoId": "-XKzonBAZy4",
+    "plantas": [
+      {
+        "area": 94,
+        "preco": 1051400,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 1.051.400"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "construtora": "Marques Construtora",
+    "nome": "Magna",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua José de Oliveira Coelho, 451",
+    "vendido": "85%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": [
+      "1.webp",
+      "2.webp",
+      "3.webp",
+      "4.webp",
+      "5.webp",
+      "6.webp",
+      "7.webp",
+      "magna.webp"
+    ],
+    "vagas": [2, 3],
+    "obsvagas": "com depósito e vaga extra",
+    "videoId": "RjC6hA1wIJ8",
+    "plantas": [
+      {
+        "area": 133,
+        "preco": 1378900,
+        "quartos": 4,
+        "banheiros": 4,
+        "lavabos": 1,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 1.378.900"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "construtora": "Marques Construtora",
+    "nome": "Gracia",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "com churrasqueira a carvão (91m²) / ponto grill (56m²)",
+    "endereco": "Rua Francisco José da Silva, 287",
+    "vendido": "97%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito",
+    "vagasdescr": "determinadas",
+    "videoId": "t2LyDF32OGg",
+    "plantas": [
+      {
+        "area": 56,
+        "preco": 578000,
+        "quartos": 2,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 578.000"
+      },
+      {
+        "area": 91,
+        "preco": 975900,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "p2.webp",
+        "precoapartirde": "R$ 975.900"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "construtora": "Marques Construtora",
+    "nome": "Pleno",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com churrasqueira a carvão (75m²) / ponto grill (56m²)",
+    "endereco": "Rua Nicola Rollo, 201",
+    "vendido": "99%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": ["1.webp"],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito",
+    "vagasdescr": "determinadas",
+    "videoId": "ildD34hkmJI",
+    "plantas": [
+      {
+        "area": 56,
+        "preco": 547500,
+        "quartos": 2,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 547.500 (ultima unidade)"
+      },
+      {
+        "area": 75,
+        "preco": 547500,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p2.webp",
+        "precoapartirde": ""
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "construtora": "Marques Construtora",
+    "nome": "Arboris",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com ponto grill",
+    "endereco": "Rua Celso Ramos, 188",
+    "vendido": "75%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
+    "vagas": [1, 2],
+    "obsvagas": "com depósito",
+    "videoId": "cldrEnbab3U",
+    "plantas": [
+      {
+        "area": 47,
+        "preco": 427700,
+        "quartos": 2,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 427.700"
+      },
+      {
+        "area": 69,
+        "preco": 612600,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p2.webp",
+        "precoapartirde": "R$ 612.600"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "construtora": "Marques Construtora",
+    "nome": "Dueto",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com ponto grill",
+    "endereco": "Rua Carvalho de Freitas, 100",
+    "vendido": "95%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "fotos": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
+    "vagas": [1],
+    "obsvagas": "com depósito",
+    "videoId": "di8qBiT2rSc",
+    "plantas": [
+      {
+        "area": 45,
+        "preco": 413400,
+        "quartos": 2,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 413.400"
+      },
+      {
+        "area": 45,
+        "preco": 413400,
+        "quartos": 2,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "p2.webp",
+        "precoapartirde": "R$ 413.400"
+      }
+    ]
+  }
+]
