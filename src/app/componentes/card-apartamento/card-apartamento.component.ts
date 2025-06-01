@@ -63,22 +63,26 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
               {{ vagasFormatadas() }}
               {{ pluralize(vagasUnicas(), 'vaga', 'vagas') }}
               <ng-container *ngIf="a.vagasdescr">
-                {{ a.vagasdescr }}</ng-container
-              >
-              <ng-container *ngIf="a.obsvagas"> {{ a.obsvagas }}</ng-container>
+                {{ a.vagasdescr }}
+              </ng-container>
+              <ng-container *ngIf="a.obsvagas">
+                {{ a.obsvagas }}
+              </ng-container>
             </span>
           </div>
 
           <!-- LAZER (se existir) -->
           <div *ngIf="a.lazer" class="detalhe-item">
             <span class="material-icons detalhe-icone">pool</span>
-            <span class="detalhe-texto">{{ a.lazer }}</span>
+            <!-- Prefixo “lazer” adicionado fixo -->
+            <span class="detalhe-texto">lazer {{ a.lazer }}</span>
           </div>
 
           <!-- VARANDA (se existir) -->
           <div *ngIf="a.varanda" class="detalhe-item">
             <span class="material-icons detalhe-icone">outdoor_grill</span>
-            <span class="detalhe-texto">{{ a.varanda }}</span>
+            <!-- Prefixo “varanda” adicionado fixo -->
+            <span class="detalhe-texto">varanda {{ a.varanda }}</span>
           </div>
         </div>
 
@@ -106,8 +110,12 @@ export class CardApartamentoComponent {
   private _quartosUnicos: string[] | null = null;
   quartosUnicos(): number[] {
     if (!this._quartosUnicos) {
+      // filtra apenas valores de quartos > 0
+      const apenasPositivos = this.a.plantas
+        .map((p) => p.quartos)
+        .filter((q) => q > 0);
       this._quartosUnicos = Array.from(
-        new Set(this.a.plantas.map((p) => p.quartos.toString()))
+        new Set(apenasPositivos.map((q) => q.toString()))
       );
     }
     return this._quartosUnicos.map((s) => Number(s));
@@ -116,25 +124,26 @@ export class CardApartamentoComponent {
     const arr = this.quartosUnicos().map((n) => n.toString());
     return this.formatarLista(arr, 'ou');
   }
-  // ... dentro de CardApartamentoComponent ...
 
   // —— SUÍTES ——
   private _suitesUnicas: string[] | null = null;
   suitesUnicas(): number[] {
     if (!this._suitesUnicas) {
+      // filtra apenas valores de suítes > 0
+      const apenasPositivos = this.a.plantas
+        .map((p) => p.suites)
+        .filter((s) => s > 0);
       this._suitesUnicas = Array.from(
-        new Set(this.a.plantas.map((p) => p.suites.toString()))
+        new Set(apenasPositivos.map((s) => s.toString()))
       );
     }
     return this._suitesUnicas.map((s) => Number(s));
   }
   suitesFormatadas(): string {
     const únicos = this.suitesUnicas();
-    // Se o único valor for 0, não exibe
-    if (únicos.length === 1 && únicos[0] === 0) {
+    if (únicos.length === 0) {
       return '';
     }
-    // Caso contrário, formata normalmente
     const arr = únicos.map((n) => n.toString());
     return this.formatarLista(arr, 'ou');
   }
@@ -143,8 +152,12 @@ export class CardApartamentoComponent {
   private _banheirosUnicos: string[] | null = null;
   banheirosUnicos(): number[] {
     if (!this._banheirosUnicos) {
+      // filtra apenas valores de banheiros > 0
+      const apenasPositivos = this.a.plantas
+        .map((p) => p.banheiros)
+        .filter((b) => b > 0);
       this._banheirosUnicos = Array.from(
-        new Set(this.a.plantas.map((p) => p.banheiros.toString()))
+        new Set(apenasPositivos.map((b) => b.toString()))
       );
     }
     return this._banheirosUnicos.map((s) => Number(s));
@@ -158,19 +171,21 @@ export class CardApartamentoComponent {
   private _lavabosUnicos: string[] | null = null;
   lavabosUnicos(): number[] {
     if (!this._lavabosUnicos) {
+      // filtra apenas valores de lavabos > 0
+      const apenasPositivos = this.a.plantas
+        .map((p) => p.lavabos)
+        .filter((l) => l > 0);
       this._lavabosUnicos = Array.from(
-        new Set(this.a.plantas.map((p) => p.lavabos.toString()))
+        new Set(apenasPositivos.map((l) => l.toString()))
       );
     }
     return this._lavabosUnicos.map((s) => Number(s));
   }
   lavabosFormatados(): string {
     const únicos = this.lavabosUnicos();
-    // Se o único valor for 0, não exibe
-    if (únicos.length === 1 && únicos[0] === 0) {
+    if (únicos.length === 0) {
       return '';
     }
-    // Caso contrário, formata normalmente
     const arr = únicos.map((n) => n.toString());
     return this.formatarLista(arr, 'ou');
   }
@@ -179,8 +194,10 @@ export class CardApartamentoComponent {
   private _vagasUnicas: string[] | null = null;
   vagasUnicas(): number[] {
     if (!this._vagasUnicas) {
+      // filtra apenas valores de vagas > 0
+      const apenasPositivos = this.a.vagas.filter((v) => v > 0);
       this._vagasUnicas = Array.from(
-        new Set(this.a.vagas.map((v) => v.toString()))
+        new Set(apenasPositivos.map((v) => v.toString()))
       );
     }
     return this._vagasUnicas.map((s) => Number(s));
