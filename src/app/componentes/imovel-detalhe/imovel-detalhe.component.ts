@@ -1,5 +1,3 @@
-// src/app/componentes/imovel-detalhe/imovel-detalhe.component.ts
-
 import { Component, OnInit, inject, Signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
@@ -24,22 +22,11 @@ export class ImovelDetalheComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private apartamentosServico = inject(ApartamentosServico);
 
-  /** Signal que guarda o id do imóvel */
-  idSelecionado!: number;
-
-  /** Signal / Computed que aponta para o Apartamento ou undefined */
   imovelSignal!: Signal<Apartamento | undefined>;
 
   ngOnInit(): void {
-    // 1) Extrair o parâmetro “id” da rota
     const idParam = Number(this.route.snapshot.paramMap.get('id') || NaN);
-    this.idSelecionado = isNaN(idParam) ? -1 : idParam;
-
-    // 2) Criar o computed que busca o apartamento por ID:
-    this.imovelSignal = this.apartamentosServico.buscarPorIdSignal(
-      this.idSelecionado
-    );
-    // - quando o sinal de todosApartamentos for populado,
-    //   este computed retornará o objeto correto ou undefined.
+    const id = isNaN(idParam) ? -1 : idParam;
+    this.imovelSignal = this.apartamentosServico.buscarPorIdSignal(id);
   }
 }

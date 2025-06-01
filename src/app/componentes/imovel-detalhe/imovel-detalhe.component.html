@@ -4,42 +4,53 @@
 >
   <h1>{{ imovel.nome }}</h1>
 
-  <!-- Galeria de fotos -->
-  <div class="galeria-fotos">
+  <!-- Fachada -->
+  <div class="fachada-container">
     <img
-      *ngFor="let foto of imovel.fotos"
-      [src]="'/assets/' + foto"
-      alt="Foto {{ imovel.nome }}"
-      class="img-foto"
+      [src]="'/assets/' + imovel.nome + '/' + imovel.foto_fachada[0]"
+      alt="Fachada {{ imovel.nome }}"
+      class="img-fachada"
     />
   </div>
 
-  <!-- Informações principais -->
-  <p class="status">{{ imovel.status }}</p>
-  <p class="local">
-    {{ imovel.bairro }}, {{ imovel.cidade }} – {{ imovel.estado }}
-  </p>
-  <p class="lazer" *ngIf="imovel.lazer">
-    <strong>Lazer:</strong> {{ imovel.lazer }}
-  </p>
-  <p class="varanda" *ngIf="imovel.varanda">
-    <strong>Varanda:</strong> {{ imovel.varanda }}
-  </p>
+  <!-- Galeria de Apartamentos -->
+  <section *ngIf="imovel.fotos_apartamentos?.length">
+    <h2>Apartamentos</h2>
+    <div class="galeria-imoveis">
+      <img
+        *ngFor="let foto of imovel.fotos_apartamentos"
+        [src]="'/assets/' + imovel.nome + '/' + foto"
+        alt="Foto apartamento {{ imovel.nome }}"
+        class="img-imovel"
+      />
+    </div>
+  </section>
 
-  <!-- Amenidades -->
-  <section *ngIf="imovel.amenidades?.length">
-    <h2>Amenidades</h2>
-    <app-lista-amenidades
-      [amenidades]="imovel.amenidades ?? []"
-    ></app-lista-amenidades>
+  <!-- Galeria de Lazer -->
+  <section *ngIf="imovel.fotos_lazer?.length">
+    <h2>Lazer</h2>
+    <div class="galeria-imoveis">
+      <img
+        *ngFor="let foto of imovel.fotos_lazer"
+        [src]="'/assets/' + imovel.nome + '/' + foto"
+        alt="Foto lazer {{ imovel.nome }}"
+        class="img-imovel"
+      />
+    </div>
   </section>
 
   <!-- Plantas -->
   <section *ngIf="imovel.plantas?.length">
     <h2>Opções de Planta</h2>
-    <ng-container *ngFor="let p of imovel.plantas">
-      <app-detalhes-planta [planta]="p"></app-detalhes-planta>
-    </ng-container>
+    <div class="galeria-plantas">
+      <ng-container *ngFor="let p of imovel.plantas; let i = index">
+        <img
+          class="img-planta"
+          [src]="'/assets/' + imovel.nome + '/' + p.foto"
+          alt="Planta {{ i + 1 }} de {{ imovel.nome }}"
+        />
+      </ng-container>
+    </div>
   </section>
 </div>
 

@@ -11,33 +11,30 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
     <div class="card card-apartamento">
       <img
         class="card-img-top"
-        [src]="'/assets/' + a.logo"
-        alt="Logo do {{ a.nome }}"
+        [src]="'/assets/' + a.nome + '/' + a.foto_fachada[0]"
+        alt="Fachada do {{ a.nome }}"
       />
+
       <div class="card-body">
         <h2 class="card-title">{{ a.nome }}</h2>
         <p class="card-local">{{ a.bairro }}, {{ a.cidade }}</p>
 
         <div class="card-detalhes-icons">
-          <!-- Ícone de quartos -->
           <span class="icon texto-det">
             <span class="material-icons">king_bed</span>
             {{ quartosFormatados() }}
           </span>
 
-          <!-- Ícone de metragem -->
           <span class="icon texto-det">
             <span class="material-icons">square_foot</span>
             {{ areaFormatada() }}
           </span>
 
-          <!-- Ícone de banheiros -->
           <span class="icon texto-det">
             <span class="material-icons">bathtub</span>
             {{ banheirosFormatados() }}
           </span>
 
-          <!-- Ícone de vagas -->
           <span class="icon texto-det">
             <span class="material-icons">garage</span>
             {{ vagasFormatadas() }}
