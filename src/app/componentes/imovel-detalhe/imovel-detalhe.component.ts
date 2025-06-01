@@ -3,18 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ApartamentosServico } from '../../servicos/apartamentos.servico';
 import { Apartamento } from '../../modelos/apartamento.model';
-import { DetalhesPlantaComponent } from '../detalhes-planta/detalhes-planta.component';
-import { ListaAmenidadesComponent } from '../lista-amenidades/lista-amenidades.component';
 
 @Component({
   selector: 'app-imovel-detalhe',
   standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-    DetalhesPlantaComponent,
-    ListaAmenidadesComponent,
-  ],
+  imports: [CommonModule, RouterModule],
   templateUrl: './imovel-detalhe.component.html',
   styleUrls: ['./imovel-detalhe.component.css'],
 })
