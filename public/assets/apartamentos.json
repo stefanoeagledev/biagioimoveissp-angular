@@ -14,14 +14,6 @@
     "vendido": "",
     "prontoEm": "",
     "lancamentoEm": "set/2024",
-    "fotos": [
-      "Apartamentos/03_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
-      "Lazer/01_Perspectiva artística da Piscina Adulto.webp",
-      "Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
-      "Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
-      "Apartamentos/02_Perspectiva artística da entrada.webp",
-      "Apartamentos/01_Perspectiva artística da Fachada.webp"
-    ],
     "vagas": [1, 2],
     "obsvagas": "com depósito",
     "vagasdescr": "determinadas",
@@ -33,7 +25,16 @@
         "quartos": 2,
         "banheiros": 2,
         "lavabos": 0,
-        "foto": "p1.webp",
+        "foto": "Plantas/p1_2 dorms (1 suíte) - 56m² opção living ampliado.webp",
+        "precoapartirde": "R$ 387.159"
+      },
+      {
+        "area": 56,
+        "preco": 387159,
+        "quartos": 2,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "Plantas/p1_2 dorms (1 suíte) - 56m²",
         "precoapartirde": "R$ 387.159"
       },
       {
@@ -42,7 +43,16 @@
         "quartos": 3,
         "banheiros": 2,
         "lavabos": 0,
-        "foto": "p2.webp",
+        "foto": "Plantas/p2_3 dorms (1 suíte) - 74m² opção living ampliado.webp",
+        "precoapartirde": "R$ 513.429"
+      },
+      {
+        "area": 74,
+        "preco": 513429,
+        "quartos": 3,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "Plantas/p2_3 dorms (1 suíte) - 74m².webp",
         "precoapartirde": "R$ 513.429"
       }
     ],

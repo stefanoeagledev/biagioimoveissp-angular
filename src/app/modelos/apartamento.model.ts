@@ -25,7 +25,6 @@ export interface Apartamento {
   vendido?: string;
   prontoEm?: string;
   lancamentoEm?: string;
-  fotos: string[];
   vagas: number[];
   obsvagas?: string;
   vagasdescr?: string;
