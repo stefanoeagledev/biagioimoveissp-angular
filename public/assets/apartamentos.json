@@ -15,29 +15,29 @@
     "prontoEm": "",
     "lancamentoEm": "set/2024",
     "foto_fachada": [
-      "Jaracandá/Fachada/01_Perspectiva artística da Fachada.webp"
+      "01_Jaracandá/Fachada/01_Perspectiva artística da Fachada.webp"
     ],
     "fotos_apartamentos": [
-      "Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
-      "Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
-      "Jaracandá/Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
-      "Jaracandá/Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
-      "Jaracandá/Apartamentos/02_Perspectiva artística da entrada.webp",
-      "Jaracandá/Apartamentos/01_Perspectiva artística da Fachada.webp"
+      "01_Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
+      "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+      "01_Jaracandá/Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
+      "01_Jaracandá/Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
+      "01_Jaracandá/Apartamentos/02_Perspectiva artística da entrada.webp",
+      "01_Jaracandá/Apartamentos/01_Perspectiva artística da Fachada.webp"
     ],
     "fotos_lazer": [
-      "Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
-      "Jaracandá/Lazer/02_Perspectiva artística do Fitness.webp",
-      "Jaracandá/Lazer/03_Perspectiva artística do Fitness Externo.webp",
-      "Jaracandá/Lazer/04_Perspectiva artística do Espaço Churrasqueira e Forno de Pizza.webp",
-      "Jaracandá/Lazer/05_Perspectiva artística da Brinquedoteca.webp",
-      "Jaracandá/Lazer/06_Perspectiva artística do Baby Play.webp",
-      "Jaracandá/Lazer/07_Perspectiva artística do Playground.webp",
-      "Jaracandá/Lazer/08_Perspectiva artística do Coworking.webp",
-      "Jaracandá/Lazer/09_Perspectiva artística da Sauna com Descanso.webp",
-      "Jaracandá/Lazer/10_Perspectiva artística do Salão de Festas Gourmet.webp",
-      "Jaracandá/Lazer/11_Perspectiva artística da Quadra Recreativa com Iluminação.webp",
-      "Jaracandá/Lazer/12_Perspectiva artística do Salão de Jogos.webp"
+      "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+      "01_Jaracandá/Lazer/02_Perspectiva artística do Fitness.webp",
+      "01_Jaracandá/Lazer/03_Perspectiva artística do Fitness Externo.webp",
+      "01_Jaracandá/Lazer/04_Perspectiva artística do Espaço Churrasqueira e Forno de Pizza.webp",
+      "01_Jaracandá/Lazer/05_Perspectiva artística da Brinquedoteca.webp",
+      "01_Jaracandá/Lazer/06_Perspectiva artística do Baby Play.webp",
+      "01_Jaracandá/Lazer/07_Perspectiva artística do Playground.webp",
+      "01_Jaracandá/Lazer/08_Perspectiva artística do Coworking.webp",
+      "01_Jaracandá/Lazer/09_Perspectiva artística da Sauna com Descanso.webp",
+      "01_Jaracandá/Lazer/10_Perspectiva artística do Salão de Festas Gourmet.webp",
+      "01_Jaracandá/Lazer/11_Perspectiva artística da Quadra Recreativa com Iluminação.webp",
+      "01_Jaracandá/Lazer/12_Perspectiva artística do Salão de Jogos.webp"
     ],
     "vagas": [1, 2],
     "obsvagas": "com depósito",
@@ -51,7 +51,7 @@
         "suites": 1,
         "banheiros": 2,
         "lavabos": 0,
-        "foto": "Jaracandá/Plantas/p1_2 dorms (1 suíte) - 56m² opção living ampliado.webp",
+        "foto": "01_Jaracandá/Plantas/p1_2 dorms (1 suíte) - 56m² opção living ampliado.webp",
         "precoapartirde": "R$ 387.159"
       },
       {
@@ -61,7 +61,7 @@
         "suites": 1,
         "banheiros": 2,
         "lavabos": 0,
-        "foto": "Jaracandá/Plantas/p1_2 dorms (1 suíte) - 56m²",
+        "foto": "01_Jaracandá/Plantas/p1_2 dorms (1 suíte) - 56m²",
         "precoapartirde": "R$ 387.159"
       },
       {
@@ -71,7 +71,7 @@
         "suites": 1,
         "banheiros": 2,
         "lavabos": 0,
-        "foto": "Jaracandá/Plantas/p2_3 dorms (1 suíte) - 74m² opção living ampliado.webp",
+        "foto": "01_Jaracandá/Plantas/p2_3 dorms (1 suíte) - 74m² opção living ampliado.webp",
         "precoapartirde": "R$ 513.429"
       },
       {
@@ -81,7 +81,7 @@
         "suites": 1,
         "banheiros": 2,
         "lavabos": 0,
-        "foto": "Jaracandá/Plantas/p2_3 dorms (1 suíte) - 74m².webp",
+        "foto": "01_Jaracandá/Plantas/p2_3 dorms (1 suíte) - 74m².webp",
         "precoapartirde": "R$ 513.429"
       }
     ],
@@ -121,31 +121,31 @@
     "vendido": "90%",
     "prontoEm": "jul/2026",
     "lancamentoEm": "",
-    "foto_fachada": ["Olivier/Fachada/01_Fachada.webp"],
+    "foto_fachada": ["01_Olivier/Fachada/01_Fachada.webp"],
     "fotos_apartamentos": [
-      "Olivier/Apartamentos/02_Portaria.webp",
-      "Olivier/Lazer/01_Piscina Adulto.webp",
-      "Olivier/Apartamentos/03_Hall Social",
-      "Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp",
-      "Olivier/Apartamentos/05_Terraço Gourmet.webp",
-      "Olivier/Apartamentos/06_Suite Master.webp"
+      "01_Olivier/Apartamentos/02_Portaria.webp",
+      "01_Olivier/Lazer/01_Piscina Adulto.webp",
+      "01_Olivier/Apartamentos/03_Hall Social",
+      "01_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp",
+      "01_Olivier/Apartamentos/05_Terraço Gourmet.webp",
+      "01_Olivier/Apartamentos/06_Suite Master.webp"
     ],
     "fotos_lazer": [
-      "Olivier/Lazer/01_Piscina Adulto.webp",
-      "Olivier/Lazer/02_Piscina Com Raia De 25 Metros.webp",
-      "Olivier/Lazer/03_Descanso Da Sauna.webp",
-      "Olivier/Lazer/04_Sauna.webp",
-      "Olivier/Lazer/05_Fitness.webp",
-      "Olivier/Lazer/06_Fitness Multiuso.webp",
-      "Olivier/Lazer/07_Quadra.webp",
-      "Olivier/Lazer/08_Espaço Churrasqueira E Forno De Pizza.webp",
-      "Olivier/Lazer/09_Salão De Festas Gourmet.webp",
-      "Olivier/Lazer/10_Salão De Festas Gourmet.webp",
-      "Olivier/Lazer/11_Salão De Jogos.webp",
-      "Olivier/Lazer/12_Coworking.webp",
-      "Olivier/Lazer/13_Babyplay.webp",
-      "Olivier/Lazer/14_Playground.webp",
-      "Olivier/Lazer/15_Brinquedoteca.webp"
+      "01_Olivier/Lazer/01_Piscina Adulto.webp",
+      "01_Olivier/Lazer/02_Piscina Com Raia De 25 Metros.webp",
+      "01_Olivier/Lazer/03_Descanso Da Sauna.webp",
+      "01_Olivier/Lazer/04_Sauna.webp",
+      "01_Olivier/Lazer/05_Fitness.webp",
+      "01_Olivier/Lazer/06_Fitness Multiuso.webp",
+      "01_Olivier/Lazer/07_Quadra.webp",
+      "01_Olivier/Lazer/08_Espaço Churrasqueira E Forno De Pizza.webp",
+      "01_Olivier/Lazer/09_Salão De Festas Gourmet.webp",
+      "01_Olivier/Lazer/10_Salão De Festas Gourmet.webp",
+      "01_Olivier/Lazer/11_Salão De Jogos.webp",
+      "01_Olivier/Lazer/12_Coworking.webp",
+      "01_Olivier/Lazer/13_Babyplay.webp",
+      "01_Olivier/Lazer/14_Playground.webp",
+      "01_Olivier/Lazer/15_Brinquedoteca.webp"
     ],
     "vagas": [3],
     "obsvagas": "com depósito",
@@ -158,7 +158,7 @@
         "suites": 2,
         "banheiros": 4,
         "lavabos": 1,
-        "foto": "Olivier/Plantas/p0_Planta tipo apto 141m² - 4 dorms (2 suítes).webp",
+        "foto": "01_Olivier/Plantas/p0_Planta tipo apto 141m² - 4 dorms (2 suítes).webp",
         "precoapartirde": "R$ 1.274.100"
       },
       {
@@ -168,7 +168,7 @@
         "suites": 3,
         "banheiros": 4,
         "lavabos": 1,
-        "foto": "Olivier/Plantas/p1_Planta opção apto 141m² - 3 suítes.webp",
+        "foto": "01_Olivier/Plantas/p1_Planta opção apto 141m² - 3 suítes.webp",
         "precoapartirde": "R$ 1.274.100"
       }
     ],
