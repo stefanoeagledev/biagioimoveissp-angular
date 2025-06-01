@@ -1,0 +1,271 @@
+/* ======================== */
+/* CAIXA GERAL DE FILTROS   */
+/* ======================== */
+.caixa-filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* —— FILTRO DE BAIRRO —— */
+.filtro-bairro {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filtro-bairro label {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.filtro-bairro input {
+  padding: 0.4rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* —— FILTRO DE SORT (ordenar) —— */
+.filtro-sort {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filtro-sort label {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.filtro-sort select {
+  padding: 0.4rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ================= */
+/* CHIPS DE FILTROS  */
+/* ================= */
+.filtros-ativos {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: #e0e0e0;
+  border-radius: 12px;
+  padding: 0 0.5rem;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+
+.chip button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* ========== AMENIDADES ========= */
+.filtro-amenidades {
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 1rem;
+}
+
+.filtro-amenidades h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.checkbox-amenidade {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.checkbox-amenidade input {
+  margin: 0;
+  transform: scale(1.1);
+}
+
+/* ========== CAMPOS NUMÉRICOS (Área, Quartos etc.) ========= */
+.filtro-intervalo {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.filtro-intervalo label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.intervalo-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.intervalo-inputs input[type="number"] {
+  width: 4rem;
+  padding: 0.25rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* ========== DROPDOWN “VALOR” ========= */
+.filtro-valor-wrapper {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.botao-valor {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.botao-valor:hover {
+  background: #f5f5f5;
+}
+
+.icone-seta {
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.15s ease;
+}
+
+.icone-seta.para-cima {
+  transform: rotate(-135deg);
+}
+
+.icone-seta.para-baixo {
+  transform: rotate(45deg);
+}
+
+.painel-valor {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  z-index: 1000;
+}
+
+.painel-valor-conteudo {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.painel-valor-conteudo h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.valor-inputs {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.campo-valor {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.campo-valor label {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.campo-valor input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.4rem;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.acoes-painel {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.btn-aplicar,
+.btn-cancelar {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-aplicar {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.btn-aplicar:hover {
+  background-color: #2563eb;
+}
+
+.btn-cancelar {
+  background-color: #f0f0f0;
+  color: #444;
+}
+
+.btn-cancelar:hover {
+  background-color: #e0e0e0;
+}
+
+/* ========== BOTÃO PARA LIMPAR FILTROS ========== */
+.botao-limpar {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #999;
+  background: #f5f5f5;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.botao-limpar:hover {
+  background: #e0e0e0;
+}

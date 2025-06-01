@@ -1,0 +1,381 @@
+<!-- src/app/componentes/filtro-apartamentos/filtro-apartamentos.component.html -->
+
+<div class="caixa-filtros">
+  <!-- ========== FILTRO POR BAIRRO (autocomplete) ========== -->
+  <div class="filtro-bairro">
+    <label for="bairro-input">Bairro:</label>
+    <input
+      id="bairro-input"
+      list="bairros-list"
+      placeholder="Escolha ou digite um bairro"
+      [ngModel]="filtroAtual().bairro || ''"
+      (ngModelChange)="onBairroChange($any($event))"
+    />
+    <datalist id="bairros-list">
+      <option *ngFor="let b of bairrosDisponiveis()" [value]="b"></option>
+    </datalist>
+  </div>
+
+  <!-- ========== ORDENAR ========== -->
+  <div class="filtro-sort">
+    <label for="sort-select">Ordenar por:</label>
+    <select
+      id="sort-select"
+      [ngModel]="filtroAtual().sortOrder || ''"
+      (ngModelChange)="onSortChange($any($event))"
+    >
+      <option value="">Sem ordenação</option>
+      <option value="preco-asc">Preço (menor → maior)</option>
+      <option value="preco-desc">Preço (maior → menor)</option>
+      <option value="area-asc">Área (menor → maior)</option>
+      <option value="area-desc">Área (maior → menor)</option>
+      <option value="quartos-asc">Quartos (menor → maior)</option>
+      <option value="quartos-desc">Quartos (maior → menor)</option>
+    </select>
+  </div>
+
+  <!-- ========== CHIPS DE FILTROS ATIVOS ========== -->
+  <div
+    class="filtros-ativos"
+    *ngIf="(filtroAtual() | json) !== '{}'; else nenhumFiltro"
+  >
+    <!-- Bairro -->
+    <span class="chip" *ngIf="filtroAtual().bairro">
+      Bairro: {{ filtroAtual().bairro }}
+      <button (click)="removeFiltro('bairro')">×</button>
+    </span>
+
+    <!-- Área -->
+    <span
+      class="chip"
+      *ngIf="filtroAtual().minArea != null || filtroAtual().maxArea != null"
+    >
+      Área: {{ filtroAtual().minArea ?? areaDom().min }} –
+      {{ filtroAtual().maxArea ?? areaDom().max }}
+      <button (click)="removeFiltro('minArea'); removeFiltro('maxArea')">
+        ×
+      </button>
+    </span>
+
+    <!-- Quartos -->
+    <span
+      class="chip"
+      *ngIf="
+        filtroAtual().minQuartos != null || filtroAtual().maxQuartos != null
+      "
+    >
+      Quartos: {{ filtroAtual().minQuartos ?? quartosDom().min }} –
+      {{ filtroAtual().maxQuartos ?? quartosDom().max }}
+      <button (click)="removeFiltro('minQuartos'); removeFiltro('maxQuartos')">
+        ×
+      </button>
+    </span>
+
+    <!-- Suítes -->
+    <span
+      class="chip"
+      *ngIf="filtroAtual().minSuites != null || filtroAtual().maxSuites != null"
+    >
+      Suítes: {{ filtroAtual().minSuites ?? suitesDom().min }} –
+      {{ filtroAtual().maxSuites ?? suitesDom().max }}
+      <button (click)="removeFiltro('minSuites'); removeFiltro('maxSuites')">
+        ×
+      </button>
+    </span>
+
+    <!-- Banheiros -->
+    <span
+      class="chip"
+      *ngIf="
+        filtroAtual().minBanheiros != null || filtroAtual().maxBanheiros != null
+      "
+    >
+      Banheiros: {{ filtroAtual().minBanheiros ?? banheirosDom().min }} –
+      {{ filtroAtual().maxBanheiros ?? banheirosDom().max }}
+      <button
+        (click)="removeFiltro('minBanheiros'); removeFiltro('maxBanheiros')"
+      >
+        ×
+      </button>
+    </span>
+
+    <!-- Lavabos -->
+    <span
+      class="chip"
+      *ngIf="
+        filtroAtual().minLavabos != null || filtroAtual().maxLavabos != null
+      "
+    >
+      Lavabos: {{ filtroAtual().minLavabos ?? lavabosDom().min }} –
+      {{ filtroAtual().maxLavabos ?? lavabosDom().max }}
+      <button (click)="removeFiltro('minLavabos'); removeFiltro('maxLavabos')">
+        ×
+      </button>
+    </span>
+
+    <!-- Vagas -->
+    <span
+      class="chip"
+      *ngIf="filtroAtual().minVagas != null || filtroAtual().maxVagas != null"
+    >
+      Vagas: {{ filtroAtual().minVagas ?? vagasDom().min }} –
+      {{ filtroAtual().maxVagas ?? vagasDom().max }}
+      <button (click)="removeFiltro('minVagas'); removeFiltro('maxVagas')">
+        ×
+      </button>
+    </span>
+
+    <!-- Preço -->
+    <span
+      class="chip"
+      *ngIf="filtroAtual().minPreco != null || filtroAtual().maxPreco != null"
+    >
+      Preço: R$ {{ filtroAtual().minPreco ?? precoDom().min }} –
+      {{ filtroAtual().maxPreco ?? precoDom().max }}
+      <button (click)="removeFiltro('minPreco'); removeFiltro('maxPreco')">
+        ×
+      </button>
+    </span>
+
+    <!-- Amenidades -->
+    <span class="chip" *ngFor="let am of filtroAtual().amenidades || []">
+      Amenidade: {{ getAmenidadeNome(am) }}
+      <button (click)="onAmenidadeToggle(am, false)">×</button>
+    </span>
+
+    <!-- SortOrder -->
+    <span class="chip" *ngIf="filtroAtual().sortOrder">
+      Ordenar por: {{ getSortLabel(filtroAtual().sortOrder) }}
+      <button (click)="removeFiltro('sortOrder')">×</button>
+    </span>
+  </div>
+  <ng-template #nenhumFiltro></ng-template>
+
+  <!-- ========== CHECKBOXES DE AMENIDADES ========== -->
+  <div class="filtro-amenidades">
+    <h4>Amenidades</h4>
+    <div class="checkbox-amenidade" *ngFor="let am of amenidadesDisponiveis()">
+      <label>
+        <input
+          type="checkbox"
+          [checked]="
+            filtroAtual().amenidades
+              ? filtroAtual().amenidades?.includes(am.iconKey)
+              : false
+          "
+          (change)="onAmenidadeToggle(am.iconKey, $any($event.target).checked)"
+        />
+        {{ am.nome }}
+      </label>
+    </div>
+  </div>
+
+  <!-- ========== CAMPOS NUMÉRICOS PARA FILTROS ========== -->
+
+  <!-- Área -->
+  <div class="filtro-intervalo">
+    <label>Área (m²):</label>
+    <div class="intervalo-inputs">
+      <input
+        type="number"
+        [min]="areaDom().min"
+        [max]="areaDom().max"
+        [(ngModel)]="selArea().min"
+        (ngModelChange)="onAreaMinChange($any($event))"
+      />
+      <span>até</span>
+      <input
+        type="number"
+        [min]="areaDom().min"
+        [max]="areaDom().max"
+        [(ngModel)]="selArea().max"
+        (ngModelChange)="onAreaMaxChange($any($event))"
+      />
+    </div>
+  </div>
+
+  <!-- Quartos -->
+  <div class="filtro-intervalo">
+    <label>Quartos:</label>
+    <div class="intervalo-inputs">
+      <input
+        type="number"
+        [min]="quartosDom().min"
+        [max]="quartosDom().max"
+        [(ngModel)]="selQuartos().min"
+        (ngModelChange)="onQuartosMinChange($any($event))"
+      />
+      <span>até</span>
+      <input
+        type="number"
+        [min]="quartosDom().min"
+        [max]="quartosDom().max"
+        [(ngModel)]="selQuartos().max"
+        (ngModelChange)="onQuartosMaxChange($any($event))"
+      />
+    </div>
+  </div>
+
+  <!-- Suítes -->
+  <div class="filtro-intervalo">
+    <label>Suítes:</label>
+    <div class="intervalo-inputs">
+      <input
+        type="number"
+        [min]="suitesDom().min"
+        [max]="suitesDom().max"
+        [(ngModel)]="selSuites().min"
+        (ngModelChange)="onSuitesMinChange($any($event))"
+      />
+      <span>até</span>
+      <input
+        type="number"
+        [min]="suitesDom().min"
+        [max]="suitesDom().max"
+        [(ngModel)]="selSuites().max"
+        (ngModelChange)="onSuitesMaxChange($any($event))"
+      />
+    </div>
+  </div>
+
+  <!-- Banheiros -->
+  <div class="filtro-intervalo">
+    <label>Banheiros:</label>
+    <div class="intervalo-inputs">
+      <input
+        type="number"
+        [min]="banheirosDom().min"
+        [max]="banheirosDom().max"
+        [(ngModel)]="selBanheiros().min"
+        (ngModelChange)="onBanheirosMinChange($any($event))"
+      />
+      <span>até</span>
+      <input
+        type="number"
+        [min]="banheirosDom().min"
+        [max]="banheirosDom().max"
+        [(ngModel)]="selBanheiros().max"
+        (ngModelChange)="onBanheirosMaxChange($any($event))"
+      />
+    </div>
+  </div>
+
+  <!-- Lavabos -->
+  <div class="filtro-intervalo">
+    <label>Lavabos:</label>
+    <div class="intervalo-inputs">
+      <input
+        type="number"
+        [min]="lavabosDom().min"
+        [max]="lavabosDom().max"
+        [(ngModel)]="selLavabos().min"
+        (ngModelChange)="onLavabosMinChange($any($event))"
+      />
+      <span>até</span>
+      <input
+        type="number"
+        [min]="lavabosDom().min"
+        [max]="lavabosDom().max"
+        [(ngModel)]="selLavabos().max"
+        (ngModelChange)="onLavabosMaxChange($any($event))"
+      />
+    </div>
+  </div>
+
+  <!-- Vagas -->
+  <div class="filtro-intervalo">
+    <label>Vagas:</label>
+    <div class="intervalo-inputs">
+      <input
+        type="number"
+        [min]="vagasDom().min"
+        [max]="vagasDom().max"
+        [(ngModel)]="selVagas().min"
+        (ngModelChange)="onVagasMinChange($any($event))"
+      />
+      <span>até</span>
+      <input
+        type="number"
+        [min]="vagasDom().min"
+        [max]="vagasDom().max"
+        [(ngModel)]="selVagas().max"
+        (ngModelChange)="onVagasMaxChange($any($event))"
+      />
+    </div>
+  </div>
+
+  <!-- ========== DROPDOWN “Valor” (preço) ========== -->
+  <div class="filtro-valor-wrapper">
+    <!-- Botão “Valor” -->
+    <button class="botao-valor" (click)="toggleValorDropdown()">
+      Valor
+      <span
+        class="icone-seta"
+        [class.para-cima]="openPreco()"
+        [class.para-baixo]="!openPreco()"
+      ></span>
+    </button>
+
+    <!-- Painel que surge abaixo do botão -->
+    <div class="painel-valor" *ngIf="openPreco()">
+      <div class="painel-valor-conteudo">
+        <h4>Valor</h4>
+
+        <!-- Inputs numéricos de Preço Min / Máx -->
+        <div class="valor-inputs">
+          <div class="campo-valor">
+            <label for="preco-min">Preço mín.</label>
+            <input
+              id="preco-min"
+              type="number"
+              [min]="precoDom().min"
+              [max]="precoDom().max"
+              [(ngModel)]="selPreco().min"
+              (ngModelChange)="onPrecoMinChange($any($event))"
+            />
+          </div>
+          <div class="campo-valor">
+            <label for="preco-max">Preço máx.</label>
+            <input
+              id="preco-max"
+              type="number"
+              [min]="precoDom().min"
+              [max]="precoDom().max"
+              [(ngModel)]="selPreco().max"
+              (ngModelChange)="onPrecoMaxChange($any($event))"
+            />
+          </div>
+        </div>
+
+        <!-- (Opcional) Slider de duas pontas 
+        <mat-slider
+          [min]="precoDom().min"
+          [max]="precoDom().max"
+          [step]="1000"
+          [thumbLabel]="true"
+          [value]="[ selPreco().min, selPreco().max ]"
+          [range]="true"
+          (input)="
+            onPrecoMinChange($any($event.value[0])); 
+            onPrecoMaxChange($any($event.value[1]))
+          "
+        ></mat-slider>
+        -->
+
+        <div class="acoes-painel">
+          <button class="btn-aplicar" (click)="toggleValorDropdown()">
+            Aplicar
+          </button>
+          <button class="btn-cancelar" (click)="toggleValorDropdown()">
+            Cancelar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== BOTÃO PARA LIMPAR TODOS OS FILTROS ========== -->
+  <button class="botao-limpar" (click)="onLimparFiltros()">
+    Limpar todos filtros
+  </button>
+</div>
