@@ -13,6 +13,7 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
   template: `
     <div class="card card-apartamento">
       <img
+        *ngIf="a.foto_fachada && a.foto_fachada.length > 0"
         class="card-img-top"
         [src]="'/assets/' + a.foto_fachada[0]"
         alt="Fachada do {{ a.nome }}"

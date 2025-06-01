@@ -12,7 +12,7 @@
   <div class="filtro-range">
     <label>Área (m²): {{ selArea().min }} – {{ selArea().max }}</label>
     <div class="range-container">
-      <!-- Thumb Mínimo -->
+      <!-- Thumb Mínimo (z-index: 1, sempre atrás) -->
       <input
         type="range"
         [min]="areaDom().min"
@@ -26,9 +26,9 @@
               (areaDom().max - areaDom().min) +
             '%'
         }"
-        [style.zIndex]="2"
+        [style.zIndex]="1"
       />
-      <!-- Thumb Máximo -->
+      <!-- Thumb Máximo (z-index: 2, sempre à frente) -->
       <input
         type="range"
         [min]="areaDom().min"
@@ -42,7 +42,7 @@
               (areaDom().max - areaDom().min) +
             '%'
         }"
-        [style.zIndex]="1"
+        [style.zIndex]="2"
       />
     </div>
   </div>
@@ -51,6 +51,7 @@
   <div class="filtro-range">
     <label>Quartos: {{ selQuartos().min }} – {{ selQuartos().max }}</label>
     <div class="range-container">
+      <!-- Thumb Mínimo -->
       <input
         type="range"
         [min]="quartosDom().min"
@@ -64,8 +65,9 @@
               (quartosDom().max - quartosDom().min) +
             '%'
         }"
-        [style.zIndex]="2"
+        [style.zIndex]="1"
       />
+      <!-- Thumb Máximo -->
       <input
         type="range"
         [min]="quartosDom().min"
@@ -79,7 +81,7 @@
               (quartosDom().max - quartosDom().min) +
             '%'
         }"
-        [style.zIndex]="1"
+        [style.zIndex]="2"
       />
     </div>
   </div>
@@ -88,6 +90,7 @@
   <div class="filtro-range">
     <label>Suítes: {{ selSuites().min }} – {{ selSuites().max }}</label>
     <div class="range-container">
+      <!-- Thumb Mínimo -->
       <input
         type="range"
         [min]="suitesDom().min"
@@ -101,8 +104,9 @@
               (suitesDom().max - suitesDom().min) +
             '%'
         }"
-        [style.zIndex]="2"
+        [style.zIndex]="1"
       />
+      <!-- Thumb Máximo -->
       <input
         type="range"
         [min]="suitesDom().min"
@@ -116,7 +120,7 @@
               (suitesDom().max - suitesDom().min) +
             '%'
         }"
-        [style.zIndex]="1"
+        [style.zIndex]="2"
       />
     </div>
   </div>
@@ -127,6 +131,7 @@
       >Banheiros: {{ selBanheiros().min }} – {{ selBanheiros().max }}</label
     >
     <div class="range-container">
+      <!-- Thumb Mínimo -->
       <input
         type="range"
         [min]="banheirosDom().min"
@@ -140,8 +145,9 @@
               (banheirosDom().max - banheirosDom().min) +
             '%'
         }"
-        [style.zIndex]="2"
+        [style.zIndex]="1"
       />
+      <!-- Thumb Máximo -->
       <input
         type="range"
         [min]="banheirosDom().min"
@@ -155,7 +161,7 @@
               (banheirosDom().max - banheirosDom().min) +
             '%'
         }"
-        [style.zIndex]="1"
+        [style.zIndex]="2"
       />
     </div>
   </div>
@@ -164,6 +170,7 @@
   <div class="filtro-range">
     <label>Lavabos: {{ selLavabos().min }} – {{ selLavabos().max }}</label>
     <div class="range-container">
+      <!-- Thumb Mínimo -->
       <input
         type="range"
         [min]="lavabosDom().min"
@@ -177,8 +184,9 @@
               (lavabosDom().max - lavabosDom().min) +
             '%'
         }"
-        [style.zIndex]="2"
+        [style.zIndex]="1"
       />
+      <!-- Thumb Máximo -->
       <input
         type="range"
         [min]="lavabosDom().min"
@@ -192,7 +200,7 @@
               (lavabosDom().max - lavabosDom().min) +
             '%'
         }"
-        [style.zIndex]="1"
+        [style.zIndex]="2"
       />
     </div>
   </div>
@@ -201,6 +209,7 @@
   <div class="filtro-range">
     <label>Vagas: {{ selVagas().min }} – {{ selVagas().max }}</label>
     <div class="range-container">
+      <!-- Thumb Mínimo -->
       <input
         type="range"
         [min]="vagasDom().min"
@@ -214,8 +223,9 @@
               (vagasDom().max - vagasDom().min) +
             '%'
         }"
-        [style.zIndex]="2"
+        [style.zIndex]="1"
       />
+      <!-- Thumb Máximo -->
       <input
         type="range"
         [min]="vagasDom().min"
@@ -229,7 +239,7 @@
               (vagasDom().max - vagasDom().min) +
             '%'
         }"
-        [style.zIndex]="1"
+        [style.zIndex]="2"
       />
     </div>
   </div>
@@ -238,6 +248,7 @@
   <div class="filtro-range">
     <label>Preço (R$): {{ selPreco().min }} – {{ selPreco().max }}</label>
     <div class="range-container">
+      <!-- Thumb Mínimo -->
       <input
         type="range"
         [min]="precoDom().min"
@@ -251,8 +262,9 @@
               (precoDom().max - precoDom().min) +
             '%'
         }"
-        [style.zIndex]="2"
+        [style.zIndex]="1"
       />
+      <!-- Thumb Máximo -->
       <input
         type="range"
         [min]="precoDom().min"
@@ -266,7 +278,7 @@
               (precoDom().max - precoDom().min) +
             '%'
         }"
-        [style.zIndex]="1"
+        [style.zIndex]="2"
       />
     </div>
   </div>
