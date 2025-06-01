@@ -18,26 +18,9 @@
   font-size: 1rem;
 }
 
-/* Grid de cards: mantém igual ao anterior */
 .lista-cards {
   display: grid;
   gap: 1rem;
-}
-
-@media (max-width: 767px) {
-  .lista-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .lista-cards {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .lista-cards {
-    grid-template-columns: repeat(5, 1fr);
-  }
+  /* Cada card terá mínimo de 200px, mas vai crescer para caber no espaço disponível. */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
