@@ -4,7 +4,6 @@ export interface Planta {
   quartos: number;
   banheiros: number;
   lavabos: number;
-  foto: string;
   precoapartirde: string;
   // opcional: outros campos, como "tabelaem"
   tabelaem?: string;
