@@ -136,6 +136,15 @@
         "lavabos": 1,
         "foto": "p1.webp",
         "precoapartirde": "R$ 1.274.100"
+      },
+      {
+        "area": 141,
+        "preco": 1274100,
+        "quartos": 3,
+        "banheiros": 4,
+        "lavabos": 1,
+        "foto": "p1.webp",
+        "precoapartirde": "R$ 1.274.100"
       }
     ]
   },
