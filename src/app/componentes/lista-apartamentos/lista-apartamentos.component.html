@@ -1,5 +1,3 @@
-<!-- src/app/componentes/lista-apartamentos/lista-apartamentos.component.html -->
-
 <div class="caixa-filtros">
   <!-- FILTRO POR BAIRRO -->
   <input
@@ -12,7 +10,7 @@
   <div class="filtro-range">
     <label>Área (m²): {{ selArea().min }} – {{ selArea().max }}</label>
     <div class="range-container">
-      <!-- Mínimo -->
+      <!-- Thumb Mínimo -->
       <input
         type="range"
         [min]="areaDom().min"
@@ -28,7 +26,7 @@
         }"
         [style.zIndex]="selArea().min > selArea().max - 1 ? 2 : 3"
       />
-      <!-- Máximo -->
+      <!-- Thumb Máximo -->
       <input
         type="range"
         [min]="areaDom().min"

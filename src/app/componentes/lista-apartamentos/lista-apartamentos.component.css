@@ -24,7 +24,7 @@
 /* ============================================= */
 
 .filtro-range {
-  flex: 1 1 250px; /* mínimo de 250px, mas flexível */
+  flex: 1 1 250px; /* mínimo de 250px, mas cresce se houver espaço */
   display: flex;
   flex-direction: column;
 }
@@ -37,11 +37,11 @@
 
 .range-container {
   position: relative;
-  height: 32px; /* controla altura total do track */
+  height: 32px; /* controla a altura total do track */
 }
 
+/* Ambos os inputs (mínimo e máximo) devem aceitar clique e drag */
 .range-container input[type="range"] {
-  /* NÃO precisa de `pointer-events: none` aqui */
   position: absolute;
   top: 0;
   left: 0;
@@ -51,7 +51,7 @@
   -webkit-appearance: none;
 }
 
-/* Track padrão */
+/* Track cinza */
 .range-container input[type="range"]::-webkit-slider-runnable-track {
   height: 8px;
   background: #ddd;
@@ -63,7 +63,7 @@
   border-radius: 4px;
 }
 
-/* Thumb (círculo) */
+/* Thumb (círculo azul) */
 .range-container input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 16px;
@@ -71,7 +71,7 @@
   border-radius: 50%;
   background: #007bff;
   cursor: pointer;
-  margin-top: -4px; /* centraliza no track */
+  margin-top: -4px; /* centraliza verticalmente no track */
 }
 .range-container input[type="range"]::-moz-range-thumb {
   width: 16px;
@@ -81,14 +81,15 @@
   cursor: pointer;
 }
 
-/* Pseudo-elemento que desenha faixa azul entre os dois thumbs */
+/* Faixa azul entre os thumbs 
+   Usa variáveis CSS definidas inline no [ngStyle] de cada <input> */
 .range-container input[type="range"]::before {
   content: "";
   position: absolute;
   height: 8px;
   background: #007bff;
   border-radius: 4px;
-  top: 12px; /* centraliza verticalmente */
+  top: 12px; /* (32px total - 8px track) / 2 */
   left: var(--thumb-min, 0%);
   width: calc(var(--thumb-max, 0%) - var(--thumb-min, 0%));
 }

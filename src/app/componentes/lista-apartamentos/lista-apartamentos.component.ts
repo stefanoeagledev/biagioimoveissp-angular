@@ -39,7 +39,7 @@ export class ListaApartamentosComponent {
   vagasDom: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
   precoDom: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
 
-  // ─── VALORES SELECIONADOS (inicializados depois que o domínio aparecer) ─
+  // ─── VALORES SELECIONADOS (inicializados quando o domínio aparecer) ───
   selArea: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
   selQuartos: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
   selSuites: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
@@ -49,27 +49,21 @@ export class ListaApartamentosComponent {
   selPreco: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
 
   constructor() {
-    // Registramos o effect já no construtor,
-    // para que ele “pegue” o sinal assim que o JSON chegar.
+    // Registrar o effect no construtor para “pegar” o JSON assim que chegar
     effect(() => {
-      // 1) Leia o sinal bruto de todos os apartamentos
       const todos: Apartamento[] = this.serv.obterTodosApartamentosSignal()();
-
-      // Se ainda não carregou nada, saia (evita setar 0–0 para sempre)
       if (todos.length === 0) {
+        // Se JSON ainda não chegou, apenas retorne
         return;
       }
 
-      // Auxiliar para extrair { min, max } de qualquer array de números
+      // Função auxiliar para extrair faixa {min, max} de um array de números
       const faixaDe = (arr: number[]): FaixaNum => ({
         min: Math.min(...arr),
         max: Math.max(...arr),
       });
 
-      //
-      // 2) DOMÍNIO DE ÁREA
-      //
-      // Aqui anotamos explicitamente a tipagem:
+      // 1) DOMÍNIO DE ÁREA
       const todasAreas: number[] = todos.flatMap((a: Apartamento) =>
         a.plantas.map((p: Planta) => p.area)
       );
@@ -77,9 +71,7 @@ export class ListaApartamentosComponent {
       this.areaDom.set(faixaArea);
       this.selArea.set({ ...faixaArea });
 
-      //
-      // 3) DOMÍNIO DE QUARTOS
-      //
+      // 2) DOMÍNIO DE QUARTOS
       const todosQuartos: number[] = todos.flatMap((a: Apartamento) =>
         a.plantas.map((p: Planta) => p.quartos)
       );
@@ -87,9 +79,7 @@ export class ListaApartamentosComponent {
       this.quartosDom.set(faixaQuartos);
       this.selQuartos.set({ ...faixaQuartos });
 
-      //
-      // 4) DOMÍNIO DE SUÍTES
-      //
+      // 3) DOMÍNIO DE SUÍTES
       const todasSuites: number[] = todos.flatMap((a: Apartamento) =>
         a.plantas.map((p: Planta) => p.suites)
       );
@@ -97,9 +87,7 @@ export class ListaApartamentosComponent {
       this.suitesDom.set(faixaSuites);
       this.selSuites.set({ ...faixaSuites });
 
-      //
-      // 5) DOMÍNIO DE BANHEIROS
-      //
+      // 4) DOMÍNIO DE BANHEIROS
       const todosBanheiros: number[] = todos.flatMap((a: Apartamento) =>
         a.plantas.map((p: Planta) => p.banheiros)
       );
@@ -107,9 +95,7 @@ export class ListaApartamentosComponent {
       this.banheirosDom.set(faixaBanheiros);
       this.selBanheiros.set({ ...faixaBanheiros });
 
-      //
-      // 6) DOMÍNIO DE LAVABOS
-      //
+      // 5) DOMÍNIO DE LAVABOS
       const todosLavabos: number[] = todos.flatMap((a: Apartamento) =>
         a.plantas.map((p: Planta) => p.lavabos)
       );
@@ -117,9 +103,7 @@ export class ListaApartamentosComponent {
       this.lavabosDom.set(faixaLavabos);
       this.selLavabos.set({ ...faixaLavabos });
 
-      //
-      // 7) DOMÍNIO DE VAGAS
-      //
+      // 6) DOMÍNIO DE VAGAS
       const todasVagas: number[] = todos.flatMap((a: Apartamento) =>
         a.vagas.map((v: number) => v)
       );
@@ -127,9 +111,7 @@ export class ListaApartamentosComponent {
       this.vagasDom.set(faixaVagas);
       this.selVagas.set({ ...faixaVagas });
 
-      //
-      // 8) DOMÍNIO DE PREÇOS
-      //
+      // 7) DOMÍNIO DE PREÇOS
       const todosPrecos: number[] = todos.flatMap((a: Apartamento) =>
         a.plantas.map((p: Planta) => p.preco)
       );

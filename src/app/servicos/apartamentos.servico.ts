@@ -171,10 +171,7 @@ export class ApartamentosServico {
     return this._todosApartamentos.asReadonly();
   }
 
-  /**
-   * Computed que devolve o apartamento cujo id bate com o passado.
-   * Usa _todosApartamentos internamente. Se não achar, retorna undefined.
-   */
+  /** Computed que devolve o apartamento cujo id bate com o passado */
   buscarPorIdSignal(id: number): Signal<Apartamento | undefined> {
     return computed(() => this._todosApartamentos().find((a) => a.id === id));
   }
