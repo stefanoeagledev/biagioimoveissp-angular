@@ -4,6 +4,7 @@ export interface Planta {
   quartos: number;
   banheiros: number;
   lavabos: number;
+  foto: string;
   precoapartirde: string;
   // opcional: outros campos, como "tabelaem"
   tabelaem?: string;
@@ -24,6 +25,7 @@ export interface Apartamento {
   vendido?: string;
   prontoEm?: string;
   lancamentoEm?: string;
+  fotos: string[];
   vagas: number[];
   obsvagas?: string;
   vagasdescr?: string;

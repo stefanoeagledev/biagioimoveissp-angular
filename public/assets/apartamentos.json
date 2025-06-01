@@ -14,6 +14,29 @@
     "vendido": "",
     "prontoEm": "",
     "lancamentoEm": "set/2024",
+    "foto_fachada": ["Apartamentos/01_Perspectiva artística da Fachada.webp"],
+    "fotos_apartamentos": [
+      "Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
+      "Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+      "Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
+      "Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
+      "Apartamentos/02_Perspectiva artística da entrada.webp",
+      "Apartamentos/01_Perspectiva artística da Fachada.webp"
+    ],
+    "fotos_lazer": [
+      "Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+      "Lazer/02_Perspectiva artística do Fitness.webp",
+      "Lazer/03_Perspectiva artística do Fitness Externo.webp",
+      "Lazer/04_Perspectiva artística do Espaço Churrasqueira e Forno de Pizza.webp",
+      "Lazer/05_Perspectiva artística da Brinquedoteca.webp",
+      "Lazer/06_Perspectiva artística do Baby Play.webp",
+      "Lazer/07_Perspectiva artística do Playground.webp",
+      "Lazer/08_Perspectiva artística do Coworking.webp",
+      "Lazer/09_Perspectiva artística da Sauna com Descanso.webp",
+      "Lazer/10_Perspectiva artística do Salão de Festas Gourmet.webp",
+      "Lazer/11_Perspectiva artística da Quadra Recreativa com Iluminação.webp",
+      "Lazer/12_Perspectiva artística do Salão de Jogos.webp"
+    ],
     "vagas": [1, 2],
     "obsvagas": "com depósito",
     "vagasdescr": "determinadas",
@@ -25,6 +48,7 @@
         "quartos": 2,
         "banheiros": 2,
         "lavabos": 0,
+        "foto": "Plantas/p1_2 dorms (1 suíte) - 56m² opção living ampliado.webp",
         "precoapartirde": "R$ 387.159"
       },
       {
@@ -33,6 +57,7 @@
         "quartos": 2,
         "banheiros": 2,
         "lavabos": 0,
+        "foto": "Plantas/p1_2 dorms (1 suíte) - 56m²",
         "precoapartirde": "R$ 387.159"
       },
       {
@@ -41,6 +66,7 @@
         "quartos": 3,
         "banheiros": 2,
         "lavabos": 0,
+        "foto": "Plantas/p2_3 dorms (1 suíte) - 74m² opção living ampliado.webp",
         "precoapartirde": "R$ 513.429"
       },
       {
@@ -49,6 +75,7 @@
         "quartos": 3,
         "banheiros": 2,
         "lavabos": 0,
+        "foto": "Plantas/p2_3 dorms (1 suíte) - 74m².webp",
         "precoapartirde": "R$ 513.429"
       }
     ],
