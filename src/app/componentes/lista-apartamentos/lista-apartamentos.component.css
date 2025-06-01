@@ -5,7 +5,7 @@
   margin-bottom: 1.5rem;
 }
 
-.caixa-filtros input {
+.caixa-filtros input[type="text"] {
   padding: 0.5rem;
   font-size: 1rem;
   width: 150px;
@@ -14,10 +14,98 @@
 .caixa-filtros button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .lista-cards {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* ====================================== */
+/* FILTRO RANGE DUAS “thumbs” SOBREPOSTAS */
+/* ====================================== */
+
+.filtro-range {
+  flex: 1 1 250px; /* ocupa espaço proporcional */
+  display: flex;
+  flex-direction: column;
+}
+
+.filtro-range label {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.range-container {
+  position: relative;
+  height: 32px; /* altura do track */
+}
+
+/* Estilo para cada <input type="range"> */
+.range-container input[type="range"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  background: transparent; /* track transparente, usaremos um pseudo-elemento para background */
+  -webkit-appearance: none;
+}
+
+/* Estilização do “pole” (track) – aplicado ao segundo input (base) */
+.range-container input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+}
+.range-container input[type="range"]::-moz-range-track {
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+/* Estilização do “thumb” (o ponto que arrasta) */
+.range-container input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  margin-top: -4px; /* centralizar thumb verticalmente no track */
+}
+.range-container input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+
+/* ================================================== */
+/* EXIBIR O TRECHO SELECIONADO ENTRE AS DUAS THUMBS */
+/* usando um pseudo-elemento no primeiro range (min) */
+/* ================================================== */
+.range-container input[type="range"] {
+  pointer-events: none; /* evitar conflito na área do track */
+}
+
+/* Apenas o segundo range (o que controla max) recebe pointer-events */
+.range-container input[type="range"]:nth-child(2) {
+  pointer-events: auto;
+}
+
+/* O pseudo-elemento ::before do primeiro range desenha a faixa azul entre min e max */
+.range-container input[type="range"]::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  background: #007bff;
+  border-radius: 4px;
+  top: 12px; /* alinhado verticalmente ao track de 8px (32px container) */
+  left: 0;
+  width: 0; /* será atualizado dinamicamente em JS/CSS inline */
 }

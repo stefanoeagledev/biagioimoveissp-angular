@@ -1,0 +1,186 @@
+<div class="caixa-filtros">
+  <!-- FILTRO POR BAIRRO -->
+  <input
+    type="text"
+    placeholder="Filtrar por bairro"
+    (input)="onBairroChange($any($event.target).value)"
+  />
+
+  <!-- FILTRO POR ÁREA (range duplo) -->
+  <div class="filtro-range">
+    <label>Área (m²): {{ selArea.min }} – {{ selArea.max }}</label>
+    <div class="range-container">
+      <input
+        type="range"
+        [min]="areaDom.min"
+        [max]="areaDom.max"
+        [step]="1"
+        [(ngModel)]="selArea.min"
+        (input)="onAreaMinChange(selArea.min)"
+        [style.zIndex]="selArea.min > selArea.max - 1 ? 2 : 3"
+      />
+      <input
+        type="range"
+        [min]="areaDom.min"
+        [max]="areaDom.max"
+        [step]="1"
+        [(ngModel)]="selArea.max"
+        (input)="onAreaMaxChange(selArea.max)"
+      />
+    </div>
+  </div>
+
+  <!-- FILTRO POR QUARTOS -->
+  <div class="filtro-range">
+    <label>Quartos: {{ selQuartos.min }} – {{ selQuartos.max }}</label>
+    <div class="range-container">
+      <input
+        type="range"
+        [min]="quartosDom.min"
+        [max]="quartosDom.max"
+        [step]="1"
+        [(ngModel)]="selQuartos.min"
+        (input)="onQuartosMinChange(selQuartos.min)"
+        [style.zIndex]="selQuartos.min > selQuartos.max - 1 ? 2 : 3"
+      />
+      <input
+        type="range"
+        [min]="quartosDom.min"
+        [max]="quartosDom.max"
+        [step]="1"
+        [(ngModel)]="selQuartos.max"
+        (input)="onQuartosMaxChange(selQuartos.max)"
+      />
+    </div>
+  </div>
+
+  <!-- FILTRO POR SUÍTES -->
+  <div class="filtro-range">
+    <label>Suítes: {{ selSuites.min }} – {{ selSuites.max }}</label>
+    <div class="range-container">
+      <input
+        type="range"
+        [min]="suitesDom.min"
+        [max]="suitesDom.max"
+        [step]="1"
+        [(ngModel)]="selSuites.min"
+        (input)="onSuitesMinChange(selSuites.min)"
+        [style.zIndex]="selSuites.min > selSuites.max - 1 ? 2 : 3"
+      />
+      <input
+        type="range"
+        [min]="suitesDom.min"
+        [max]="suitesDom.max"
+        [step]="1"
+        [(ngModel)]="selSuites.max"
+        (input)="onSuitesMaxChange(selSuites.max)"
+      />
+    </div>
+  </div>
+
+  <!-- FILTRO POR BANHEIROS -->
+  <div class="filtro-range">
+    <label>Banheiros: {{ selBanheiros.min }} – {{ selBanheiros.max }}</label>
+    <div class="range-container">
+      <input
+        type="range"
+        [min]="banheirosDom.min"
+        [max]="banheirosDom.max"
+        [step]="1"
+        [(ngModel)]="selBanheiros.min"
+        (input)="onBanheirosMinChange(selBanheiros.min)"
+        [style.zIndex]="selBanheiros.min > selBanheiros.max - 1 ? 2 : 3"
+      />
+      <input
+        type="range"
+        [min]="banheirosDom.min"
+        [max]="banheirosDom.max"
+        [step]="1"
+        [(ngModel)]="selBanheiros.max"
+        (input)="onBanheirosMaxChange(selBanheiros.max)"
+      />
+    </div>
+  </div>
+
+  <!-- FILTRO POR LAVABOS -->
+  <div class="filtro-range">
+    <label>Lavabos: {{ selLavabos.min }} – {{ selLavabos.max }}</label>
+    <div class="range-container">
+      <input
+        type="range"
+        [min]="lavabosDom.min"
+        [max]="lavabosDom.max"
+        [step]="1"
+        [(ngModel)]="selLavabos.min"
+        (input)="onLavabosMinChange(selLavabos.min)"
+        [style.zIndex]="selLavabos.min > selLavabos.max - 1 ? 2 : 3"
+      />
+      <input
+        type="range"
+        [min]="lavabosDom.min"
+        [max]="lavabosDom.max"
+        [step]="1"
+        [(ngModel)]="selLavabos.max"
+        (input)="onLavabosMaxChange(selLavabos.max)"
+      />
+    </div>
+  </div>
+
+  <!-- FILTRO POR VAGAS -->
+  <div class="filtro-range">
+    <label>Vagas: {{ selVagas.min }} – {{ selVagas.max }}</label>
+    <div class="range-container">
+      <input
+        type="range"
+        [min]="vagasDom.min"
+        [max]="vagasDom.max"
+        [step]="1"
+        [(ngModel)]="selVagas.min"
+        (input)="onVagasMinChange(selVagas.min)"
+        [style.zIndex]="selVagas.min > selVagas.max - 1 ? 2 : 3"
+      />
+      <input
+        type="range"
+        [min]="vagasDom.min"
+        [max]="vagasDom.max"
+        [step]="1"
+        [(ngModel)]="selVagas.max"
+        (input)="onVagasMaxChange(selVagas.max)"
+      />
+    </div>
+  </div>
+
+  <!-- FILTRO POR PREÇO -->
+  <div class="filtro-range">
+    <label>Preço (R$): {{ selPreco.min }} – {{ selPreco.max }}</label>
+    <div class="range-container">
+      <input
+        type="range"
+        [min]="precoDom.min"
+        [max]="precoDom.max"
+        [step]="1000"
+        [(ngModel)]="selPreco.min"
+        (input)="onPrecoMinChange(selPreco.min)"
+        [style.zIndex]="selPreco.min > selPreco.max - 1000 ? 2 : 3"
+      />
+      <input
+        type="range"
+        [min]="precoDom.min"
+        [max]="precoDom.max"
+        [step]="1000"
+        [(ngModel)]="selPreco.max"
+        (input)="onPrecoMaxChange(selPreco.max)"
+      />
+    </div>
+  </div>
+
+  <!-- BOTÃO PARA LIMPAR TODOS OS FILTROS -->
+  <button (click)="onLimparFiltros()">Limpar filtros</button>
+</div>
+
+<!-- GRADE DE CARDS -->
+<div class="lista-cards">
+  <ng-container *ngFor="let a of apartamentos()">
+    <app-card-apartamento [a]="a"></app-card-apartamento>
+  </ng-container>
+</div>

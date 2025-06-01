@@ -36,6 +36,26 @@ export class ApartamentosServico {
         }
       }
 
+      // → FILTRO POR SUÍTES (se houver minSuites ou maxSuites):
+      if (filtro.minSuites != null || filtro.maxSuites != null) {
+        const suitesArray = apt.plantas.map((p) => p.suites);
+        const minSu = Math.min(...suitesArray);
+        const maxSu = Math.max(...suitesArray);
+        if (filtro.minSuites != null && maxSu < filtro.minSuites) return false;
+        if (filtro.maxSuites != null && minSu > filtro.maxSuites) return false;
+      }
+
+      // → FILTRO POR LAVABOS (se houver minLavabos ou maxLavabos):
+      if (filtro.minLavabos != null || filtro.maxLavabos != null) {
+        const lavabosArray = apt.plantas.map((p) => p.lavabos);
+        const minLv = Math.min(...lavabosArray);
+        const maxLv = Math.max(...lavabosArray);
+        if (filtro.minLavabos != null && maxLv < filtro.minLavabos)
+          return false;
+        if (filtro.maxLavabos != null && minLv > filtro.maxLavabos)
+          return false;
+      }
+
       // --- FILTRO POR ÁREA ---
       if (filtro.minArea != null || filtro.maxArea != null) {
         const areas = apt.plantas.map((p) => p.area);
