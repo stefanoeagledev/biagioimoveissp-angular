@@ -39,7 +39,10 @@
       "01_Jaracandá/Lazer/11_Perspectiva artística da Quadra Recreativa com Iluminação.webp",
       "01_Jaracandá/Lazer/12_Perspectiva artística do Salão de Jogos.webp"
     ],
-    "vagas": [2, 1],
+    "vagas": [
+      2,
+      1
+    ],
     "obsvagas": "com depósito",
     "vagasdescr": "determinadas",
     "videoId": "X9bdH8CVDRY",
@@ -171,7 +174,9 @@
     "vendido": "90%",
     "prontoEm": "jul/2026",
     "lancamentoEm": "",
-    "foto_fachada": ["02_Olivier/Fachada/01_Fachada.webp"],
+    "foto_fachada": [
+      "02_Olivier/Fachada/01_Fachada.webp"
+    ],
     "fotos_apartamentos": [
       "02_Olivier/Apartamentos/02_Portaria.webp",
       "02_Olivier/Lazer/01_Piscina Adulto.webp",
@@ -197,7 +202,9 @@
       "02_Olivier/Lazer/14_Playground.webp",
       "02_Olivier/Lazer/15_Brinquedoteca.webp"
     ],
-    "vagas": [3],
+    "vagas": [
+      3
+    ],
     "obsvagas": "com depósito",
     "videoId": "nd9HanRNOps",
     "plantas": [
@@ -330,23 +337,39 @@
       "03_Morumbi Home Resort/Apartamentos/14_Morumbi Home Resort Hall Social Torre Bahamas.webp"
     ],
     "fotos_lazer": [
-      "02_Olivier/Lazer/01_Piscina Adulto.webp",
-      "02_Olivier/Lazer/02_Piscina Com Raia De 25 Metros.webp",
-      "02_Olivier/Lazer/03_Descanso Da Sauna.webp",
-      "02_Olivier/Lazer/04_Sauna.webp",
-      "02_Olivier/Lazer/05_Fitness.webp",
-      "02_Olivier/Lazer/06_Fitness Multiuso.webp",
-      "02_Olivier/Lazer/07_Quadra.webp",
-      "02_Olivier/Lazer/08_Espaço Churrasqueira E Forno De Pizza.webp",
-      "02_Olivier/Lazer/09_Salão De Festas Gourmet.webp",
-      "02_Olivier/Lazer/10_Salão De Festas Gourmet.webp",
-      "02_Olivier/Lazer/11_Salão De Jogos.webp",
-      "02_Olivier/Lazer/12_Coworking.webp",
-      "02_Olivier/Lazer/13_Babyplay.webp",
-      "02_Olivier/Lazer/14_Playground.webp",
-      "02_Olivier/Lazer/15_Brinquedoteca.webp"
+      "03_Morumbi Home Resort/Lazer/01_Morumbi Home Resort Piscina adulto, piscina infantil, solarium e deck molhado.webp",
+      "03_Morumbi Home Resort/Lazer/02_Morumbi Home Resort Piscina Adulto.webp",
+      "03_Morumbi Home Resort/Lazer/03_Morumbi Home Resort Detalhe Piscina.webp",
+      "03_Morumbi Home Resort/Lazer/04_Morumbi Home Resort Piscina Infantil.webp",
+      "03_Morumbi Home Resort/Lazer/05_Morumbi Home Resort Espelho D'agua.webp",
+      "03_Morumbi Home Resort/Lazer/06_Morumbi Home Resort Piscina Coberta Com Raia De 25m.webp",
+      "03_Morumbi Home Resort/Lazer/07_Morumbi Home Resort Fitness Center.webp",
+      "03_Morumbi Home Resort/Lazer/08_Morumbi Home Resort Fitness Externo.webp",
+      "03_Morumbi Home Resort/Lazer/09_Morumbi Home Resort Sauna.webp",
+      "03_Morumbi Home Resort/Lazer/10_Morumbi Home Resort Sala De Massagem.webp",
+      "03_Morumbi Home Resort/Lazer/11_Morumbi Home Resort Descanso Da Sauna.webp",
+      "03_Morumbi Home Resort/Lazer/12_Morumbi Home Resort Coworking.webp",
+      "03_Morumbi Home Resort/Lazer/13_Morumbi Home Resort Sala De Estudos.webp",
+      "03_Morumbi Home Resort/Lazer/14_Morumbi Home Resort Espaço Família com churrasqueira e forno de pizza.webp",
+      "03_Morumbi Home Resort/Lazer/15_Morumbi Home Resort Detalhe do Espaço Família.webp",
+      "03_Morumbi Home Resort/Lazer/16_Morumbi Home Resort terraço do espaço família.webp",
+      "03_Morumbi Home Resort/Lazer/17_Morumbi Home Resort Salão De Festas.webp",
+      "03_Morumbi Home Resort/Lazer/18_Morumbi Home Resort Espaço Gourmet.webp",
+      "03_Morumbi Home Resort/Lazer/19_Morumbi Home Resort Churrasqueira Da Quadra.webp",
+      "03_Morumbi Home Resort/Lazer/20_Morumbi Home Resort Quadra Recreativa.webp",
+      "03_Morumbi Home Resort/Lazer/21_Morumbi Home Resort Detalhe Quadra Recreativa.webp",
+      "03_Morumbi Home Resort/Lazer/22_Morumbi Home Resort Brinquedoteca.webp",
+      "03_Morumbi Home Resort/Lazer/23_Morumbi Home Resort Ecoplay.webp",
+      "03_Morumbi Home Resort/Lazer/24_Morumbi Home Resort Playground.webp",
+      "03_Morumbi Home Resort/Lazer/25_Morumbi Home Resort Babyplay.webp",
+      "03_Morumbi Home Resort/Lazer/26_Morumbi Home Resort Salão De Jogos.webp",
+      "03_Morumbi Home Resort/Lazer/27_Morumbi Home Resort Pet Place.webp",
+      "03_Morumbi Home Resort/Lazer/28_Morumbi Home Resort Herbário.webp"
     ],
-    "vagas": [1, 2],
+    "vagas": [
+      1,
+      2
+    ],
     "obsvagas": "com depósito e vaga extra",
     "videoId": "wWz93rz5r5E",
     "plantas": [
@@ -386,7 +409,7 @@
         "suites": 1,
         "banheiros": 2,
         "lavabos": 1,
-        "foto": "Plantas/p3_Planta tipo Apto 83m² – 3 Dormitórios (1 Suíte).webp"
+        "foto": "03_Morumbi Home Resort/Plantas/p3_Planta tipo Apto 83m² – 3 Dormitórios (1 Suíte).webp"
       },
       {
         "area": 104,
@@ -395,7 +418,7 @@
         "suites": 2,
         "banheiros": 3,
         "lavabos": 1,
-        "foto": "Plantas/p4_Planta Apto 104m² – Opção 2 Suítes (suíte Master Com Closet Ampliado e Banheiros Sr. E Sra) + living ampliado e cozinha fechada.webp"
+        "foto": "03_Morumbi Home Resort/Plantas/p4_Planta Apto 104m² – Opção 2 Suítes (suíte Master Com Closet Ampliado e Banheiros Sr. E Sra) + living ampliado e cozinha fechada.webp"
       },
       {
         "area": 104,
@@ -404,7 +427,7 @@
         "suites": 2,
         "banheiros": 2,
         "lavabos": 1,
-        "foto": "Plantas/p5_Planta Apto 104m² – Opção 2 Suítes (suíte Master Com Closet E Banheiro Ampliados), cozinha integrada e living Ampliado.webp"
+        "foto": "03_Morumbi Home Resort/Plantas/p5_Planta Apto 104m² – Opção 2 Suítes (suíte Master Com Closet E Banheiro Ampliados), cozinha integrada e living Ampliado.webp"
       },
       {
         "area": 104,
@@ -413,7 +436,7 @@
         "suites": 2,
         "banheiros": 2,
         "lavabos": 1,
-        "foto": "Plantas/p6_Planta Apto 104m² - Opção 2 Suítes, Living Ampliado, cozinha integrada e Home Office.webp"
+        "foto": "03_Morumbi Home Resort/Plantas/p6_Planta Apto 104m² - Opção 2 Suítes, Living Ampliado, cozinha integrada e Home Office.webp"
       },
       {
         "area": 104,
@@ -422,7 +445,7 @@
         "suites": 3,
         "banheiros": 3,
         "lavabos": 1,
-        "foto": "Plantas/p7_Planta tipo Apto 104m² - 3 Suítes e cozinha fechada.webp"
+        "foto": "03_Morumbi Home Resort/Plantas/p7_Planta tipo Apto 104m² - 3 Suítes e cozinha fechada.webp"
       }
     ],
     "amenidades": [
