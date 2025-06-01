@@ -11,24 +11,24 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
     <div class="card card-apartamento">
       <img
         class="card-img-top"
-        [src]="'/assets/' + a.fotos[0]"
-        alt="Foto do {{ a.nome }}"
+        [src]="'/assets/' + a.logo"
+        alt="Logo do {{ a.nome }}"
       />
       <div class="card-body">
         <h2 class="card-title">{{ a.nome }}</h2>
         <p class="card-local">{{ a.bairro }}, {{ a.cidade }}</p>
 
         <div class="card-detalhes-icons">
-          <!-- Ícone de metragem + área -->
-          <span class="icon texto-det">
-            <span class="material-icons">square_foot</span>
-            {{ areaFormatada() }}
-          </span>
-
           <!-- Ícone de quartos -->
           <span class="icon texto-det">
             <span class="material-icons">king_bed</span>
             {{ quartosFormatados() }}
+          </span>
+
+          <!-- Ícone de metragem -->
+          <span class="icon texto-det">
+            <span class="material-icons">square_foot</span>
+            {{ areaFormatada() }}
           </span>
 
           <!-- Ícone de banheiros -->
@@ -58,19 +58,19 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
 export class CardApartamentoComponent {
   @Input() a!: Apartamento;
 
-  areaFormatada(): string {
-    const lista = this.a.plantas.map((p: Planta) => `${p.area} m²`);
+  quartosFormatados(): string {
+    const lista = this.a.plantas.map((p) => p.quartos.toString());
     return this.formatarLista(lista, 'e');
   }
 
-  quartosFormatados(): string {
-    const lista = this.a.plantas.map((p: Planta) => p.quartos.toString());
+  areaFormatada(): string {
+    const lista = this.a.plantas.map((p) => `${p.area} m²`);
     return this.formatarLista(lista, 'e');
   }
 
   banheirosFormatados(): string {
-    const lista = this.a.plantas.map((p: Planta) => p.banheiros.toString());
-    return this.formatarLista(lista, 'e');
+    const lista = this.a.plantas.map((p) => p.banheiros.toString());
+    return this.formatarLista(lista, 'ou');
   }
 
   vagasFormatadas(): string {
