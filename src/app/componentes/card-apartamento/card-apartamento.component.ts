@@ -92,7 +92,7 @@ export class CardApartamentoComponent {
   /** retorna algo como "56 e 74 m²" (sem duplicatas) */
   areaFormatada(): string {
     const arr = this.a.plantas.map((p: Planta) => `${p.area} m²`);
-    return this.formatarLista(arr, 'e');
+    return this.formatarLista(arr, 'ou');
   }
 
   // —— QUARTOS ——
@@ -107,7 +107,7 @@ export class CardApartamentoComponent {
   }
   quartosFormatados(): string {
     const arr = this.quartosUnicos().map((n) => n.toString());
-    return this.formatarLista(arr, 'e');
+    return this.formatarLista(arr, 'ou');
   }
 
   // —— SUÍTES ——
