@@ -1,3 +1,5 @@
+// src/app/componentes/card-apartamento/card-apartamento.component.ts
+
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -40,12 +42,16 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
             </span>
           </div>
 
-          <!-- BANHEIROS -->
+          <!-- BANHEIROS (+ LAVABOS ENTRE PARÊNTESES) -->
           <div *ngIf="banheirosFormatados()" class="detalhe-item">
             <span class="material-icons detalhe-icone">bathtub</span>
             <span class="detalhe-texto">
               {{ banheirosFormatados() }}
               {{ pluralize(banheirosUnicos(), 'banheiro', 'banheiros') }}
+              <ng-container *ngIf="lavabosFormatados()">
+                ({{ lavabosFormatados() }}
+                {{ pluralize(lavabosUnicos(), 'lavabo', 'lavabos') }})
+              </ng-container>
             </span>
           </div>
 
@@ -65,13 +71,13 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
           <!-- LAZER (se existir) -->
           <div *ngIf="a.lazer" class="detalhe-item">
             <span class="material-icons detalhe-icone">pool</span>
-            <span class="detalhe-texto">lazer {{ a.lazer }}</span>
+            <span class="detalhe-texto">{{ a.lazer }}</span>
           </div>
 
           <!-- VARANDA (se existir) -->
           <div *ngIf="a.varanda" class="detalhe-item">
             <span class="material-icons detalhe-icone">outdoor_grill</span>
-            <span class="detalhe-texto">varanda {{ a.varanda }}</span>
+            <span class="detalhe-texto">{{ a.varanda }}</span>
           </div>
         </div>
 
@@ -109,6 +115,7 @@ export class CardApartamentoComponent {
     const arr = this.quartosUnicos().map((n) => n.toString());
     return this.formatarLista(arr, 'ou');
   }
+  // ... dentro de CardApartamentoComponent ...
 
   // —— SUÍTES ——
   private _suitesUnicas: string[] | null = null;
@@ -121,7 +128,13 @@ export class CardApartamentoComponent {
     return this._suitesUnicas.map((s) => Number(s));
   }
   suitesFormatadas(): string {
-    const arr = this.suitesUnicas().map((n) => n.toString());
+    const únicos = this.suitesUnicas();
+    // Se o único valor for 0, não exibe
+    if (únicos.length === 1 && únicos[0] === 0) {
+      return '';
+    }
+    // Caso contrário, formata normalmente
+    const arr = únicos.map((n) => n.toString());
     return this.formatarLista(arr, 'ou');
   }
 
@@ -137,6 +150,27 @@ export class CardApartamentoComponent {
   }
   banheirosFormatados(): string {
     const arr = this.banheirosUnicos().map((n) => n.toString());
+    return this.formatarLista(arr, 'ou');
+  }
+
+  // —— LAVABOS ——
+  private _lavabosUnicos: string[] | null = null;
+  lavabosUnicos(): number[] {
+    if (!this._lavabosUnicos) {
+      this._lavabosUnicos = Array.from(
+        new Set(this.a.plantas.map((p) => p.lavabos.toString()))
+      );
+    }
+    return this._lavabosUnicos.map((s) => Number(s));
+  }
+  lavabosFormatados(): string {
+    const únicos = this.lavabosUnicos();
+    // Se o único valor for 0, não exibe
+    if (únicos.length === 1 && únicos[0] === 0) {
+      return '';
+    }
+    // Caso contrário, formata normalmente
+    const arr = únicos.map((n) => n.toString());
     return this.formatarLista(arr, 'ou');
   }
 
@@ -170,8 +204,8 @@ export class CardApartamentoComponent {
   }
 
   /**
-   * Retorna singular ou plural (“quarto(s)”, “suíte(s)”), de
-   * acordo com o maior valor no array.
+   * Retorna singular ou plural (“quarto(s)”, “suíte(s)”, “lavabo(s)”),
+   * de acordo com o maior valor no array.
    * Se apenas [1], usa singular; caso contrário, plural.
    */
   pluralize(arr: number[], singular: string, plural: string): string {
