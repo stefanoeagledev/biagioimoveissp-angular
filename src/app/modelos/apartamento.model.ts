@@ -2,6 +2,7 @@ export interface Planta {
   area: number;
   preco: number;
   quartos: number;
+  suites: number;
   banheiros: number;
   lavabos: number;
   precoapartirde: string;

@@ -11,7 +11,7 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
     <div class="card card-apartamento">
       <img
         class="card-img-top"
-        [src]="'/assets/' + a.nome + '/' + a.foto_fachada[0]"
+        [src]="'/assets/' + a.foto_fachada[0]"
         alt="Fachada do {{ a.nome }}"
       />
 
