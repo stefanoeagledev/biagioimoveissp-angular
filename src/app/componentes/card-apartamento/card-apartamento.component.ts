@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { Apartamento, Planta } from '../../modelos/apartamento.model';
@@ -7,6 +7,7 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
   selector: 'app-card-apartamento',
   standalone: true,
   imports: [CommonModule, RouterModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="card card-apartamento">
       <img
@@ -19,26 +20,59 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
         <h2 class="card-title">{{ a.nome }}</h2>
         <p class="card-local">{{ a.bairro }}, {{ a.cidade }}</p>
 
-        <div class="card-detalhes-icons">
-          <span class="icon texto-det">
-            <span class="material-icons">king_bed</span>
-            {{ quartosFormatados() }}
-          </span>
+        <div class="detalhes-lista">
+          <!-- ÁREA -->
+          <div *ngIf="areaFormatada()" class="detalhe-item">
+            <span class="material-icons detalhe-icone">square_foot</span>
+            <span class="detalhe-texto">{{ areaFormatada() }}</span>
+          </div>
 
-          <span class="icon texto-det">
-            <span class="material-icons">square_foot</span>
-            {{ areaFormatada() }}
-          </span>
+          <!-- QUARTOS (+ SUÍTES ENTRE PARÊNTESES) -->
+          <div *ngIf="quartosFormatados()" class="detalhe-item">
+            <span class="material-icons detalhe-icone">king_bed</span>
+            <span class="detalhe-texto">
+              {{ quartosFormatados() }}
+              {{ pluralize(quartosUnicos(), 'quarto', 'quartos') }}
+              <ng-container *ngIf="suitesFormatadas()">
+                ({{ suitesFormatadas() }}
+                {{ pluralize(suitesUnicas(), 'suíte', 'suítes') }})
+              </ng-container>
+            </span>
+          </div>
 
-          <span class="icon texto-det">
-            <span class="material-icons">bathtub</span>
-            {{ banheirosFormatados() }}
-          </span>
+          <!-- BANHEIROS -->
+          <div *ngIf="banheirosFormatados()" class="detalhe-item">
+            <span class="material-icons detalhe-icone">bathtub</span>
+            <span class="detalhe-texto">
+              {{ banheirosFormatados() }}
+              {{ pluralize(banheirosUnicos(), 'banheiro', 'banheiros') }}
+            </span>
+          </div>
 
-          <span class="icon texto-det">
-            <span class="material-icons">garage</span>
-            {{ vagasFormatadas() }}
-          </span>
+          <!-- VAGAS -->
+          <div *ngIf="vagasFormatadas()" class="detalhe-item">
+            <span class="material-icons detalhe-icone">garage</span>
+            <span class="detalhe-texto">
+              {{ vagasFormatadas() }}
+              {{ pluralize(vagasUnicas(), 'vaga', 'vagas') }}
+              <ng-container *ngIf="a.vagasdescr">
+                {{ a.vagasdescr }}</ng-container
+              >
+              <ng-container *ngIf="a.obsvagas"> {{ a.obsvagas }}</ng-container>
+            </span>
+          </div>
+
+          <!-- LAZER (se existir) -->
+          <div *ngIf="a.lazer" class="detalhe-item">
+            <span class="material-icons detalhe-icone">pool</span>
+            <span class="detalhe-texto">lazer {{ a.lazer }}</span>
+          </div>
+
+          <!-- VARANDA (se existir) -->
+          <div *ngIf="a.varanda" class="detalhe-item">
+            <span class="material-icons detalhe-icone">outdoor_grill</span>
+            <span class="detalhe-texto">varanda {{ a.varanda }}</span>
+          </div>
         </div>
 
         <a
@@ -55,34 +89,95 @@ import { Apartamento, Planta } from '../../modelos/apartamento.model';
 export class CardApartamentoComponent {
   @Input() a!: Apartamento;
 
-  quartosFormatados(): string {
-    const lista = this.a.plantas.map((p) => p.quartos.toString());
-    return this.formatarLista(lista, 'e');
-  }
-
+  /** retorna algo como "56 e 74 m²" (sem duplicatas) */
   areaFormatada(): string {
-    const lista = this.a.plantas.map((p) => `${p.area} m²`);
-    return this.formatarLista(lista, 'e');
+    const arr = this.a.plantas.map((p: Planta) => `${p.area} m²`);
+    return this.formatarLista(arr, 'e');
   }
 
+  // —— QUARTOS ——
+  private _quartosUnicos: string[] | null = null;
+  quartosUnicos(): number[] {
+    if (!this._quartosUnicos) {
+      this._quartosUnicos = Array.from(
+        new Set(this.a.plantas.map((p) => p.quartos.toString()))
+      );
+    }
+    return this._quartosUnicos.map((s) => Number(s));
+  }
+  quartosFormatados(): string {
+    const arr = this.quartosUnicos().map((n) => n.toString());
+    return this.formatarLista(arr, 'e');
+  }
+
+  // —— SUÍTES ——
+  private _suitesUnicas: string[] | null = null;
+  suitesUnicas(): number[] {
+    if (!this._suitesUnicas) {
+      this._suitesUnicas = Array.from(
+        new Set(this.a.plantas.map((p) => p.suites.toString()))
+      );
+    }
+    return this._suitesUnicas.map((s) => Number(s));
+  }
+  suitesFormatadas(): string {
+    const arr = this.suitesUnicas().map((n) => n.toString());
+    return this.formatarLista(arr, 'ou');
+  }
+
+  // —— BANHEIROS ——
+  private _banheirosUnicos: string[] | null = null;
+  banheirosUnicos(): number[] {
+    if (!this._banheirosUnicos) {
+      this._banheirosUnicos = Array.from(
+        new Set(this.a.plantas.map((p) => p.banheiros.toString()))
+      );
+    }
+    return this._banheirosUnicos.map((s) => Number(s));
+  }
   banheirosFormatados(): string {
-    const lista = this.a.plantas.map((p) => p.banheiros.toString());
-    return this.formatarLista(lista, 'ou');
+    const arr = this.banheirosUnicos().map((n) => n.toString());
+    return this.formatarLista(arr, 'ou');
   }
 
+  // —— VAGAS ——
+  private _vagasUnicas: string[] | null = null;
+  vagasUnicas(): number[] {
+    if (!this._vagasUnicas) {
+      this._vagasUnicas = Array.from(
+        new Set(this.a.vagas.map((v) => v.toString()))
+      );
+    }
+    return this._vagasUnicas.map((s) => Number(s));
+  }
   vagasFormatadas(): string {
-    const únicos = Array.from(new Set(this.a.vagas.map((v) => v.toString())));
-    return this.formatarLista(únicos, 'ou');
+    const arr = this.vagasUnicas().map((n) => n.toString());
+    return this.formatarLista(arr, 'ou');
   }
 
-  formatarLista(items: string[], conj: 'e' | 'ou'): string {
+  /**
+   * Formata lista de strings (sem repetição) unindo com vírgula,
+   * e usando `conj` (“e” ou “ou”) antes do último elemento.
+   */
+  private formatarLista(items: string[], conj: 'e' | 'ou'): string {
     const únicos = Array.from(new Set(items));
     if (únicos.length === 0) return '';
     if (únicos.length === 1) return únicos[0];
     if (únicos.length === 2) return `${únicos[0]} ${conj} ${únicos[1]}`;
-
     const todosMenosUltimo = únicos.slice(0, -1).join(', ');
     const último = únicos[únicos.length - 1];
     return `${todosMenosUltimo} ${conj} ${último}`;
+  }
+
+  /**
+   * Retorna singular ou plural (“quarto(s)”, “suíte(s)”), de
+   * acordo com o maior valor no array.
+   * Se apenas [1], usa singular; caso contrário, plural.
+   */
+  pluralize(arr: number[], singular: string, plural: string): string {
+    if (arr.length === 1 && arr[0] === 1) {
+      return singular;
+    }
+    return plural;
   }
 }
