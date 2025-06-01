@@ -1,5 +1,10 @@
-// src/app/servicos/apartamentos.servico.ts
-import { Injectable, computed, signal, WritableSignal } from '@angular/core';
+import {
+  Injectable,
+  computed,
+  signal,
+  WritableSignal,
+  Signal,
+} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Apartamento } from '../modelos/apartamento.model';
 import { FiltroApartamentos } from './filtro-apartamentos.model';
@@ -22,7 +27,7 @@ export class ApartamentosServico {
    * Computed que produz a lista de apartamentos de acordo
    * com o critério de filtro atual
    */
-  apartamentosFiltrados = computed(() => {
+  public readonly apartamentosFiltrados = computed(() => {
     const lista = this._todosApartamentos();
     const filtro = this._criterioFiltro();
 
@@ -138,7 +143,7 @@ export class ApartamentosServico {
   }
 
   /** Expõe o computed para consumo nos componentes */
-  obterApartamentosFiltradosSignal() {
+  obterApartamentosFiltradosSignal(): Signal<Apartamento[]> {
     return this.apartamentosFiltrados;
   }
 
@@ -161,11 +166,11 @@ export class ApartamentosServico {
     this._criterioFiltro.set({});
   }
 
-  obterTodosApartamentosSignal() {
-    return this._todosApartamentos;
+  obterTodosApartamentosSignal(): Signal<Apartamento[]> {
+    return this._todosApartamentos.asReadonly();
   }
 
-  buscarPorIdSignal(id: number) {
+  buscarPorIdSignal(id: number): Signal<Apartamento | undefined> {
     return computed(() => this._todosApartamentos().find((a) => a.id === id));
   }
 }

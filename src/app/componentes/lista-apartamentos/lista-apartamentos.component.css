@@ -1,3 +1,5 @@
+/* src/app/componentes/lista-apartamentos/lista-apartamentos.component.css */
+
 .caixa-filtros {
   display: flex;
   flex-wrap: wrap;
@@ -17,18 +19,12 @@
   cursor: pointer;
 }
 
-.lista-cards {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-/* ====================================== */
-/* FILTRO RANGE DUAS “thumbs” SOBREPOSTAS */
-/* ====================================== */
+/* ============================================= */
+/* FILTRO RANGE DUAS “thumbs” SOBREPOSTAS (CSS)   */
+/* ============================================= */
 
 .filtro-range {
-  flex: 1 1 250px; /* ocupa espaço proporcional */
+  flex: 1 1 250px; /* mínimo de 250px, mas flexível */
   display: flex;
   flex-direction: column;
 }
@@ -41,21 +37,26 @@
 
 .range-container {
   position: relative;
-  height: 32px; /* altura do track */
+  height: 32px; /* controla a altura total do track */
 }
 
-/* Estilo para cada <input type="range"> */
 .range-container input[type="range"] {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 32px;
-  background: transparent; /* track transparente, usaremos um pseudo-elemento para background */
+  background: transparent;
   -webkit-appearance: none;
+  pointer-events: none; /* torna “mínimo” imóvel ao clicar no track */
 }
 
-/* Estilização do “pole” (track) – aplicado ao segundo input (base) */
+/* Apenas o 2º <input> (max) capta o clique do usuário */
+.range-container input[type="range"]:nth-child(2) {
+  pointer-events: auto;
+}
+
+/* Track (pole) padrão */
 .range-container input[type="range"]::-webkit-slider-runnable-track {
   height: 8px;
   background: #ddd;
@@ -67,7 +68,7 @@
   border-radius: 4px;
 }
 
-/* Estilização do “thumb” (o ponto que arrasta) */
+/* Thumb (círculo) */
 .range-container input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 16px;
@@ -75,7 +76,7 @@
   border-radius: 50%;
   background: #007bff;
   cursor: pointer;
-  margin-top: -4px; /* centralizar thumb verticalmente no track */
+  margin-top: -4px; /* centraliza verticalmente no track */
 }
 .range-container input[type="range"]::-moz-range-thumb {
   width: 16px;
@@ -85,27 +86,24 @@
   cursor: pointer;
 }
 
-/* ================================================== */
-/* EXIBIR O TRECHO SELECIONADO ENTRE AS DUAS THUMBS */
-/* usando um pseudo-elemento no primeiro range (min) */
-/* ================================================== */
-.range-container input[type="range"] {
-  pointer-events: none; /* evitar conflito na área do track */
-}
-
-/* Apenas o segundo range (o que controla max) recebe pointer-events */
-.range-container input[type="range"]:nth-child(2) {
-  pointer-events: auto;
-}
-
-/* O pseudo-elemento ::before do primeiro range desenha a faixa azul entre min e max */
+/* Pseudo-elemento que desenha a faixa azul entre thumbs */
 .range-container input[type="range"]::before {
   content: "";
   position: absolute;
   height: 8px;
   background: #007bff;
   border-radius: 4px;
-  top: 12px; /* alinhado verticalmente ao track de 8px (32px container) */
-  left: 0;
-  width: 0; /* será atualizado dinamicamente em JS/CSS inline */
+  top: 12px; /* centraliza verticalmente */
+  left: var(--thumb-min, 0%);
+  width: calc(var(--thumb-max, 0%) - var(--thumb-min, 0%));
+}
+
+/* ========================= */
+/* GRADE DE CARDS FLUIDA     */
+/* ========================= */
+
+.lista-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
