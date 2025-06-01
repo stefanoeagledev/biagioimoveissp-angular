@@ -9,8 +9,12 @@ import {
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Apartamento, Planta } from '../../modelos/apartamento.model';
-import { ApartamentosServico } from '../../servicos/apartamentos.servico';
+import {
+  ApartamentosServico,
+  Amenidade,
+} from '../../servicos/apartamentos.servico';
 import { CardApartamentoComponent } from '../card-apartamento/card-apartamento.component';
+import { FiltroApartamentos } from '../../servicos/filtro-apartamentos.model';
 
 interface FaixaNum {
   min: number;
@@ -27,10 +31,19 @@ interface FaixaNum {
 export class ListaApartamentosComponent {
   private serv = inject(ApartamentosServico);
 
-  /** Signal que aponta para a lista filtrada de apartamentos */
+  /** Lista filtrada conforme critérios atuais */
   apartamentos: Signal<Apartamento[]> = this.serv.apartamentosFiltrados;
 
-  // ─── DOMÍNIOS (serão preenchidos dinamicamente) ───────────────────
+  /** Critérios de filtro atualmente aplicados */
+  filtroAtual: Signal<FiltroApartamentos> = this.serv.obterFiltroSignal();
+
+  /** Lista de bairros disponíveis (para autocomplete) */
+  bairrosDisponiveis: Signal<string[]> = this.serv.bairrosDisponiveis;
+
+  /** Lista de amenidades disponíveis (iconKey + nome) */
+  amenidadesDisponiveis: Signal<Amenidade[]> = this.serv.amenidadesDisponiveis;
+
+  // ——— Domínios numéricos (mín e máx) ———
   areaDom: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
   quartosDom: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
   suitesDom: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
@@ -39,7 +52,7 @@ export class ListaApartamentosComponent {
   vagasDom: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
   precoDom: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
 
-  // ─── VALORES SELECIONADOS (inicializados quando o domínio aparecer) ───
+  // ——— Faixas selecionadas pelos sliders ———
   selArea: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
   selQuartos: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
   selSuites: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
@@ -49,84 +62,86 @@ export class ListaApartamentosComponent {
   selPreco: WritableSignal<FaixaNum> = signal({ min: 0, max: 0 });
 
   constructor() {
-    // Registrar o effect no construtor para “pegar” o JSON assim que chegar
+    // Recalcula domínios sempre que a lista completa de apartamentos mudar
     effect(() => {
       const todos: Apartamento[] = this.serv.obterTodosApartamentosSignal()();
+
       if (todos.length === 0) {
-        // Se JSON ainda não chegou, apenas retorne
         return;
       }
 
-      // Função auxiliar para extrair faixa {min, max} de um array de números
       const faixaDe = (arr: number[]): FaixaNum => ({
         min: Math.min(...arr),
         max: Math.max(...arr),
       });
 
-      // 1) DOMÍNIO DE ÁREA
-      const todasAreas: number[] = todos.flatMap((a: Apartamento) =>
-        a.plantas.map((p: Planta) => p.area)
+      // 1) áreas
+      const todasAreas: number[] = todos.flatMap((a) =>
+        a.plantas.map((p) => p.area)
       );
-      const faixaArea = faixaDe(todasAreas);
-      this.areaDom.set(faixaArea);
-      this.selArea.set({ ...faixaArea });
+      const fArea = faixaDe(todasAreas);
+      this.areaDom.set(fArea);
+      this.selArea.set({ ...fArea });
 
-      // 2) DOMÍNIO DE QUARTOS
-      const todosQuartos: number[] = todos.flatMap((a: Apartamento) =>
-        a.plantas.map((p: Planta) => p.quartos)
+      // 2) quartos
+      const todosQuartos: number[] = todos.flatMap((a) =>
+        a.plantas.map((p) => p.quartos)
       );
-      const faixaQuartos = faixaDe(todosQuartos);
-      this.quartosDom.set(faixaQuartos);
-      this.selQuartos.set({ ...faixaQuartos });
+      const fQuartos = faixaDe(todosQuartos);
+      this.quartosDom.set(fQuartos);
+      this.selQuartos.set({ ...fQuartos });
 
-      // 3) DOMÍNIO DE SUÍTES
-      const todasSuites: number[] = todos.flatMap((a: Apartamento) =>
-        a.plantas.map((p: Planta) => p.suites)
+      // 3) suítes
+      const todasSuites: number[] = todos.flatMap((a) =>
+        a.plantas.map((p) => p.suites)
       );
-      const faixaSuites = faixaDe(todasSuites);
-      this.suitesDom.set(faixaSuites);
-      this.selSuites.set({ ...faixaSuites });
+      const fSuites = faixaDe(todasSuites);
+      this.suitesDom.set(fSuites);
+      this.selSuites.set({ ...fSuites });
 
-      // 4) DOMÍNIO DE BANHEIROS
-      const todosBanheiros: number[] = todos.flatMap((a: Apartamento) =>
-        a.plantas.map((p: Planta) => p.banheiros)
+      // 4) banheiros
+      const todosBanheiros: number[] = todos.flatMap((a) =>
+        a.plantas.map((p) => p.banheiros)
       );
-      const faixaBanheiros = faixaDe(todosBanheiros);
-      this.banheirosDom.set(faixaBanheiros);
-      this.selBanheiros.set({ ...faixaBanheiros });
+      const fBanheiros = faixaDe(todosBanheiros);
+      this.banheirosDom.set(fBanheiros);
+      this.selBanheiros.set({ ...fBanheiros });
 
-      // 5) DOMÍNIO DE LAVABOS
-      const todosLavabos: number[] = todos.flatMap((a: Apartamento) =>
-        a.plantas.map((p: Planta) => p.lavabos)
+      // 5) lavabos
+      const todosLavabos: number[] = todos.flatMap((a) =>
+        a.plantas.map((p) => p.lavabos)
       );
-      const faixaLavabos = faixaDe(todosLavabos);
-      this.lavabosDom.set(faixaLavabos);
-      this.selLavabos.set({ ...faixaLavabos });
+      const fLavabos = faixaDe(todosLavabos);
+      this.lavabosDom.set(fLavabos);
+      this.selLavabos.set({ ...fLavabos });
 
-      // 6) DOMÍNIO DE VAGAS
-      const todasVagas: number[] = todos.flatMap((a: Apartamento) =>
-        a.vagas.map((v: number) => v)
-      );
-      const faixaVagas = faixaDe(todasVagas);
-      this.vagasDom.set(faixaVagas);
-      this.selVagas.set({ ...faixaVagas });
+      // 6) vagas
+      const todasVagas: number[] = todos.flatMap((a) => a.vagas.map((v) => v));
+      const fVagas = faixaDe(todasVagas);
+      this.vagasDom.set(fVagas);
+      this.selVagas.set({ ...fVagas });
 
-      // 7) DOMÍNIO DE PREÇOS
-      const todosPrecos: number[] = todos.flatMap((a: Apartamento) =>
-        a.plantas.map((p: Planta) => p.preco)
+      // 7) preços
+      const todosPrecos: number[] = todos.flatMap((a) =>
+        a.plantas.map((p) => p.preco)
       );
-      const faixaPrecos = faixaDe(todosPrecos);
-      this.precoDom.set(faixaPrecos);
-      this.selPreco.set({ ...faixaPrecos });
+      const fPrecos = faixaDe(todosPrecos);
+      this.precoDom.set(fPrecos);
+      this.selPreco.set({ ...fPrecos });
     });
   }
 
-  // ——— Métodos chamados pelo template ———
+  // ——— Métodos usados na template ———
 
   onBairroChange(texto: string) {
     this.serv.atualizarCampoFiltro('bairro', texto || undefined);
   }
 
+  onSortChange(valor: string) {
+    this.serv.atualizarCampoFiltro('sortOrder', valor || undefined);
+  }
+
+  // Área
   onAreaMinChange(valor: number) {
     this.selArea.update((v) => ({ min: valor, max: v.max }));
     this.serv.atualizarCampoFiltro('minArea', valor);
@@ -136,6 +151,7 @@ export class ListaApartamentosComponent {
     this.serv.atualizarCampoFiltro('maxArea', valor);
   }
 
+  // Quartos
   onQuartosMinChange(valor: number) {
     this.selQuartos.update((v) => ({ min: valor, max: v.max }));
     this.serv.atualizarCampoFiltro('minQuartos', valor);
@@ -145,6 +161,7 @@ export class ListaApartamentosComponent {
     this.serv.atualizarCampoFiltro('maxQuartos', valor);
   }
 
+  // Suítes
   onSuitesMinChange(valor: number) {
     this.selSuites.update((v) => ({ min: valor, max: v.max }));
     this.serv.atualizarCampoFiltro('minSuites', valor);
@@ -154,6 +171,7 @@ export class ListaApartamentosComponent {
     this.serv.atualizarCampoFiltro('maxSuites', valor);
   }
 
+  // Banheiros
   onBanheirosMinChange(valor: number) {
     this.selBanheiros.update((v) => ({ min: valor, max: v.max }));
     this.serv.atualizarCampoFiltro('minBanheiros', valor);
@@ -163,6 +181,7 @@ export class ListaApartamentosComponent {
     this.serv.atualizarCampoFiltro('maxBanheiros', valor);
   }
 
+  // Lavabos
   onLavabosMinChange(valor: number) {
     this.selLavabos.update((v) => ({ min: valor, max: v.max }));
     this.serv.atualizarCampoFiltro('minLavabos', valor);
@@ -172,6 +191,7 @@ export class ListaApartamentosComponent {
     this.serv.atualizarCampoFiltro('maxLavabos', valor);
   }
 
+  // Vagas
   onVagasMinChange(valor: number) {
     this.selVagas.update((v) => ({ min: valor, max: v.max }));
     this.serv.atualizarCampoFiltro('minVagas', valor);
@@ -181,6 +201,7 @@ export class ListaApartamentosComponent {
     this.serv.atualizarCampoFiltro('maxVagas', valor);
   }
 
+  // Preço
   onPrecoMinChange(valor: number) {
     this.selPreco.update((v) => ({ min: valor, max: v.max }));
     this.serv.atualizarCampoFiltro('minPreco', valor);
@@ -190,6 +211,20 @@ export class ListaApartamentosComponent {
     this.serv.atualizarCampoFiltro('maxPreco', valor);
   }
 
+  // Amenidade (checkbox)
+  onAmenidadeToggle(iconKey: string, checked: boolean) {
+    const atual = this.filtroAtual().amenidades || [];
+    let novo: string[];
+
+    if (checked) {
+      novo = [...atual, iconKey];
+    } else {
+      novo = atual.filter((k) => k !== iconKey);
+    }
+    this.serv.atualizarCampoFiltro('amenidades', novo);
+  }
+
+  // Limpar tudo
   onLimparFiltros() {
     this.serv.limparFiltros();
     this.selArea.set({ ...this.areaDom() });
@@ -199,5 +234,40 @@ export class ListaApartamentosComponent {
     this.selLavabos.set({ ...this.lavabosDom() });
     this.selVagas.set({ ...this.vagasDom() });
     this.selPreco.set({ ...this.precoDom() });
+  }
+
+  // Remover apenas um campo de filtro (para os chips)
+  removeFiltro(campo: keyof FiltroApartamentos) {
+    this.serv.atualizarCampoFiltro(campo, undefined);
+  }
+
+  /**
+   * Retorna o nome da amenidade a partir do iconKey.
+   * Se não encontrar, retorna o próprio iconKey.
+   */
+  getAmenidadeNome(iconKey: string): string {
+    const achou = this.amenidadesDisponiveis().find(
+      (x) => x.iconKey === iconKey
+    );
+    return achou ? achou.nome : iconKey;
+  }
+
+  /**
+   * Converte o valor de `sortOrder` (string) em rótulo legível.
+   * Se for `undefined` ou não bater em nenhuma chave, devolve empty string.
+   */
+  getSortLabel(sortOrder?: string): string {
+    const mapa: Record<string, string> = {
+      'preco-asc': 'Preço (menor → maior)',
+      'preco-desc': 'Preço (maior → menor)',
+      'area-asc': 'Área (menor → maior)',
+      'area-desc': 'Área (maior → menor)',
+      'quartos-asc': 'Quartos (menor → maior)',
+      'quartos-desc': 'Quartos (maior → menor)',
+    };
+    if (!sortOrder) {
+      return '';
+    }
+    return mapa[sortOrder] || sortOrder;
   }
 }

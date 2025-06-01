@@ -1,3 +1,5 @@
+// src/app/servicos/filtro-apartamentos.model.ts
+
 export interface FiltroApartamentos {
   bairro?: string;
   minArea?: number;
@@ -14,4 +16,21 @@ export interface FiltroApartamentos {
   maxVagas?: number;
   minPreco?: number;
   maxPreco?: number;
+
+  /**
+   * Lista de iconKeys de amenidades selecionadas.
+   * Se vazia ou undefined, ignora esse filtro.
+   */
+  amenidades?: string[];
+
+  /**
+   * Critério de ordenação. Valores possíveis:
+   * - 'preco-asc'
+   * - 'preco-desc'
+   * - 'area-asc'
+   * - 'area-desc'
+   * - 'quartos-asc'
+   * - 'quartos-desc'
+   */
+  sortOrder?: string;
 }
