@@ -37,10 +37,11 @@
 
 .range-container {
   position: relative;
-  height: 32px; /* controla a altura total do track */
+  height: 32px; /* controla altura total do track */
 }
 
 .range-container input[type="range"] {
+  /* NÃO precisa de `pointer-events: none` aqui */
   position: absolute;
   top: 0;
   left: 0;
@@ -48,15 +49,9 @@
   height: 32px;
   background: transparent;
   -webkit-appearance: none;
-  pointer-events: none; /* torna “mínimo” imóvel ao clicar no track */
 }
 
-/* Apenas o 2º <input> (max) capta o clique do usuário */
-.range-container input[type="range"]:nth-child(2) {
-  pointer-events: auto;
-}
-
-/* Track (pole) padrão */
+/* Track padrão */
 .range-container input[type="range"]::-webkit-slider-runnable-track {
   height: 8px;
   background: #ddd;
@@ -76,7 +71,7 @@
   border-radius: 50%;
   background: #007bff;
   cursor: pointer;
-  margin-top: -4px; /* centraliza verticalmente no track */
+  margin-top: -4px; /* centraliza no track */
 }
 .range-container input[type="range"]::-moz-range-thumb {
   width: 16px;
@@ -86,7 +81,7 @@
   cursor: pointer;
 }
 
-/* Pseudo-elemento que desenha a faixa azul entre thumbs */
+/* Pseudo-elemento que desenha faixa azul entre os dois thumbs */
 .range-container input[type="range"]::before {
   content: "";
   position: absolute;
@@ -98,10 +93,7 @@
   width: calc(var(--thumb-max, 0%) - var(--thumb-min, 0%));
 }
 
-/* ========================= */
-/* GRADE DE CARDS FLUIDA     */
-/* ========================= */
-
+/* Grade de cards fluída */
 .lista-cards {
   display: grid;
   gap: 1rem;

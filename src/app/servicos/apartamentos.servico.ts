@@ -166,10 +166,15 @@ export class ApartamentosServico {
     this._criterioFiltro.set({});
   }
 
+  /** Retorna o sinal com todos os apartamentos brutos */
   obterTodosApartamentosSignal(): Signal<Apartamento[]> {
     return this._todosApartamentos.asReadonly();
   }
 
+  /**
+   * Computed que devolve o apartamento cujo id bate com o passado.
+   * Usa _todosApartamentos internamente. Se não achar, retorna undefined.
+   */
   buscarPorIdSignal(id: number): Signal<Apartamento | undefined> {
     return computed(() => this._todosApartamentos().find((a) => a.id === id));
   }
