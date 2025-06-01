@@ -1,3 +1,5 @@
+<!-- src/app/componentes/lista-apartamentos/lista-apartamentos.component.html -->
+
 <div class="caixa-filtros">
   <!-- FILTRO POR BAIRRO -->
   <input
@@ -24,7 +26,7 @@
               (areaDom().max - areaDom().min) +
             '%'
         }"
-        [style.zIndex]="selArea().min > selArea().max - 1 ? 2 : 3"
+        [style.zIndex]="2"
       />
       <!-- Thumb Máximo -->
       <input
@@ -40,6 +42,7 @@
               (areaDom().max - areaDom().min) +
             '%'
         }"
+        [style.zIndex]="1"
       />
     </div>
   </div>
@@ -61,7 +64,7 @@
               (quartosDom().max - quartosDom().min) +
             '%'
         }"
-        [style.zIndex]="selQuartos().min > selQuartos().max - 1 ? 2 : 3"
+        [style.zIndex]="2"
       />
       <input
         type="range"
@@ -76,6 +79,7 @@
               (quartosDom().max - quartosDom().min) +
             '%'
         }"
+        [style.zIndex]="1"
       />
     </div>
   </div>
@@ -97,7 +101,7 @@
               (suitesDom().max - suitesDom().min) +
             '%'
         }"
-        [style.zIndex]="selSuites().min > selSuites().max - 1 ? 2 : 3"
+        [style.zIndex]="2"
       />
       <input
         type="range"
@@ -112,6 +116,7 @@
               (suitesDom().max - suitesDom().min) +
             '%'
         }"
+        [style.zIndex]="1"
       />
     </div>
   </div>
@@ -135,7 +140,7 @@
               (banheirosDom().max - banheirosDom().min) +
             '%'
         }"
-        [style.zIndex]="selBanheiros().min > selBanheiros().max - 1 ? 2 : 3"
+        [style.zIndex]="2"
       />
       <input
         type="range"
@@ -150,6 +155,7 @@
               (banheirosDom().max - banheirosDom().min) +
             '%'
         }"
+        [style.zIndex]="1"
       />
     </div>
   </div>
@@ -171,7 +177,7 @@
               (lavabosDom().max - lavabosDom().min) +
             '%'
         }"
-        [style.zIndex]="selLavabos().min > selLavabos().max - 1 ? 2 : 3"
+        [style.zIndex]="2"
       />
       <input
         type="range"
@@ -186,6 +192,7 @@
               (lavabosDom().max - lavabosDom().min) +
             '%'
         }"
+        [style.zIndex]="1"
       />
     </div>
   </div>
@@ -207,7 +214,7 @@
               (vagasDom().max - vagasDom().min) +
             '%'
         }"
-        [style.zIndex]="selVagas().min > selVagas().max - 1 ? 2 : 3"
+        [style.zIndex]="2"
       />
       <input
         type="range"
@@ -222,6 +229,7 @@
               (vagasDom().max - vagasDom().min) +
             '%'
         }"
+        [style.zIndex]="1"
       />
     </div>
   </div>
@@ -243,7 +251,7 @@
               (precoDom().max - precoDom().min) +
             '%'
         }"
-        [style.zIndex]="selPreco().min > selPreco().max - 1000 ? 2 : 3"
+        [style.zIndex]="2"
       />
       <input
         type="range"
@@ -258,6 +266,7 @@
               (precoDom().max - precoDom().min) +
             '%'
         }"
+        [style.zIndex]="1"
       />
     </div>
   </div>

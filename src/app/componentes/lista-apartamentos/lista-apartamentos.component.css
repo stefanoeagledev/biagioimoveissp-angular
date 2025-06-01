@@ -39,8 +39,7 @@
   position: relative;
   height: 32px; /* controla a altura total do track */
 }
-
-/* Ambos os inputs (mínimo e máximo) devem aceitar clique e drag */
+/* Os dois <input type="range"> precisam aceitar clique e arraste */
 .range-container input[type="range"] {
   position: absolute;
   top: 0;
@@ -49,6 +48,7 @@
   height: 32px;
   background: transparent;
   -webkit-appearance: none;
+  /* NÃO defina pointer-events: none! Assim, ambos podem ser arrastados livremente */
 }
 
 /* Track cinza */
