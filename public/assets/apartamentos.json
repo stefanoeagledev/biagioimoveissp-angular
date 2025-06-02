@@ -322,6 +322,7 @@
     ],
     "fotos_apartamentos": [
       "03_Morumbi Home Resort/Apartamentos/01_Morumbi Home Resort Living Ampliado com cozinha integrada e home office do apto De 104m².webp",
+      "03_Morumbi Home Resort/Lazer/01_Morumbi Home Resort Piscina adulto, piscina infantil, solarium e deck molhado.webp",
       "03_Morumbi Home Resort/Apartamentos/02_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 104m².webp",
       "03_Morumbi Home Resort/Apartamentos/03_Morumbi Home Resort Suite do Apto De 104m².webp",
       "03_Morumbi Home Resort/Apartamentos/04_Morumbi Home Resort Living Ampliado do Apto De 83m².webp",
@@ -592,6 +593,182 @@
       {
         "nome": "Ecoplay",
         "iconKey": "eco"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "construtora": "Marques Construtora",
+    "nome": "Ohana",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Panamby",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "gourmet com churrasqueira a carvão",
+    "endereco": "Rua Fabio Lopes Dos Santos Luz, 120",
+    "vendido": "90%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "foto_fachada": [
+      "04_Ohana/Fachada/01_Perspectiva Artística da Fachada.webp"
+    ],
+    "fotos_apartamentos": [
+      "04_Ohana/Apartamentos/01_Perspectiva Artística da Portaria.webp",
+      "04_Ohana/Lazer/01_Perspectiva Artística da Piscina Adulto.webp",
+      "04_Ohana/Apartamentos/02_Perspectiva Artística do Hall Social.webp",
+      "04_Ohana/Apartamentos/03_Perspectiva artística do terraço gourmet.webp",
+      "04_Ohana/Apartamentos/05_perspectiva artística do living - opção de planta 1.webp",
+      "04_Ohana/Apartamentos/06_Perspectiva Artística do home theater - opção de planta 1.webp",
+      "04_Ohana/Apartamentos/07_Perspectiva Artística da suíte master.webp",
+      "04_Ohana/Apartamentos/08_Perspectiva Artística da suíte master ampliada - opção de planta 2.webp",
+      "04_Ohana/Apartamentos/09_Foto aérea da rua com montagem 3d do Ohana Morumbi.webp",
+      "04_Ohana/Apartamentos/10_foto da rua com montagem 3D da entrada do Ohana Morumbi.webp"
+    ],
+    "fotos_lazer": [
+      "04_Ohana/Lazer/01_Perspectiva Artística da Piscina Adulto.webp",
+      "04_Ohana/Lazer/02_perspectiva artística da piscina coberta com raia de 20 metros.webp",
+      "04_Ohana/Lazer/03_Perspectiva Artística da Quadra Recreativa.webp",
+      "04_Ohana/Lazer/04_Perspectiva Artística do Espaço Churrasqueira e Forno de Pizza.webp",
+      "04_Ohana/Lazer/05_Perspectiva Artística do Coworking.webp",
+      "04_Ohana/Lazer/06_Perspectiva Artística do Salão de Festas Gourmet.webp",
+      "04_Ohana/Lazer/07_perspectiva artística da praça Ohana.webp",
+      "04_Ohana/Lazer/08_Perspectiva Artística do Salão de Jogos.webp",
+      "04_Ohana/Lazer/09_Perspectiva artística do Baby Play.webp",
+      "04_Ohana/Lazer/10_Perspectiva Artística do Playground.webp",
+      "04_Ohana/Lazer/11_Perspectiva Artística da Brinquedoteca.webp",
+      "04_Ohana/Lazer/12_Perspectiva Artística do Fitness.webp",
+      "04_Ohana/Lazer/13_Perspectiva Artística do descanso da Sauna.webp",
+      "04_Ohana/Lazer/14_Perspectiva artística da sauna.webp",
+      "04_Ohana/Lazer/15_perspectiva artística do terraço social.webp"
+    ],
+    "vagas": [
+      2
+    ],
+    "obsvagas": "com depósito",
+    "videoId": "-XKzonBAZy4",
+    "plantas": [
+      {
+        "area": 94,
+        "preco": 1051400,
+        "quartos": 3,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "04_Ohana/Plantas/p0_3 dorms (1 suíte) - 94m².webp"
+      },
+      {
+        "area": 94,
+        "preco": 1051400,
+        "quartos": 2,
+        "suites": 2,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "04_Ohana/Plantas/p1_2 dorms (2 suítes) - opção home theater - 94m².webp"
+      },
+      {
+        "area": 94,
+        "preco": 1051400,
+        "quartos": 2,
+        "suites": 2,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "04_Ohana/Plantas/p2_2 dorms (2 suítes) - opção suíte master ampliada - 94m².webp"
+      }
+    ],
+    "amenidades": [
+      {
+        "nome": "Portaria",
+        "iconKey": "security"
+      },
+      {
+        "nome": "Acesso de veículos com clausura",
+        "iconKey": "garage"
+      },
+      {
+        "nome": "Salão de festas gourmet",
+        "iconKey": "celebration"
+      },
+      {
+        "nome": "Brinquedoteca",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Zeladoria",
+        "iconKey": "support_agent"
+      },
+      {
+        "nome": "Piscina infantil",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Quadra recreativa",
+        "iconKey": "sports_basketball"
+      },
+      {
+        "nome": "Fitness",
+        "iconKey": "fitness_center"
+      },
+      {
+        "nome": "Entrada social de pedestres com clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Hall social",
+        "iconKey": "meeting_room"
+      },
+      {
+        "nome": "Praça Ohana",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Baby play",
+        "iconKey": "child_care"
+      },
+      {
+        "nome": "Piscina coberta com raia com 20 m",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Solarium",
+        "iconKey": "wb_sunny"
+      },
+      {
+        "nome": "Espaço churrasqueira e forno de pizza gourmet",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Depósito para encomendas",
+        "iconKey": "inventory_2"
+      },
+      {
+        "nome": "Entrada de serviço de pedestres com clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Coworking",
+        "iconKey": "workspaces"
+      },
+      {
+        "nome": "Playground",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Sauna com descanso",
+        "iconKey": "hot_tub"
+      },
+      {
+        "nome": "Piscina adulto",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Deck molhado",
+        "iconKey": "deck"
+      },
+      {
+        "nome": "Salão de jogos",
+        "iconKey": "sports_esports"
       }
     ]
   }
