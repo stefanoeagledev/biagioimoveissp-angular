@@ -13,8 +13,11 @@
   "vendido": "90%",
   "prontoEm": "jul/2026",
   "lancamentoEm": "",
-  "foto_fachada": ["02_Olivier/Fachada/01_Fachada.webp"],
+  "foto_fachada": [
+    "02_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp"
+  ],
   "fotos_apartamentos": [
+    "02_Olivier/Fachada/01_Fachada.webp",
     "02_Olivier/Apartamentos/02_Portaria.webp",
     "02_Olivier/Lazer/01_Piscina Adulto.webp",
     "02_Olivier/Apartamentos/03_Hall Social",

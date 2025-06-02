@@ -13,10 +13,12 @@
   "vendido": "90%",
   "prontoEm": "",
   "lancamentoEm": "",
-  "foto_fachada": ["04_Ohana/Fachada/01_Perspectiva Artística da Fachada.webp"],
+  "foto_fachada": [
+    "04_Ohana/Lazer/01_Perspectiva Artística da Piscina Adulto.webp"
+  ],
   "fotos_apartamentos": [
+    "04_Ohana/Fachada/01_Perspectiva Artística da Fachada.webp",
     "04_Ohana/Apartamentos/01_Perspectiva Artística da Portaria.webp",
-    "04_Ohana/Lazer/01_Perspectiva Artística da Piscina Adulto.webp",
     "04_Ohana/Apartamentos/02_Perspectiva Artística do Hall Social.webp",
     "04_Ohana/Apartamentos/03_Perspectiva artística do terraço gourmet.webp",
     "04_Ohana/Apartamentos/05_perspectiva artística do living - opção de planta 1.webp",

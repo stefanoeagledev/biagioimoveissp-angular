@@ -15,15 +15,15 @@
     "prontoEm": "",
     "lancamentoEm": "",
     "foto_fachada": [
-      "01_Jaracandá/Fachada/01_Perspectiva artística da Fachada.webp"
+      "01_Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp"
     ],
     "fotos_apartamentos": [
-      "01_Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
+      "01_Jaracandá/Fachada/01_Perspectiva artística da Fachada.webp",
       "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
+      "01_Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
       "01_Jaracandá/Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
       "01_Jaracandá/Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
-      "01_Jaracandá/Apartamentos/02_Perspectiva artística da entrada.webp",
-      "01_Jaracandá/Apartamentos/01_Perspectiva artística da Fachada.webp"
+      "01_Jaracandá/Apartamentos/02_Perspectiva artística da entrada.webp"
     ],
     "fotos_lazer": [
       "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
@@ -175,9 +175,10 @@
     "prontoEm": "jul/2026",
     "lancamentoEm": "",
     "foto_fachada": [
-      "02_Olivier/Fachada/01_Fachada.webp"
+      "02_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp"
     ],
     "fotos_apartamentos": [
+      "02_Olivier/Fachada/01_Fachada.webp",
       "02_Olivier/Apartamentos/02_Portaria.webp",
       "02_Olivier/Lazer/01_Piscina Adulto.webp",
       "02_Olivier/Apartamentos/03_Hall Social",
@@ -318,9 +319,10 @@
     "prontoEm": "dez/2025",
     "lancamentoEm": "",
     "foto_fachada": [
-      "03_Morumbi Home Resort/Fachada/01_Morumbi Home Resort Torres Aruba e Bahamas vistas da Nelson Gama de Oliveira.webp"
+      "03_Morumbi Home Resort/Lazer/01_Morumbi Home Resort Piscina adulto, piscina infantil, solarium e deck molhado.webp"
     ],
     "fotos_apartamentos": [
+      "03_Morumbi Home Resort/Fachada/01_Morumbi Home Resort Torres Aruba e Bahamas vistas da Nelson Gama de Oliveira.webp",
       "03_Morumbi Home Resort/Apartamentos/01_Morumbi Home Resort Living Ampliado com cozinha integrada e home office do apto De 104m².webp",
       "03_Morumbi Home Resort/Lazer/01_Morumbi Home Resort Piscina adulto, piscina infantil, solarium e deck molhado.webp",
       "03_Morumbi Home Resort/Apartamentos/02_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 104m².webp",
@@ -612,11 +614,11 @@
     "prontoEm": "",
     "lancamentoEm": "",
     "foto_fachada": [
-      "04_Ohana/Fachada/01_Perspectiva Artística da Fachada.webp"
+      "04_Ohana/Lazer/01_Perspectiva Artística da Piscina Adulto.webp"
     ],
     "fotos_apartamentos": [
+      "04_Ohana/Fachada/01_Perspectiva Artística da Fachada.webp",
       "04_Ohana/Apartamentos/01_Perspectiva Artística da Portaria.webp",
-      "04_Ohana/Lazer/01_Perspectiva Artística da Piscina Adulto.webp",
       "04_Ohana/Apartamentos/02_Perspectiva Artística do Hall Social.webp",
       "04_Ohana/Apartamentos/03_Perspectiva artística do terraço gourmet.webp",
       "04_Ohana/Apartamentos/05_perspectiva artística do living - opção de planta 1.webp",
@@ -769,6 +771,173 @@
       {
         "nome": "Salão de jogos",
         "iconKey": "sports_esports"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "construtora": "Marques Construtora",
+    "nome": "Arboris",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com ponto grill",
+    "endereco": "Rua Celso Ramos, 188",
+    "vendido": "75%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "foto_fachada": [
+      "05_Arboris/Lazer/01_Perspectiva artística da piscina adulto com raia.webp"
+    ],
+    "fotos_apartamentos": [
+      "05_Arboris/Fachada/01_Perspectiva artística da Fachada.webp",
+      "05_Arboris/Apartamentos/01_Perspectiva artística da entrada.webp",
+      "05_Arboris/Lazer/01_Perspectiva artística da piscina adulto com raia.webp",
+      "05_Arboris/Apartamentos/02_Perspectiva artística da varanda grill - Apto. 69 m².webp",
+      "05_Arboris/Apartamentos/03_Perspectiva artística do living ampliado - Apto 69m².webp",
+      "05_Arboris/Apartamentos/04_Perspectiva artística do living - Apto 47m².webp",
+      "05_Arboris/Apartamentos/05_Perspectiva artística do hall social.webp"
+    ],
+    "fotos_lazer": [
+      "05_Arboris/Lazer/01_Perspectiva artística da piscina adulto com raia.webp",
+      "05_Arboris/Lazer/02_Perspectiva artística do Fitness.webp",
+      "05_Arboris/Lazer/03_Perspectiva artística do Espaço Churrasqueira e Forno de Pizza.webp",
+      "05_Arboris/Lazer/04_Perspectiva artística do Salão de Festas Gourmet.webp",
+      "05_Arboris/Lazer/05_Perspectiva artística da Brinquedoteca.webp",
+      "05_Arboris/Lazer/06_Perspectiva artística do Baby Play.webp",
+      "05_Arboris/Lazer/07_Perspectiva artística da Sauna com Descanso.webp",
+      "05_Arboris/Lazer/08_Perspectiva artística do Playground.webp",
+      "05_Arboris/Lazer/09_Perspectiva artística do Coworking.webp",
+      "05_Arboris/Lazer/10_Perspectiva artística da Quadra Recreativa.webp",
+      "05_Arboris/Lazer/11_Perspectiva artística do salão de jogos.webp"
+    ],
+    "vagas": [
+      1,
+      2
+    ],
+    "obsvagas": "com depósito",
+    "videoId": "cldrEnbab3U",
+    "plantas": [
+      {
+        "area": 47,
+        "preco": 427700,
+        "quartos": 2,
+        "suites": 0,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "05_Arboris/Plantas/p0_2 dorms - 47m².webp"
+      },
+      {
+        "area": 47,
+        "preco": 427700,
+        "quartos": 1,
+        "suites": 0,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "05_Arboris/Plantas/p1_2 Dorms – 47m² opção living ampliado.webp"
+      },
+      {
+        "area": 69,
+        "preco": 612600,
+        "quartos": 3,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "05_Arboris/Plantas/p2_3 dorms (1 suíte) - 69m².webp"
+      },
+      {
+        "area": 69,
+        "preco": 612600,
+        "quartos": 2,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "05_Arboris/Plantas/p3_3 dorms (1 suíte) – 69m² opção living ampliado.webp"
+      }
+    ],
+    "amenidades": [
+      {
+        "nome": "Piscina adulto com raia",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Quadra recreativa",
+        "iconKey": "sports_basketball"
+      },
+      {
+        "nome": "Espaço Churrasqueira e forno de pizza",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Brinquedoteca",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Fitness externo",
+        "iconKey": "sports_motorsports"
+      },
+      {
+        "nome": "Portaria",
+        "iconKey": "security"
+      },
+      {
+        "nome": "Entrada de veículos com clausura",
+        "iconKey": "garage"
+      },
+      {
+        "nome": "Piscina infantil",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Baby play",
+        "iconKey": "child_care"
+      },
+      {
+        "nome": "Hall social",
+        "iconKey": "meeting_room"
+      },
+      {
+        "nome": "Sauna com descanso",
+        "iconKey": "hot_tub"
+      },
+      {
+        "nome": "Salão de Jogos",
+        "iconKey": "sports_esports"
+      },
+      {
+        "nome": "Entrada de Serviço de Pedestres com Clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Zeladoria",
+        "iconKey": "support_agent"
+      },
+      {
+        "nome": "Solarium",
+        "iconKey": "wb_sunny"
+      },
+      {
+        "nome": "Playground",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Salão de festas gourmet",
+        "iconKey": "celebration"
+      },
+      {
+        "nome": "Fitness",
+        "iconKey": "fitness_center"
+      },
+      {
+        "nome": "Coworking",
+        "iconKey": "workspaces"
+      },
+      {
+        "nome": "Entrada Social de pedestres com clausura",
+        "iconKey": "login"
       }
     ]
   }
