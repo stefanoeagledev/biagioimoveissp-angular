@@ -1,45 +1,5 @@
 [
   {
-    "id": 5,
-    "construtora": "Marques Construtora",
-    "nome": "Magna",
-    "logo": "logo.webp",
-    "status": "Pronto para Morar",
-    "bairro": "Morumbi",
-    "cidade": "São Paulo",
-    "estado": "SP",
-    "lazer": "completo",
-    "varanda": "gourmet com churrasqueira a carvão",
-    "endereco": "Rua José de Oliveira Coelho, 451",
-    "vendido": "85%",
-    "prontoEm": "",
-    "lancamentoEm": "",
-    "fotos": [
-      "1.webp",
-      "2.webp",
-      "3.webp",
-      "4.webp",
-      "5.webp",
-      "6.webp",
-      "7.webp",
-      "magna.webp"
-    ],
-    "vagas": [2, 3],
-    "obsvagas": "com depósito e vaga extra",
-    "videoId": "RjC6hA1wIJ8",
-    "plantas": [
-      {
-        "area": 133,
-        "preco": 1378900,
-        "quartos": 4,
-        "banheiros": 4,
-        "lavabos": 1,
-        "foto": "p1.webp",
-        "precoapartirde": "R$ 1.378.900"
-      }
-    ]
-  },
-  {
     "id": 6,
     "construtora": "Marques Construtora",
     "nome": "Gracia",

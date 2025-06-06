@@ -1,0 +1,71 @@
+{
+  "id": 6,
+  "construtora": "Marques Construtora",
+  "nome": "Magna",
+  "logo": "logo.webp",
+  "status": "Pronto para Morar",
+  "bairro": "Morumbi",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "lazer": "completo",
+  "varanda": "gourmet com churrasqueira a carvão",
+  "endereco": "Rua José de Oliveira Coelho, 451",
+  "vendido": "85%",
+  "prontoEm": "",
+  "lancamentoEm": "",
+  "foto_fachada": [
+    "06_Magna/Apartamentos/01_Perspectiva Artística da Piscina Adulto com Raia de 25 metros.webp"
+  ],
+  "fotos_apartamentos": [
+    "06_Magna/Fachada/01_Perspectiva Artística da Fachada.webp",
+    "06_Magna/Apartamentos/02_Perspectiva artística do living ampliado com cozinha integrada ampliada.webp",
+    "06_Magna/Apartamentos/03_Perspectiva Artística do Living Ampliado com Cozinha integrada Ampliada.webp",
+    "06_Magna/Apartamentos/04_Perspectiva Artística do Terraço Gourmet.webp",
+    "06_Magna/Apartamentos/05_Perspectiva Artística da Suite Master.webp",
+    "06_Magna/Apartamentos/06_Perspectiva Artística da Portaria.webp",
+    "06_Magna/Apartamentos/07_Perspectiva Artística do Hall Social.webp"
+  ],
+  "fotos_lazer": [
+    "06_Magna/Lazer/01_Perspectiva Artística da Piscina Adulto com Raia de 25 metros.webp",
+    "06_Magna/Lazer/02_Perspectiva Artística do Deck Molhado.webp",
+    "06_Magna/Lazer/03_Perspectiva Artística da Quadra Recreativa.webp",
+    "06_Magna/Lazer/04_Perspectiva Artística do Pet Place.webp",
+    "06_Magna/Lazer/05_Perspectiva Artística do Espaço Churrasqueira e Forno de Pizza.webp",
+    "06_Magna/Lazer/06_Perspectiva Artística do Coworking.webp",
+    "06_Magna/Lazer/07_Perspectiva Artística da Sala de Reuniões.webp",
+    "06_Magna/Lazer/08_Perspectiva Artística da Sala de Estudos.webp",
+    "06_Magna/Lazer/09_Perspectiva Artística do Salão de Festas.webp",
+    "06_Magna/Lazer/10_Perspectiva Artística do Espaço Gourmet.webp",
+    "06_Magna/Lazer/11_Perspectiva Artística dos Salões de Festas Integrados.webp",
+    "06_Magna/Lazer/12_Perspectiva Artística do Salão de Jogos.webp",
+    "06_Magna/Lazer/13_Perspectiva artística do Baby Play.webp",
+    "06_Magna/Lazer/14_Perspectiva Artística do Playground.webp",
+    "06_Magna/Lazer/15_Perspectiva Artística do Eco Play.webp",
+    "06_Magna/Lazer/16_Perspectiva Artística da Brinquedoteca.webp",
+    "06_Magna/Lazer/17_Perspectiva Artística do Fitness.webp",
+    "06_Magna/Lazer/18_Perspectiva Artística do descanso da Sauna.webp"
+  ],
+  "vagas": [2, 3],
+  "obsvagas": "com depósito e vaga extra",
+  "videoId": "RjC6hA1wIJ8",
+  "plantas": [
+    {
+      "area": 133,
+      "preco": 1378900,
+      "quartos": 4,
+      "suites": 2,
+      "banheiros": 4,
+      "lavabos": 1,
+      "foto": "06_Magna/Plantas/p0_4 dorms (2 suítes) - 133m².webp"
+    },
+    {
+      "area": 133,
+      "preco": 1378900,
+      "quartos": 3,
+      "suites": 3,
+      "banheiros": 4,
+      "lavabos": 1,
+      "foto": "06_Magna/Plantas/p1_3 suítes + living ampliado - 133m².webp"
+    }
+  ]
+}
