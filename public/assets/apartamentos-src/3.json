@@ -13,13 +13,14 @@
   "vendido": "80%",
   "prontoEm": "dez/2025",
   "lancamentoEm": "",
-  "foto_fachada": [
+  "foto_card": [
     "03_Morumbi Home Resort/Lazer/01_Morumbi Home Resort Piscina adulto, piscina infantil, solarium e deck molhado.webp"
   ],
+  "foto_fachada": [
+    "03_Morumbi Home Resort/Fachada/01_Morumbi Home Resort Torres Aruba e Bahamas vistas da Nelson Gama de Oliveira.webp"
+  ],
   "fotos_apartamentos": [
-    "03_Morumbi Home Resort/Fachada/01_Morumbi Home Resort Torres Aruba e Bahamas vistas da Nelson Gama de Oliveira.webp",
     "03_Morumbi Home Resort/Apartamentos/01_Morumbi Home Resort Living Ampliado com cozinha integrada e home office do apto De 104m².webp",
-    "03_Morumbi Home Resort/Lazer/01_Morumbi Home Resort Piscina adulto, piscina infantil, solarium e deck molhado.webp",
     "03_Morumbi Home Resort/Apartamentos/02_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 104m².webp",
     "03_Morumbi Home Resort/Apartamentos/03_Morumbi Home Resort Suite do Apto De 104m².webp",
     "03_Morumbi Home Resort/Apartamentos/04_Morumbi Home Resort Living Ampliado do Apto De 83m².webp",
@@ -64,6 +65,7 @@
     "03_Morumbi Home Resort/Lazer/27_Morumbi Home Resort Pet Place.webp",
     "03_Morumbi Home Resort/Lazer/28_Morumbi Home Resort Herbário.webp"
   ],
+  "foto_implantacao": ["03_Morumbi Home Resort/Plantas/implantacao.webp"],
   "vagas": [1, 2],
   "obsvagas": "com depósito e vaga extra",
   "videoId": "wWz93rz5r5E",

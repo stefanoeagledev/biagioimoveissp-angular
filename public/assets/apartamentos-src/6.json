@@ -13,11 +13,11 @@
   "vendido": "85%",
   "prontoEm": "",
   "lancamentoEm": "",
-  "foto_fachada": [
+  "foto_card": [
     "06_Magna/Apartamentos/02_Perspectiva artística do living ampliado com cozinha integrada ampliada.webp"
   ],
+  "foto_fachada": ["06_Magna/Fachada/01_Perspectiva Artística da Fachada.webp"],
   "fotos_apartamentos": [
-    "06_Magna/Fachada/01_Perspectiva Artística da Fachada.webp",
     "06_Magna/Apartamentos/02_Perspectiva artística do living ampliado com cozinha integrada ampliada.webp",
     "06_Magna/Apartamentos/03_Perspectiva Artística do Living Ampliado com Cozinha integrada Ampliada.webp",
     "06_Magna/Apartamentos/04_Perspectiva Artística do Terraço Gourmet.webp",
@@ -45,6 +45,7 @@
     "06_Magna/Lazer/17_Perspectiva Artística do Fitness.webp",
     "06_Magna/Lazer/18_Perspectiva Artística do descanso da Sauna.webp"
   ],
+  "foto_implantacao": ["06_Magna/Plantas/implantacao.webp"],
   "vagas": [2, 3],
   "obsvagas": "com depósito e vaga extra",
   "videoId": "RjC6hA1wIJ8",

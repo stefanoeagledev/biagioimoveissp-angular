@@ -31,8 +31,10 @@ export interface Apartamento {
   videoId?: string;
 
   foto_fachada: string[];
+  foto_card: string[];
   fotos_apartamentos: string[];
   fotos_lazer: string[];
+  fotos_implantacao: string[];
 
   plantas: Planta[];
   amenidades?: { nome: string; iconKey: string }[];

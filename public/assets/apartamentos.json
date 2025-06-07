@@ -14,12 +14,13 @@
     "vendido": "",
     "prontoEm": "",
     "lancamentoEm": "",
-    "foto_fachada": [
+    "foto_card": [
       "01_Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp"
     ],
+    "foto_fachada": [
+      "01_Jaracandá/Fachada/01_Perspectiva artística da Fachada.webp"
+    ],
     "fotos_apartamentos": [
-      "01_Jaracandá/Fachada/01_Perspectiva artística da Fachada.webp",
-      "01_Jaracandá/Lazer/01_Perspectiva artística da Piscina Adulto.webp",
       "01_Jaracandá/Apartamentos/01_Perspectiva artística da Varanda com Churrasqueira do apto. de 74 m².webp",
       "01_Jaracandá/Apartamentos/04_Perspectiva artística do Living Ampliado do apto. de 74 m².webp",
       "01_Jaracandá/Apartamentos/05_Perspectiva artística do Living do apto. de 56 m².webp",
@@ -39,7 +40,13 @@
       "01_Jaracandá/Lazer/11_Perspectiva artística da Quadra Recreativa com Iluminação.webp",
       "01_Jaracandá/Lazer/12_Perspectiva artística do Salão de Jogos.webp"
     ],
-    "vagas": [2, 1],
+    "foto_implantacao": [
+      "01_Jaracandá/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      2,
+      1
+    ],
     "obsvagas": "com depósito",
     "vagasdescr": "determinadas",
     "videoId": "X9bdH8CVDRY",
@@ -171,13 +178,14 @@
     "vendido": "90%",
     "prontoEm": "jul/2026",
     "lancamentoEm": "",
-    "foto_fachada": [
+    "foto_card": [
       "02_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp"
     ],
+    "foto_fachada": [
+      "02_Olivier/Fachada/01_Fachada.webp"
+    ],
     "fotos_apartamentos": [
-      "02_Olivier/Fachada/01_Fachada.webp",
       "02_Olivier/Apartamentos/02_Portaria.webp",
-      "02_Olivier/Lazer/01_Piscina Adulto.webp",
       "02_Olivier/Apartamentos/03_Hall Social",
       "02_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp",
       "02_Olivier/Apartamentos/05_Terraço Gourmet.webp",
@@ -200,7 +208,12 @@
       "02_Olivier/Lazer/14_Playground.webp",
       "02_Olivier/Lazer/15_Brinquedoteca.webp"
     ],
-    "vagas": [3],
+    "foto_implantacao": [
+      "02_Olivier/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      3
+    ],
     "obsvagas": "com depósito",
     "videoId": "nd9HanRNOps",
     "plantas": [
@@ -313,13 +326,14 @@
     "vendido": "80%",
     "prontoEm": "dez/2025",
     "lancamentoEm": "",
-    "foto_fachada": [
+    "foto_card": [
       "03_Morumbi Home Resort/Lazer/01_Morumbi Home Resort Piscina adulto, piscina infantil, solarium e deck molhado.webp"
     ],
+    "foto_fachada": [
+      "03_Morumbi Home Resort/Fachada/01_Morumbi Home Resort Torres Aruba e Bahamas vistas da Nelson Gama de Oliveira.webp"
+    ],
     "fotos_apartamentos": [
-      "03_Morumbi Home Resort/Fachada/01_Morumbi Home Resort Torres Aruba e Bahamas vistas da Nelson Gama de Oliveira.webp",
       "03_Morumbi Home Resort/Apartamentos/01_Morumbi Home Resort Living Ampliado com cozinha integrada e home office do apto De 104m².webp",
-      "03_Morumbi Home Resort/Lazer/01_Morumbi Home Resort Piscina adulto, piscina infantil, solarium e deck molhado.webp",
       "03_Morumbi Home Resort/Apartamentos/02_Morumbi Home Resort Varanda Com Churrasqueira do Apto De 104m².webp",
       "03_Morumbi Home Resort/Apartamentos/03_Morumbi Home Resort Suite do Apto De 104m².webp",
       "03_Morumbi Home Resort/Apartamentos/04_Morumbi Home Resort Living Ampliado do Apto De 83m².webp",
@@ -364,7 +378,13 @@
       "03_Morumbi Home Resort/Lazer/27_Morumbi Home Resort Pet Place.webp",
       "03_Morumbi Home Resort/Lazer/28_Morumbi Home Resort Herbário.webp"
     ],
-    "vagas": [1, 2],
+    "foto_implantacao": [
+      "03_Morumbi Home Resort/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      1,
+      2
+    ],
     "obsvagas": "com depósito e vaga extra",
     "videoId": "wWz93rz5r5E",
     "plantas": [
@@ -605,11 +625,13 @@
     "vendido": "90%",
     "prontoEm": "",
     "lancamentoEm": "",
-    "foto_fachada": [
+    "foto_card": [
       "04_Ohana/Lazer/01_Perspectiva Artística da Piscina Adulto.webp"
     ],
+    "foto_fachada": [
+      "04_Ohana/Fachada/01_Perspectiva Artística da Fachada.webp"
+    ],
     "fotos_apartamentos": [
-      "04_Ohana/Fachada/01_Perspectiva Artística da Fachada.webp",
       "04_Ohana/Apartamentos/01_Perspectiva Artística da Portaria.webp",
       "04_Ohana/Apartamentos/02_Perspectiva Artística do Hall Social.webp",
       "04_Ohana/Apartamentos/03_Perspectiva artística do terraço gourmet.webp",
@@ -637,7 +659,12 @@
       "04_Ohana/Lazer/14_Perspectiva artística da sauna.webp",
       "04_Ohana/Lazer/15_perspectiva artística do terraço social.webp"
     ],
-    "vagas": [2],
+    "foto_implantacao": [
+      "04_Ohana/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      2
+    ],
     "obsvagas": "com depósito",
     "videoId": "-XKzonBAZy4",
     "plantas": [
@@ -779,13 +806,14 @@
     "vendido": "75%",
     "prontoEm": "",
     "lancamentoEm": "",
-    "foto_fachada": [
+    "foto_card": [
       "05_Arboris/Lazer/01_Perspectiva artística da piscina adulto com raia.webp"
     ],
+    "foto_fachada": [
+      "05_Arboris/Fachada/01_Perspectiva artística da Fachada.webp"
+    ],
     "fotos_apartamentos": [
-      "05_Arboris/Fachada/01_Perspectiva artística da Fachada.webp",
       "05_Arboris/Apartamentos/01_Perspectiva artística da entrada.webp",
-      "05_Arboris/Lazer/01_Perspectiva artística da piscina adulto com raia.webp",
       "05_Arboris/Apartamentos/02_Perspectiva artística da varanda grill - Apto. 69 m².webp",
       "05_Arboris/Apartamentos/03_Perspectiva artística do living ampliado - Apto 69m².webp",
       "05_Arboris/Apartamentos/04_Perspectiva artística do living - Apto 47m².webp",
@@ -804,7 +832,13 @@
       "05_Arboris/Lazer/10_Perspectiva artística da Quadra Recreativa.webp",
       "05_Arboris/Lazer/11_Perspectiva artística do salão de jogos.webp"
     ],
-    "vagas": [1, 2],
+    "foto_implantacao": [
+      "05_Arboris/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      1,
+      2
+    ],
     "obsvagas": "com depósito",
     "videoId": "cldrEnbab3U",
     "plantas": [
@@ -824,7 +858,7 @@
         "suites": 0,
         "banheiros": 1,
         "lavabos": 0,
-        "foto": "05_Arboris/Plantas/p1_2 Dorms – 47m² opção living ampliado.webp"
+        "foto": "05_Arboris/Plantas/p1_1 Dorms – 47m² opção living ampliado.webp"
       },
       {
         "area": 69,
@@ -842,7 +876,7 @@
         "suites": 1,
         "banheiros": 2,
         "lavabos": 0,
-        "foto": "05_Arboris/Plantas/p3_3 dorms (1 suíte) – 69m² opção living ampliado.webp"
+        "foto": "05_Arboris/Plantas/p3_2 dorms (1 suíte) – 69m² opção living ampliado.webp"
       }
     ],
     "amenidades": [
@@ -943,11 +977,13 @@
     "vendido": "85%",
     "prontoEm": "",
     "lancamentoEm": "",
-    "foto_fachada": [
+    "foto_card": [
       "06_Magna/Apartamentos/02_Perspectiva artística do living ampliado com cozinha integrada ampliada.webp"
     ],
+    "foto_fachada": [
+      "06_Magna/Fachada/01_Perspectiva Artística da Fachada.webp"
+    ],
     "fotos_apartamentos": [
-      "06_Magna/Fachada/01_Perspectiva Artística da Fachada.webp",
       "06_Magna/Apartamentos/02_Perspectiva artística do living ampliado com cozinha integrada ampliada.webp",
       "06_Magna/Apartamentos/03_Perspectiva Artística do Living Ampliado com Cozinha integrada Ampliada.webp",
       "06_Magna/Apartamentos/04_Perspectiva Artística do Terraço Gourmet.webp",
@@ -975,7 +1011,13 @@
       "06_Magna/Lazer/17_Perspectiva Artística do Fitness.webp",
       "06_Magna/Lazer/18_Perspectiva Artística do descanso da Sauna.webp"
     ],
-    "vagas": [2, 3],
+    "foto_implantacao": [
+      "06_Magna/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      2,
+      3
+    ],
     "obsvagas": "com depósito e vaga extra",
     "videoId": "RjC6hA1wIJ8",
     "plantas": [
@@ -1120,11 +1162,13 @@
     "vendido": "95%",
     "prontoEm": "",
     "lancamentoEm": "",
-    "foto_fachada": [
+    "foto_card": [
       "07_Dueto/Lazer/01_Perspectiva artística da piscina adulto com raia de 20m.webp"
     ],
+    "foto_fachada": [
+      "07_Dueto/Fachada/01_Fachada Dueto Morumbi.webp"
+    ],
     "fotos_apartamentos": [
-      "07_Dueto/Fachada/01_Fachada Dueto Morumbi.webp",
       "07_Dueto/Apartamentos/01_Perspectiva artística do living dos Aptos finais 1 e 4 de 45m².webp",
       "07_Dueto/Apartamentos/02_Perspectiva artística da entrada.webp",
       "07_Dueto/Apartamentos/03_Perspectiva artística do hall social.webp",
@@ -1142,7 +1186,12 @@
       "07_Dueto/Lazer/09_Perspectiva artística da brinquedoteca.webp",
       "07_Dueto/Lazer/10_Perspectiva artística do baby play.webp"
     ],
-    "vagas": [1],
+    "foto_implantacao": [
+      "07_Dueto/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      1
+    ],
     "obsvagas": "com depósito",
     "videoId": "di8qBiT2rSc",
     "plantas": [
@@ -1184,56 +1233,424 @@
       }
     ],
     "amenidades": [
-      [
-        {
-          "nome": "Salão de festas gourmet",
-          "iconKey": "celebration"
-        },
-        {
-          "nome": "Solarium",
-          "iconKey": "wb_sunny"
-        },
-        {
-          "nome": "Salão de Jogos",
-          "iconKey": "sports_esports"
-        },
-        {
-          "nome": "Brinquedoteca",
-          "iconKey": "child_friendly"
-        },
-        {
-          "nome": "Piscina adulto",
-          "iconKey": "pool"
-        },
-        {
-          "nome": "Quiosque gourmet com churrasqueira e forno de pizza",
-          "iconKey": "outdoor_grill"
-        },
-        {
-          "nome": "Playground",
-          "iconKey": "park"
-        },
-        {
-          "nome": "Bicicletário",
-          "iconKey": "directions_bike"
-        },
-        {
-          "nome": "Piscina infantil",
-          "iconKey": "pool"
-        },
-        {
-          "nome": "Fitness",
-          "iconKey": "fitness_center"
-        },
-        {
-          "nome": "Baby play",
-          "iconKey": "child_friendly"
-        },
-        {
-          "nome": "Hall social",
-          "iconKey": "meeting_room"
-        }
-      ]
+      {
+        "nome": "Salão de festas gourmet",
+        "iconKey": "celebration"
+      },
+      {
+        "nome": "Solarium",
+        "iconKey": "wb_sunny"
+      },
+      {
+        "nome": "Salão de Jogos",
+        "iconKey": "sports_esports"
+      },
+      {
+        "nome": "Brinquedoteca",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Piscina adulto",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Quiosque gourmet com churrasqueira e forno de pizza",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Playground",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Bicicletário",
+        "iconKey": "directions_bike"
+      },
+      {
+        "nome": "Piscina infantil",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Fitness",
+        "iconKey": "fitness_center"
+      },
+      {
+        "nome": "Baby play",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Hall social",
+        "iconKey": "meeting_room"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "construtora": "Marques Construtora",
+    "nome": "Gracia",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo + piscina coberta aquecida",
+    "varanda": "com churrasqueira a carvão (91m²) / ponto grill (56m²)",
+    "endereco": "Rua Francisco José da Silva, 287",
+    "vendido": "97%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "foto_card": [
+      "08_Gracia/Apartamentos/06_Perspectiva Artística da varanda com churrasqueira do apartamento de 91m².webp"
+    ],
+    "foto_fachada": [
+      "08_Gracia/Fachada/01_Perspectiva artística da Fachada.webp"
+    ],
+    "fotos_apartamentos": [
+      "08_Gracia/Apartamentos/01_Perspectiva artística da Entrada social.webp",
+      "08_Gracia/Apartamentos/02_Perspectiva Artística do Hall Social.webp",
+      "08_Gracia/Apartamentos/03_Perspectiva Artística do living do apartamento de 56m².webp",
+      "08_Gracia/Apartamentos/04_Perspectiva Artística do living ampliado do apto de 91m².webp",
+      "08_Gracia/Apartamentos/05_Perspectiva Artística da suíte do apartamento de 91m².webp",
+      "08_Gracia/Apartamentos/06_Perspectiva Artística da varanda com churrasqueira do apartamento de 91m².webp"
+    ],
+    "fotos_lazer": [
+      "08_Gracia/Lazer/01_Perspectiva Artística da Piscina coberta com raia de 25m.webp",
+      "08_Gracia/Lazer/02_Perspectiva artística da piscina adulto.webp",
+      "08_Gracia/Lazer/03_Perspectiva artística do Fitness.webp",
+      "08_Gracia/Lazer/04_Perspectiva artística da Churrasqueira e forno de pizza gourmet.webp",
+      "08_Gracia/Lazer/05_Perspectiva artística da Quadra Recreativa.webp",
+      "08_Gracia/Lazer/06_Perspectiva artística da Sauna com Descanso.webp",
+      "08_Gracia/Lazer/07_Perspectiva artística do Fitness Externo.webp",
+      "08_Gracia/Lazer/08_Perspectiva artística do Coworking.webp",
+      "08_Gracia/Lazer/09_Perspectiva artística da Brinquedoteca.webp",
+      "08_Gracia/Lazer/10_Perspectiva artística do Baby Play.webp",
+      "08_Gracia/Lazer/11_Perspectiva artística do Playground.webp",
+      "08_Gracia/Lazer/12_Perspectiva artística do Salão De Festas Gourmet.webp"
+    ],
+    "foto_implantacao": [
+      "08_Gracia/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      1,
+      2
+    ],
+    "obsvagas": "com depósito",
+    "vagasdescr": "determinadas",
+    "videoId": "t2LyDF32OGg",
+    "plantas": [
+      {
+        "area": 56,
+        "preco": 578000,
+        "quartos": 2,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "08_Gracia/Plantas/p2_2 dorms (1 suíte) - 56m².webp"
+      },
+      {
+        "area": 56,
+        "preco": 578000,
+        "quartos": 1,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "08_Gracia/Plantas/p3_1 dorms (1 suíte) – 56m² opção living ampliado.webp"
+      },
+      {
+        "area": 91,
+        "preco": 975900,
+        "quartos": 3,
+        "suites": 1,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "08_Gracia/Plantas/p0_3 dorms (1 suíte) - 91m².webp"
+      },
+      {
+        "area": 91,
+        "preco": 975900,
+        "quartos": 2,
+        "suites": 2,
+        "banheiros": 2,
+        "lavabos": 1,
+        "foto": "08_Gracia/Plantas/p1_2 dorms (2 suítes) – 91m² opção living ampliado.webp"
+      }
+    ],
+    "amenidades": [
+      {
+        "nome": "Piscina coberta com raia de 25m",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Solarium",
+        "iconKey": "wb_sunny"
+      },
+      {
+        "nome": "Praça de apoio à churrasqueira da quadra",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Salão de festas gourmet",
+        "iconKey": "celebration"
+      },
+      {
+        "nome": "Baby play",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Fitness externo",
+        "iconKey": "sports_motorsports"
+      },
+      {
+        "nome": "Hall social",
+        "iconKey": "meeting_room"
+      },
+      {
+        "nome": "Entrada social de pedestres com clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Zeladoria",
+        "iconKey": "support_agent"
+      },
+      {
+        "nome": "Piscina adulto",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Quadra recreativa",
+        "iconKey": "sports_basketball"
+      },
+      {
+        "nome": "Churrasqueira e forno de pizza gourmet",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Praça de apoio ao salão de festas gourmet",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Brinquedoteca",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Sauna com descanso",
+        "iconKey": "hot_tub"
+      },
+      {
+        "nome": "Praça da entrada",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Entrada de serviço de pedestres com clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Piscina infantil",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Churrasqueira e forno de pizza da quadra",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Playground",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Fitness",
+        "iconKey": "fitness_center"
+      },
+      {
+        "nome": "Coworking",
+        "iconKey": "workspaces"
+      },
+      {
+        "nome": "Guarita",
+        "iconKey": "door_front"
+      },
+      {
+        "nome": "Entrada de veículos com clausura",
+        "iconKey": "garage"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "construtora": "Marques Construtora",
+    "nome": "Pleno",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com churrasqueira a carvão (75m²) / ponto grill (56m²)",
+    "endereco": "Rua Nicola Rollo, 201",
+    "vendido": "99%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "foto_card": [
+      "09_Pleno/Apartamentos/05_Perspectiva Artística da varanda com churrasqueira do apartamento de 75m².webp"
+    ],
+    "foto_fachada": [
+      "09_Pleno/Fachada/01_Perspectiva artística da Fachada.webp"
+    ],
+    "fotos_apartamentos": [
+      "09_Pleno/Apartamentos/01_Perspectiva artística da Entrada social.webp",
+      "09_Pleno/Apartamentos/02_Perspectiva Artística do Hall Social.webp",
+      "09_Pleno/Apartamentos/03_Perspectiva Artística do living do apartamento de 56m².webp",
+      "09_Pleno/Apartamentos/04_Perspectiva Artística do living ampliado do apto de 75m².webp",
+      "09_Pleno/Apartamentos/05_Perspectiva Artística da varanda com churrasqueira do apartamento de 75m².webp"
+    ],
+    "fotos_lazer": [
+      "09_Pleno/Lazer/01_Perspectiva artística da piscina adulto.webp",
+      "09_Pleno/Lazer/02_Perspectiva artística do Fitness.webp",
+      "09_Pleno/Lazer/03_Perspectiva artística da Churrasqueira e forno de pizza gourmet.webp",
+      "09_Pleno/Lazer/04_Perspectiva artística da Quadra Recreativa.webp",
+      "09_Pleno/Lazer/05_Perspectiva artística da Sauna com Descanso.webp",
+      "09_Pleno/Lazer/06_Perspectiva artística do Fitness Externo.webp",
+      "09_Pleno/Lazer/07_Perspectiva artística do Salão de Festas.webp",
+      "09_Pleno/Lazer/08_Perspectiva artística da Brinquedoteca.webp",
+      "09_Pleno/Lazer/09_Perspectiva artística do Baby Play.webp",
+      "09_Pleno/Lazer/10_Perspectiva artística do Playground.webp",
+      "09_Pleno/Lazer/11_Perspectiva artística do Salão De Festas Gourmet.webp"
+    ],
+    "foto_implantacao": [
+      "09_Pleno/Plantas/implantacao.webp"
+    ],
+    "vagas": [
+      1,
+      2
+    ],
+    "obsvagas": "com depósito",
+    "vagasdescr": "determinadas",
+    "videoId": "ildD34hkmJI",
+    "plantas": [
+      {
+        "area": 56,
+        "preco": 547500,
+        "quartos": 2,
+        "suites": 0,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "09_Pleno/Plantas/p0_2 dorms (1 suíte) - 56m².webp"
+      },
+      {
+        "area": 56,
+        "preco": 547500,
+        "quartos": 1,
+        "suites": 0,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "09_Pleno/Plantas/p1_1 dorms (1 suíte) – 56m² opção living ampliado.webp"
+      },
+      {
+        "area": 75,
+        "preco": 547500,
+        "quartos": 3,
+        "suites": 0,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "09_Pleno/Plantas/p3_2 dorms (1 suíte) – 75m² opção living ampliado.webp"
+      },
+      {
+        "area": 75,
+        "preco": 547500,
+        "quartos": 3,
+        "suites": 0,
+        "banheiros": 2,
+        "lavabos": 0,
+        "foto": "p2.webp"
+      }
+    ],
+    "amenidades": [
+      {
+        "nome": "Praça da entrada",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Praça de apoio ao salão de festas gourmet",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Baby play",
+        "iconKey": "child_care"
+      },
+      {
+        "nome": "Piscina infantil",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Sauna com descanso",
+        "iconKey": "hot_tub"
+      },
+      {
+        "nome": "Churrasqueira da quadra",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Entrada de serviço de pedestres com clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Zeladoria",
+        "iconKey": "support_agent"
+      },
+      {
+        "nome": "Hall social",
+        "iconKey": "meeting_room"
+      },
+      {
+        "nome": "Salão de jogos",
+        "iconKey": "sports_esports"
+      },
+      {
+        "nome": "Playground",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Piscina adulto",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Fitness",
+        "iconKey": "fitness_center"
+      },
+      {
+        "nome": "Quadra recreativa",
+        "iconKey": "sports_basketball"
+      },
+      {
+        "nome": "Entrada social de pedestres com clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Salão de festas gourmet",
+        "iconKey": "celebration"
+      },
+      {
+        "nome": "Brinquedoteca",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Churrasqueira e forno de pizza gourmet",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Solarium",
+        "iconKey": "wb_sunny"
+      },
+      {
+        "nome": "Fitness externo",
+        "iconKey": "sports_motorsports"
+      },
+      {
+        "nome": "Guarita",
+        "iconKey": "door_front"
+      },
+      {
+        "nome": "Entrada de veículos com clausura",
+        "iconKey": "garage"
+      }
     ]
   }
 ]

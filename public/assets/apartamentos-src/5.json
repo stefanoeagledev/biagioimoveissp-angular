@@ -13,13 +13,14 @@
   "vendido": "75%",
   "prontoEm": "",
   "lancamentoEm": "",
-  "foto_fachada": [
+  "foto_card": [
     "05_Arboris/Lazer/01_Perspectiva artística da piscina adulto com raia.webp"
   ],
+  "foto_fachada": [
+    "05_Arboris/Fachada/01_Perspectiva artística da Fachada.webp"
+  ],
   "fotos_apartamentos": [
-    "05_Arboris/Fachada/01_Perspectiva artística da Fachada.webp",
     "05_Arboris/Apartamentos/01_Perspectiva artística da entrada.webp",
-    "05_Arboris/Lazer/01_Perspectiva artística da piscina adulto com raia.webp",
     "05_Arboris/Apartamentos/02_Perspectiva artística da varanda grill - Apto. 69 m².webp",
     "05_Arboris/Apartamentos/03_Perspectiva artística do living ampliado - Apto 69m².webp",
     "05_Arboris/Apartamentos/04_Perspectiva artística do living - Apto 47m².webp",
@@ -38,6 +39,7 @@
     "05_Arboris/Lazer/10_Perspectiva artística da Quadra Recreativa.webp",
     "05_Arboris/Lazer/11_Perspectiva artística do salão de jogos.webp"
   ],
+  "foto_implantacao": ["05_Arboris/Plantas/implantacao.webp"],
   "vagas": [1, 2],
   "obsvagas": "com depósito",
   "videoId": "cldrEnbab3U",
@@ -58,7 +60,7 @@
       "suites": 0,
       "banheiros": 1,
       "lavabos": 0,
-      "foto": "05_Arboris/Plantas/p1_2 Dorms – 47m² opção living ampliado.webp"
+      "foto": "05_Arboris/Plantas/p1_1 Dorms – 47m² opção living ampliado.webp"
     },
     {
       "area": 69,
@@ -76,7 +78,7 @@
       "suites": 1,
       "banheiros": 2,
       "lavabos": 0,
-      "foto": "05_Arboris/Plantas/p3_3 dorms (1 suíte) – 69m² opção living ampliado.webp"
+      "foto": "05_Arboris/Plantas/p3_2 dorms (1 suíte) – 69m² opção living ampliado.webp"
     }
   ],
   "amenidades": [

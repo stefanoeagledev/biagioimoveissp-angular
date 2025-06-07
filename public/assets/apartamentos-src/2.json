@@ -13,13 +13,12 @@
   "vendido": "90%",
   "prontoEm": "jul/2026",
   "lancamentoEm": "",
-  "foto_fachada": [
+  "foto_card": [
     "02_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp"
   ],
+  "foto_fachada": ["02_Olivier/Fachada/01_Fachada.webp"],
   "fotos_apartamentos": [
-    "02_Olivier/Fachada/01_Fachada.webp",
     "02_Olivier/Apartamentos/02_Portaria.webp",
-    "02_Olivier/Lazer/01_Piscina Adulto.webp",
     "02_Olivier/Apartamentos/03_Hall Social",
     "02_Olivier/Apartamentos/04_Living Ampliado com cozinha integrada.webp",
     "02_Olivier/Apartamentos/05_Terraço Gourmet.webp",
@@ -42,6 +41,7 @@
     "02_Olivier/Lazer/14_Playground.webp",
     "02_Olivier/Lazer/15_Brinquedoteca.webp"
   ],
+  "foto_implantacao": ["02_Olivier/Plantas/implantacao.webp"],
   "vagas": [3],
   "obsvagas": "com depósito",
   "videoId": "nd9HanRNOps",

@@ -1,0 +1,124 @@
+{
+  "id": 8,
+  "construtora": "Marques Construtora",
+  "nome": "Gracia",
+  "logo": "logo.webp",
+  "status": "Pronto para Morar",
+  "bairro": "Morumbi",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "lazer": "completo + piscina coberta aquecida",
+  "varanda": "com churrasqueira a carvão (91m²) / ponto grill (56m²)",
+  "endereco": "Rua Francisco José da Silva, 287",
+  "vendido": "97%",
+  "prontoEm": "",
+  "lancamentoEm": "",
+  "foto_card": [
+    "08_Gracia/Apartamentos/06_Perspectiva Artística da varanda com churrasqueira do apartamento de 91m².webp"
+  ],
+  "foto_fachada": [
+    "08_Gracia/Fachada/01_Perspectiva artística da Fachada.webp"
+  ],
+  "fotos_apartamentos": [
+    "08_Gracia/Apartamentos/01_Perspectiva artística da Entrada social.webp",
+    "08_Gracia/Apartamentos/02_Perspectiva Artística do Hall Social.webp",
+    "08_Gracia/Apartamentos/03_Perspectiva Artística do living do apartamento de 56m².webp",
+    "08_Gracia/Apartamentos/04_Perspectiva Artística do living ampliado do apto de 91m².webp",
+    "08_Gracia/Apartamentos/05_Perspectiva Artística da suíte do apartamento de 91m².webp",
+    "08_Gracia/Apartamentos/06_Perspectiva Artística da varanda com churrasqueira do apartamento de 91m².webp"
+  ],
+  "fotos_lazer": [
+    "08_Gracia/Lazer/01_Perspectiva Artística da Piscina coberta com raia de 25m.webp",
+    "08_Gracia/Lazer/02_Perspectiva artística da piscina adulto.webp",
+    "08_Gracia/Lazer/03_Perspectiva artística do Fitness.webp",
+    "08_Gracia/Lazer/04_Perspectiva artística da Churrasqueira e forno de pizza gourmet.webp",
+    "08_Gracia/Lazer/05_Perspectiva artística da Quadra Recreativa.webp",
+    "08_Gracia/Lazer/06_Perspectiva artística da Sauna com Descanso.webp",
+    "08_Gracia/Lazer/07_Perspectiva artística do Fitness Externo.webp",
+    "08_Gracia/Lazer/08_Perspectiva artística do Coworking.webp",
+    "08_Gracia/Lazer/09_Perspectiva artística da Brinquedoteca.webp",
+    "08_Gracia/Lazer/10_Perspectiva artística do Baby Play.webp",
+    "08_Gracia/Lazer/11_Perspectiva artística do Playground.webp",
+    "08_Gracia/Lazer/12_Perspectiva artística do Salão De Festas Gourmet.webp"
+  ],
+  "foto_implantacao": ["08_Gracia/Plantas/implantacao.webp"],
+  "vagas": [1, 2],
+  "obsvagas": "com depósito",
+  "vagasdescr": "determinadas",
+  "videoId": "t2LyDF32OGg",
+  "plantas": [
+    {
+      "area": 56,
+      "preco": 578000,
+      "quartos": 2,
+      "suites": 1,
+      "banheiros": 2,
+      "lavabos": 0,
+      "foto": "08_Gracia/Plantas/p2_2 dorms (1 suíte) - 56m².webp"
+    },
+    {
+      "area": 56,
+      "preco": 578000,
+      "quartos": 1,
+      "suites": 1,
+      "banheiros": 2,
+      "lavabos": 0,
+      "foto": "08_Gracia/Plantas/p3_1 dorms (1 suíte) – 56m² opção living ampliado.webp"
+    },
+    {
+      "area": 91,
+      "preco": 975900,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "lavabos": 1,
+      "foto": "08_Gracia/Plantas/p0_3 dorms (1 suíte) - 91m².webp"
+    },
+    {
+      "area": 91,
+      "preco": 975900,
+      "quartos": 2,
+      "suites": 2,
+      "banheiros": 2,
+      "lavabos": 1,
+      "foto": "08_Gracia/Plantas/p1_2 dorms (2 suítes) – 91m² opção living ampliado.webp"
+    }
+  ],
+  "amenidades": [
+    { "nome": "Piscina coberta com raia de 25m", "iconKey": "pool" },
+    { "nome": "Solarium", "iconKey": "wb_sunny" },
+    { "nome": "Praça de apoio à churrasqueira da quadra", "iconKey": "park" },
+    { "nome": "Salão de festas gourmet", "iconKey": "celebration" },
+    { "nome": "Baby play", "iconKey": "child_friendly" },
+    { "nome": "Fitness externo", "iconKey": "sports_motorsports" },
+    { "nome": "Hall social", "iconKey": "meeting_room" },
+    { "nome": "Entrada social de pedestres com clausura", "iconKey": "login" },
+    { "nome": "Zeladoria", "iconKey": "support_agent" },
+
+    { "nome": "Piscina adulto", "iconKey": "pool" },
+    { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+    {
+      "nome": "Churrasqueira e forno de pizza gourmet",
+      "iconKey": "outdoor_grill"
+    },
+    { "nome": "Praça de apoio ao salão de festas gourmet", "iconKey": "park" },
+    { "nome": "Brinquedoteca", "iconKey": "child_friendly" },
+    { "nome": "Sauna com descanso", "iconKey": "hot_tub" },
+    { "nome": "Praça da entrada", "iconKey": "park" },
+    {
+      "nome": "Entrada de serviço de pedestres com clausura",
+      "iconKey": "login"
+    },
+
+    { "nome": "Piscina infantil", "iconKey": "pool" },
+    {
+      "nome": "Churrasqueira e forno de pizza da quadra",
+      "iconKey": "outdoor_grill"
+    },
+    { "nome": "Playground", "iconKey": "park" },
+    { "nome": "Fitness", "iconKey": "fitness_center" },
+    { "nome": "Coworking", "iconKey": "workspaces" },
+    { "nome": "Guarita", "iconKey": "door_front" },
+    { "nome": "Entrada de veículos com clausura", "iconKey": "garage" }
+  ]
+}

@@ -13,11 +13,11 @@
   "vendido": "95%",
   "prontoEm": "",
   "lancamentoEm": "",
-  "foto_fachada": [
+  "foto_card": [
     "07_Dueto/Lazer/01_Perspectiva artística da piscina adulto com raia de 20m.webp"
   ],
+  "foto_fachada": ["07_Dueto/Fachada/01_Fachada Dueto Morumbi.webp"],
   "fotos_apartamentos": [
-    "07_Dueto/Fachada/01_Fachada Dueto Morumbi.webp",
     "07_Dueto/Apartamentos/01_Perspectiva artística do living dos Aptos finais 1 e 4 de 45m².webp",
     "07_Dueto/Apartamentos/02_Perspectiva artística da entrada.webp",
     "07_Dueto/Apartamentos/03_Perspectiva artística do hall social.webp",
@@ -35,6 +35,7 @@
     "07_Dueto/Lazer/09_Perspectiva artística da brinquedoteca.webp",
     "07_Dueto/Lazer/10_Perspectiva artística do baby play.webp"
   ],
+  "foto_implantacao": ["07_Dueto/Plantas/implantacao.webp"],
   "vagas": [1],
   "obsvagas": "com depósito",
   "videoId": "di8qBiT2rSc",
@@ -77,22 +78,20 @@
     }
   ],
   "amenidades": [
-    [
-      { "nome": "Salão de festas gourmet", "iconKey": "celebration" },
-      { "nome": "Solarium", "iconKey": "wb_sunny" },
-      { "nome": "Salão de Jogos", "iconKey": "sports_esports" },
-      { "nome": "Brinquedoteca", "iconKey": "child_friendly" },
-      { "nome": "Piscina adulto", "iconKey": "pool" },
-      {
-        "nome": "Quiosque gourmet com churrasqueira e forno de pizza",
-        "iconKey": "outdoor_grill"
-      },
-      { "nome": "Playground", "iconKey": "park" },
-      { "nome": "Bicicletário", "iconKey": "directions_bike" },
-      { "nome": "Piscina infantil", "iconKey": "pool" },
-      { "nome": "Fitness", "iconKey": "fitness_center" },
-      { "nome": "Baby play", "iconKey": "child_friendly" },
-      { "nome": "Hall social", "iconKey": "meeting_room" }
-    ]
+    { "nome": "Salão de festas gourmet", "iconKey": "celebration" },
+    { "nome": "Solarium", "iconKey": "wb_sunny" },
+    { "nome": "Salão de Jogos", "iconKey": "sports_esports" },
+    { "nome": "Brinquedoteca", "iconKey": "child_friendly" },
+    { "nome": "Piscina adulto", "iconKey": "pool" },
+    {
+      "nome": "Quiosque gourmet com churrasqueira e forno de pizza",
+      "iconKey": "outdoor_grill"
+    },
+    { "nome": "Playground", "iconKey": "park" },
+    { "nome": "Bicicletário", "iconKey": "directions_bike" },
+    { "nome": "Piscina infantil", "iconKey": "pool" },
+    { "nome": "Fitness", "iconKey": "fitness_center" },
+    { "nome": "Baby play", "iconKey": "child_friendly" },
+    { "nome": "Hall social", "iconKey": "meeting_room" }
   ]
 }
