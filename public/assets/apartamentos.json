@@ -39,10 +39,7 @@
       "01_Jaracandá/Lazer/11_Perspectiva artística da Quadra Recreativa com Iluminação.webp",
       "01_Jaracandá/Lazer/12_Perspectiva artística do Salão de Jogos.webp"
     ],
-    "vagas": [
-      2,
-      1
-    ],
+    "vagas": [2, 1],
     "obsvagas": "com depósito",
     "vagasdescr": "determinadas",
     "videoId": "X9bdH8CVDRY",
@@ -203,9 +200,7 @@
       "02_Olivier/Lazer/14_Playground.webp",
       "02_Olivier/Lazer/15_Brinquedoteca.webp"
     ],
-    "vagas": [
-      3
-    ],
+    "vagas": [3],
     "obsvagas": "com depósito",
     "videoId": "nd9HanRNOps",
     "plantas": [
@@ -369,10 +364,7 @@
       "03_Morumbi Home Resort/Lazer/27_Morumbi Home Resort Pet Place.webp",
       "03_Morumbi Home Resort/Lazer/28_Morumbi Home Resort Herbário.webp"
     ],
-    "vagas": [
-      1,
-      2
-    ],
+    "vagas": [1, 2],
     "obsvagas": "com depósito e vaga extra",
     "videoId": "wWz93rz5r5E",
     "plantas": [
@@ -645,9 +637,7 @@
       "04_Ohana/Lazer/14_Perspectiva artística da sauna.webp",
       "04_Ohana/Lazer/15_perspectiva artística do terraço social.webp"
     ],
-    "vagas": [
-      2
-    ],
+    "vagas": [2],
     "obsvagas": "com depósito",
     "videoId": "-XKzonBAZy4",
     "plantas": [
@@ -814,10 +804,7 @@
       "05_Arboris/Lazer/10_Perspectiva artística da Quadra Recreativa.webp",
       "05_Arboris/Lazer/11_Perspectiva artística do salão de jogos.webp"
     ],
-    "vagas": [
-      1,
-      2
-    ],
+    "vagas": [1, 2],
     "obsvagas": "com depósito",
     "videoId": "cldrEnbab3U",
     "plantas": [
@@ -988,10 +975,7 @@
       "06_Magna/Lazer/17_Perspectiva Artística do Fitness.webp",
       "06_Magna/Lazer/18_Perspectiva Artística do descanso da Sauna.webp"
     ],
-    "vagas": [
-      2,
-      3
-    ],
+    "vagas": [2, 3],
     "obsvagas": "com depósito e vaga extra",
     "videoId": "RjC6hA1wIJ8",
     "plantas": [
@@ -1122,7 +1106,7 @@
     ]
   },
   {
-c    "id": 7,
+    "id": 7,
     "construtora": "Marques Construtora",
     "nome": "Dueto",
     "logo": "logo.webp",
@@ -1158,9 +1142,7 @@ c    "id": 7,
       "07_Dueto/Lazer/09_Perspectiva artística da brinquedoteca.webp",
       "07_Dueto/Lazer/10_Perspectiva artística do baby play.webp"
     ],
-    "vagas": [
-      1
-    ],
+    "vagas": [1],
     "obsvagas": "com depósito",
     "videoId": "di8qBiT2rSc",
     "plantas": [
