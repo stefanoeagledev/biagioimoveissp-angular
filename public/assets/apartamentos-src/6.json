@@ -14,7 +14,7 @@
   "prontoEm": "",
   "lancamentoEm": "",
   "foto_fachada": [
-    "06_Magna/Apartamentos/01_Perspectiva Artística da Piscina Adulto com Raia de 25 metros.webp"
+    "06_Magna/Lazer/01_Perspectiva Artística da Piscina Adulto com Raia de 25 metros.webp"
   ],
   "fotos_apartamentos": [
     "06_Magna/Fachada/01_Perspectiva Artística da Fachada.webp",
@@ -67,5 +67,39 @@
       "lavabos": 1,
       "foto": "06_Magna/Plantas/p1_3 suítes + living ampliado - 133m².webp"
     }
+  ],
+  "amenidades": [
+    { "nome": "Portaria", "iconKey": "security" },
+    { "nome": "Acesso de veículos com clausura", "iconKey": "garage" },
+    { "nome": "Sala de Reuniões", "iconKey": "meeting_room" },
+    { "nome": "Salão de festas", "iconKey": "celebration" },
+    { "nome": "Brinquedoteca", "iconKey": "child_friendly" },
+    { "nome": "Zeladoria", "iconKey": "support_agent" },
+    { "nome": "Solarium", "iconKey": "wb_sunny" },
+    {
+      "nome": "Espaço churrasqueira e forno de pizza",
+      "iconKey": "outdoor_grill"
+    },
+    { "nome": "Fitness", "iconKey": "fitness_center" },
+    { "nome": "Entrada social de pedestres com clausura", "iconKey": "login" },
+    { "nome": "Hall social", "iconKey": "meeting_room" },
+    { "nome": "Sala de estudos", "iconKey": "menu_book" },
+    { "nome": "Praça de apoio aos salões de festas", "iconKey": "park" },
+    { "nome": "Baby play", "iconKey": "child_friendly" },
+    { "nome": "Piscina adulto com raia de 25 metros", "iconKey": "pool" },
+    { "nome": "Deck molhado", "iconKey": "deck" },
+    { "nome": "Ecoplay", "iconKey": "eco" },
+    { "nome": "Pet place", "iconKey": "pets" },
+    {
+      "nome": "Entrada de serviço de pedestres com clausura",
+      "iconKey": "login"
+    },
+    { "nome": "Coworking", "iconKey": "workspaces" },
+    { "nome": "Espaço gourmet", "iconKey": "restaurant" },
+    { "nome": "Playground", "iconKey": "park" },
+    { "nome": "Sauna com descanso", "iconKey": "hot_tub" },
+    { "nome": "Piscina infantil", "iconKey": "pool" },
+    { "nome": "Quadra recreativa", "iconKey": "sports_basketball" },
+    { "nome": "Sala de jogos", "iconKey": "sports_esports" }
   ]
 }

@@ -957,7 +957,7 @@
     "prontoEm": "",
     "lancamentoEm": "",
     "foto_fachada": [
-      "06_Magna/Apartamentos/01_Perspectiva Artística da Piscina Adulto com Raia de 25 metros.webp"
+      "06_Magna/Lazer/01_Perspectiva Artística da Piscina Adulto com Raia de 25 metros.webp"
     ],
     "fotos_apartamentos": [
       "06_Magna/Fachada/01_Perspectiva Artística da Fachada.webp",
@@ -1013,6 +1013,245 @@
         "lavabos": 1,
         "foto": "06_Magna/Plantas/p1_3 suítes + living ampliado - 133m².webp"
       }
+    ],
+    "amenidades": [
+      {
+        "nome": "Portaria",
+        "iconKey": "security"
+      },
+      {
+        "nome": "Acesso de veículos com clausura",
+        "iconKey": "garage"
+      },
+      {
+        "nome": "Sala de Reuniões",
+        "iconKey": "meeting_room"
+      },
+      {
+        "nome": "Salão de festas",
+        "iconKey": "celebration"
+      },
+      {
+        "nome": "Brinquedoteca",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Zeladoria",
+        "iconKey": "support_agent"
+      },
+      {
+        "nome": "Solarium",
+        "iconKey": "wb_sunny"
+      },
+      {
+        "nome": "Espaço churrasqueira e forno de pizza",
+        "iconKey": "outdoor_grill"
+      },
+      {
+        "nome": "Fitness",
+        "iconKey": "fitness_center"
+      },
+      {
+        "nome": "Entrada social de pedestres com clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Hall social",
+        "iconKey": "meeting_room"
+      },
+      {
+        "nome": "Sala de estudos",
+        "iconKey": "menu_book"
+      },
+      {
+        "nome": "Praça de apoio aos salões de festas",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Baby play",
+        "iconKey": "child_friendly"
+      },
+      {
+        "nome": "Piscina adulto com raia de 25 metros",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Deck molhado",
+        "iconKey": "deck"
+      },
+      {
+        "nome": "Ecoplay",
+        "iconKey": "eco"
+      },
+      {
+        "nome": "Pet place",
+        "iconKey": "pets"
+      },
+      {
+        "nome": "Entrada de serviço de pedestres com clausura",
+        "iconKey": "login"
+      },
+      {
+        "nome": "Coworking",
+        "iconKey": "workspaces"
+      },
+      {
+        "nome": "Espaço gourmet",
+        "iconKey": "restaurant"
+      },
+      {
+        "nome": "Playground",
+        "iconKey": "park"
+      },
+      {
+        "nome": "Sauna com descanso",
+        "iconKey": "hot_tub"
+      },
+      {
+        "nome": "Piscina infantil",
+        "iconKey": "pool"
+      },
+      {
+        "nome": "Quadra recreativa",
+        "iconKey": "sports_basketball"
+      },
+      {
+        "nome": "Sala de jogos",
+        "iconKey": "sports_esports"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "construtora": "Marques Construtora",
+    "nome": "Dueto",
+    "logo": "logo.webp",
+    "status": "Pronto para Morar",
+    "bairro": "Morumbi",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "lazer": "completo",
+    "varanda": "com ponto grill",
+    "endereco": "Rua Carvalho de Freitas, 100",
+    "vendido": "95%",
+    "prontoEm": "",
+    "lancamentoEm": "",
+    "foto_fachada": [
+      "07_Dueto/Apartamentos/01_Perspectiva artística do living dos Aptos finais 1 e 4 de 45m².webp"
+    ],
+    "fotos_apartamentos": [
+      "07_Dueto/Fachada/01_Fachada Dueto Morumbi.webp",
+      "07_Dueto/Apartamentos/01_Perspectiva artística do living dos Aptos finais 1 e 4 de 45m².webp",
+      "07_Dueto/Apartamentos/02_Perspectiva artística da entrada.webp",
+      "07_Dueto/Apartamentos/03_Perspectiva artística do hall social.webp",
+      "07_Dueto/Apartamentos/04_Perspectiva artística do living dos Aptos finais 5 e 8 de 45m².webp"
+    ],
+    "fotos_lazer": [
+      "07_Dueto/Lazer/01_Perspectiva artística da piscina adulto com raia de 20m.webp",
+      "07_Dueto/Lazer/02_Perspectiva artística da Piscina Infantil.webp",
+      "07_Dueto/Lazer/03_Perspectiva artística da Quadra recreativa.webp",
+      "07_Dueto/Lazer/04_Perspectiva artística do Playground.webp",
+      "07_Dueto/Lazer/05_Perspectiva artística do Salão de jogos.webp",
+      "07_Dueto/Lazer/06_Perspectiva artística do fitness.webp",
+      "07_Dueto/Lazer/07_Perspectiva artística do Salão de Festas Gourmet.webp",
+      "07_Dueto/Lazer/08_Perspectiva artística da churrasqueira e forno de pizza.webp",
+      "07_Dueto/Lazer/09_Perspectiva artística da brinquedoteca.webp",
+      "07_Dueto/Lazer/10_Perspectiva artística do baby play.webp"
+    ],
+    "vagas": [
+      1
+    ],
+    "obsvagas": "com depósito",
+    "videoId": "di8qBiT2rSc",
+    "plantas": [
+      {
+        "area": 45,
+        "preco": 413400,
+        "quartos": 2,
+        "suites": 0,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "07_Dueto/Plantas/p0_45m² - 2 dorms.webp"
+      },
+      {
+        "area": 45,
+        "preco": 413400,
+        "quartos": 1,
+        "suites": 0,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "07_Dueto/Plantas/p1_45m² - 1 dorm + living ampliado.webp"
+      },
+      {
+        "area": 45,
+        "preco": 413400,
+        "quartos": 2,
+        "suites": 0,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "07_Dueto/Plantas/p2_45m² - 2 dorms.webp"
+      },
+      {
+        "area": 45,
+        "preco": 413400,
+        "quartos": 2,
+        "suites": 0,
+        "banheiros": 1,
+        "lavabos": 0,
+        "foto": "07_Dueto/Plantas/p3_45m² - 1 dorm + living ampliado.webp"
+      }
+    ],
+    "amenidades": [
+      [
+        {
+          "nome": "Salão de festas gourmet",
+          "iconKey": "celebration"
+        },
+        {
+          "nome": "Solarium",
+          "iconKey": "wb_sunny"
+        },
+        {
+          "nome": "Salão de Jogos",
+          "iconKey": "sports_esports"
+        },
+        {
+          "nome": "Brinquedoteca",
+          "iconKey": "child_friendly"
+        },
+        {
+          "nome": "Piscina adulto",
+          "iconKey": "pool"
+        },
+        {
+          "nome": "Quiosque gourmet com churrasqueira e forno de pizza",
+          "iconKey": "outdoor_grill"
+        },
+        {
+          "nome": "Playground",
+          "iconKey": "park"
+        },
+        {
+          "nome": "Bicicletário",
+          "iconKey": "directions_bike"
+        },
+        {
+          "nome": "Piscina infantil",
+          "iconKey": "pool"
+        },
+        {
+          "nome": "Fitness",
+          "iconKey": "fitness_center"
+        },
+        {
+          "nome": "Baby play",
+          "iconKey": "child_friendly"
+        },
+        {
+          "nome": "Hall social",
+          "iconKey": "meeting_room"
+        }
+      ]
     ]
   }
 ]

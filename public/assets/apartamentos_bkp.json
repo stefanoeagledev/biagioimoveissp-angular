@@ -80,45 +80,5 @@
         "precoapartirde": ""
       }
     ]
-  },
-  {
-    "id": 9,
-    "construtora": "Marques Construtora",
-    "nome": "Dueto",
-    "logo": "logo.webp",
-    "status": "Pronto para Morar",
-    "bairro": "Morumbi",
-    "cidade": "São Paulo",
-    "estado": "SP",
-    "lazer": "completo",
-    "varanda": "com ponto grill",
-    "endereco": "Rua Carvalho de Freitas, 100",
-    "vendido": "95%",
-    "prontoEm": "",
-    "lancamentoEm": "",
-    "fotos": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
-    "vagas": [1],
-    "obsvagas": "com depósito",
-    "videoId": "di8qBiT2rSc",
-    "plantas": [
-      {
-        "area": 45,
-        "preco": 413400,
-        "quartos": 2,
-        "banheiros": 1,
-        "lavabos": 0,
-        "foto": "p1.webp",
-        "precoapartirde": "R$ 413.400"
-      },
-      {
-        "area": 45,
-        "preco": 413400,
-        "quartos": 2,
-        "banheiros": 1,
-        "lavabos": 0,
-        "foto": "p2.webp",
-        "precoapartirde": "R$ 413.400"
-      }
-    ]
   }
 ]
