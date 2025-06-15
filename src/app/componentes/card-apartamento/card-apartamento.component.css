@@ -49,5 +49,21 @@
 
 .btn-ver-detalhes {
   width: 100%;
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #005baa; /* Biagio blue */
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
   text-align: center;
+}
+
+.btn-ver-detalhes:hover {
+  background-color: #004080;
+  transform: translateY(-1px);
 }
