@@ -6,27 +6,7 @@ import { Planta } from '../../modelos/apartamento.model';
   selector: 'app-detalhes-planta',
   standalone: true,
   imports: [CommonModule],
-  template: `
-    <div class="detalhes-planta">
-      <img
-        class="planta-img"
-        [src]="'/assets/' + planta.foto"
-        alt="Planta {{ planta.area }} m²"
-      />
-      <ul class="dados-planta">
-        <li><strong>Área:</strong> {{ planta.area }} m²</li>
-        <li><strong>Preço a partir de:</strong> {{ planta.precoapartirde }}</li>
-        <li><strong>Quartos:</strong> {{ planta.quartos }}</li>
-        <li><strong>Banheiros:</strong> {{ planta.banheiros }}</li>
-        <li *ngIf="planta.lavabos > 0">
-          <strong>Lavabos:</strong> {{ planta.lavabos }}
-        </li>
-        <li *ngIf="planta.tabelaem">
-          <strong>Condição:</strong> {{ planta.tabelaem }}
-        </li>
-      </ul>
-    </div>
-  `,
+  templateUrl: './detalhes-planta.component.html',
   styleUrls: ['./detalhes-planta.component.css'],
 })
 export class DetalhesPlantaComponent {

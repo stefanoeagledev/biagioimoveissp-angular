@@ -1,0 +1,83 @@
+<div class="card card-apartamento">
+  <img
+    *ngIf="a.foto_card && a.foto_card.length > 0"
+    class="card-img-top"
+    [src]="'/assets/' + a.foto_card[0]"
+    alt="Fachada do {{ a.nome }}"
+  />
+
+  <div class="card-body">
+    <h2 class="card-title">{{ a.nome }}</h2>
+    <p class="card-local">{{ a.bairro }}, {{ a.cidade }}</p>
+
+    <div class="detalhes-lista">
+      <!-- ÁREA -->
+      <div *ngIf="areaFormatada()" class="detalhe-item">
+        <span class="material-icons detalhe-icone">square_foot</span>
+        <span class="detalhe-texto">{{ areaFormatada() }}</span>
+      </div>
+
+      <!-- QUARTOS (+ SUÍTES ENTRE PARÊNTESES) -->
+      <div *ngIf="quartosFormatados()" class="detalhe-item">
+        <span class="material-icons detalhe-icone">king_bed</span>
+        <span class="detalhe-texto">
+          {{ quartosFormatados() }}
+          {{ pluralize(quartosUnicos(), "quarto", "quartos") }}
+          <ng-container *ngIf="suitesFormatadas()">
+            ({{ suitesFormatadas() }}
+            {{ pluralize(suitesUnicas(), "suíte", "suítes") }})
+          </ng-container>
+        </span>
+      </div>
+
+      <!-- BANHEIROS (+ LAVABOS ENTRE PARÊNTESES) -->
+      <div *ngIf="banheirosFormatados()" class="detalhe-item">
+        <span class="material-icons detalhe-icone">bathtub</span>
+        <span class="detalhe-texto">
+          {{ banheirosFormatados() }}
+          {{ pluralize(banheirosUnicos(), "banheiro", "banheiros") }}
+          <ng-container *ngIf="lavabosFormatados()">
+            ({{ lavabosFormatados() }}
+            {{ pluralize(lavabosUnicos(), "lavabo", "lavabos") }})
+          </ng-container>
+        </span>
+      </div>
+
+      <!-- VAGAS -->
+      <div *ngIf="vagasFormatadas()" class="detalhe-item">
+        <span class="material-icons detalhe-icone">garage</span>
+        <span class="detalhe-texto">
+          {{ vagasFormatadas() }}
+          {{ pluralize(vagasUnicas(), "vaga", "vagas") }}
+          <ng-container *ngIf="a.vagasdescr">
+            {{ a.vagasdescr }}
+          </ng-container>
+          <ng-container *ngIf="a.obsvagas">
+            {{ a.obsvagas }}
+          </ng-container>
+        </span>
+      </div>
+
+      <!-- LAZER (se existir) -->
+      <div *ngIf="a.lazer" class="detalhe-item">
+        <span class="material-icons detalhe-icone">pool</span>
+        <!-- Prefixo “lazer” adicionado fixo -->
+        <span class="detalhe-texto">lazer {{ a.lazer }}</span>
+      </div>
+
+      <!-- VARANDA (se existir) -->
+      <div *ngIf="a.varanda" class="detalhe-item">
+        <span class="material-icons detalhe-icone">outdoor_grill</span>
+        <!-- Prefixo “varanda” adicionado fixo -->
+        <span class="detalhe-texto">varanda {{ a.varanda }}</span>
+      </div>
+    </div>
+
+    <a
+      [routerLink]="['/imovel', a.id]"
+      class="btn btn-primary btn-ver-detalhes"
+    >
+      Ver detalhes
+    </a>
+  </div>
+</div>
