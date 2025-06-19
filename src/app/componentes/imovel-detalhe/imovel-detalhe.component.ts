@@ -18,8 +18,8 @@ export class ImovelDetalheComponent implements OnInit {
   imovelSignal!: Signal<Apartamento | undefined>;
 
   ngOnInit(): void {
-    const idParam = Number(this.route.snapshot.paramMap.get('id') || NaN);
-    const id = isNaN(idParam) ? -1 : idParam;
-    this.imovelSignal = this.apartamentosServico.buscarPorIdSignal(id);
+    const idParam = String(this.route.snapshot.paramMap.get('id') || undefined);
+    console.log(`ID do imóvel recebido: ${idParam}`);
+    this.imovelSignal = this.apartamentosServico.buscarPorIdSignal(idParam);
   }
 }

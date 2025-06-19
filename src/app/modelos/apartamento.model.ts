@@ -11,7 +11,7 @@ export interface Planta {
 }
 
 export interface Apartamento {
-  id: number;
+  id: string;
   construtora: string;
   nome: string;
   logo: string;

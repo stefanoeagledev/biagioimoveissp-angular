@@ -26,10 +26,10 @@ def main():
             print(f"⚠️ Falha ao ler/parsear {nome_arquivo}: {e}")
 
     # Opcional: ordenar por campo "id" se existir
-    try:
-        objetos.sort(key=lambda x: x.get('id', 0))
-    except Exception:
-        pass
+    # try:
+    #     # objetos.sort(key=lambda x: x.get('id', 0))
+    # except Exception:
+    #     pass
 
     # Grava JSON unificado
     with open(OUT_FILE, 'w', encoding='utf-8') as f:

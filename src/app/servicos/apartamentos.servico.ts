@@ -247,7 +247,7 @@ export class ApartamentosServico {
   }
 
   /** Computed que devolve o apartamento cujo id bate com o passado */
-  buscarPorIdSignal(id: number): Signal<Apartamento | undefined> {
+  buscarPorIdSignal(id: string): Signal<Apartamento | undefined> {
     return computed(() => this._todosApartamentos().find((a) => a.id === id));
   }
 

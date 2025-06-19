@@ -7,7 +7,7 @@
   <!-- Fachada -->
   <div class="fachada-container">
     <img
-      [src]="'/assets/' + imovel.nome + '/' + imovel.foto_fachada[0]"
+      [src]="'/assets/' + imovel.foto_fachada[0]"
       alt="Fachada {{ imovel.nome }}"
       class="img-fachada"
     />
@@ -19,7 +19,7 @@
     <div class="galeria-imoveis">
       <img
         *ngFor="let foto of imovel.fotos_apartamentos"
-        [src]="'/assets/' + imovel.nome + '/' + foto"
+        [src]="'/assets/' + foto"
         alt="Foto apartamento {{ imovel.nome }}"
         class="img-imovel"
       />
@@ -32,7 +32,7 @@
     <div class="galeria-imoveis">
       <img
         *ngFor="let foto of imovel.fotos_lazer"
-        [src]="'/assets/' + imovel.nome + '/' + foto"
+        [src]="'/assets/' + foto"
         alt="Foto lazer {{ imovel.nome }}"
         class="img-imovel"
       />
@@ -46,7 +46,7 @@
       <ng-container *ngFor="let p of imovel.plantas; let i = index">
         <img
           class="img-planta"
-          [src]="'/assets/' + imovel.nome + '/' + p.foto"
+          [src]="'/assets/' + p.foto"
           alt="Planta {{ i + 1 }} de {{ imovel.nome }}"
         />
       </ng-container>
