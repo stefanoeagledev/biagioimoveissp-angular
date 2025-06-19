@@ -9,7 +9,7 @@
   --biagio-blue-dark: #004080;
   --text-primary: #212121;
   --text-secondary: #555;
-  --radius: 12px;
+  --radius: 14px;
   --shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
   --shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.18);
 }
@@ -26,6 +26,18 @@
   box-shadow: var(--shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.card-apartamento img,
+.mat-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
+  /* tiny extra rounding on the top corners */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
 .card-apartamento:hover,
 .mat-card:hover {
   transform: translateY(-4px);
