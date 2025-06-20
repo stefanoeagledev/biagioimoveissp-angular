@@ -1,4 +1,4 @@
-<div class="card card-apartamento">
+<div class="card card-apartamento" [routerLink]="['/imovel', a.id]">
   <img
     *ngIf="a.foto_card && a.foto_card.length > 0"
     class="card-img-top"
